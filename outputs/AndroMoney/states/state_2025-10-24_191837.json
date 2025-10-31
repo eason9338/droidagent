@@ -1,0 +1,2540 @@
+{
+  "tag": "2025-10-24_191837",
+  "state_str": "5dfe4d8d3304dadec8b608b67dec1f28",
+  "state_str_content_free": "12a2b827b279ba3d30269c6cfa377d2d",
+  "foreground_activity": "com.kpmoney.android/.addnewrecord.AddNewRecordActivity",
+  "activity_stack": [
+    "com.kpmoney.android/.addnewrecord.AddNewRecordActivity",
+    "com.kpmoney.android/com.kpmoney.home.HomeRecordActivity"
+  ],
+  "background_services": [
+    "com.google.android.gms/.ads.identifier.service.AdvertisingIdService",
+    "com.google.android.apps.messaging/com.google.android.ims.service.JibeService",
+    "com.google.android.networkstack.tethering/com.android.networkstack.tethering.TetheringService",
+    "com.google.android.adservices.api/com.android.adservices.measurement.MeasurementService",
+    "com.android.systemui/.keyguard.KeyguardService",
+    "com.google.android.gms/org.chromium.content.app.SandboxedProcessService0",
+    "com.google.android.webview/org.chromium.android_webview.services.MetricsBridgeService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.textclassifier.service.QAiaiTextClassifierService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.superpacks.impl.AiAiSuperpacksService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService",
+    "com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService",
+    "com.google.android.gms/.chimera.PersistentApiService",
+    "com.android.systemui/.wallpapers.ImageWallpaper",
+    "com.google.android.gms/.location.geocode.GeocodeService",
+    "com.android.phone/com.android.internal.telephony.CellularNetworkService",
+    "com.google.android.gms/.chimera.PersistentBoundBrokerService",
+    "com.android.vending/com.google.android.finsky.crossprofile.ProfileStateService",
+    "io.github.ylimit.droidbotapp/.DroidBotIME",
+    "com.google.android.gms/com.google.android.location.fused.FusedLocationService",
+    "com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl",
+    "com.google.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl",
+    "com.android.phone/com.android.internal.telephony.data.CellularDataService",
+    "io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService",
+    "com.google.android.apps.nexuslauncher/com.android.launcher3.notification.NotificationListener",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationListenerService",
+    "com.android.systemui/.SystemUIService",
+    "android/.hardware.location.GeofenceHardwareService",
+    "com.android.se/.SecureElementService",
+    "com.google.android.gms/.chimera.PersistentDirectBootAwareApiService",
+    "com.google.android.gms/.geotimezone.GeoTimeZoneService",
+    "com.google.android.gms/.nearby.discovery.service.DiscoveryService",
+    "com.google.android.gms/com.google.android.location.internal.PendingIntentCallbackService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService",
+    "com.google.android.bluetooth/com.android.bluetooth.btservice.AdapterService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureService",
+    "com.google.android.gms/com.google.android.location.internal.server.GoogleLocationService",
+    "com.google.android.gms/com.google.android.contextmanager.service.ContextManagerService",
+    "com.android.systemui/.dump.SystemUIAuxiliaryDumpService",
+    "com.google.android.gms/com.google.android.location.network.NetworkLocationService",
+    "com.android.stk/.StkAppService",
+    "com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService",
+    "com.android.server.telecom/.components.TelecomService",
+    "com.google.android.networkstack/com.android.server.NetworkStackService",
+    "com.android.systemui/com.google.android.systemui.power.batteryevent.domain.BatteryEventService",
+    "com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService",
+    "com.android.emulator.multidisplay/.MultiDisplayService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationAssistantService",
+    "com.android.ons/.OpportunisticNetworkService",
+    "com.google.android.gms/.auth.account.authenticator.GoogleAccountAuthenticatorService",
+    "com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService",
+    "com.kpmoney.android/org.chromium.content.app.SandboxedProcessService0",
+    "com.android.phone/.TelephonyDebugService",
+    "com.google.android.apps.nexuslauncher/com.android.quickstep.TouchInteractionService",
+    "com.google.android.cellbroadcastservice/com.android.cellbroadcastservice.DefaultCellBroadcastService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSearchUiService"
+  ],
+  "width": 2208,
+  "height": 1840,
+  "views": [
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        1,
+        62,
+        63
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          0
+        ],
+        [
+          2208,
+          1840
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": -1,
+      "temp_id": 0,
+      "size": "2208*1840",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "d2b5df50ea96c0cc188779da61db0b1d",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        2
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          0
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 0,
+      "temp_id": 1,
+      "size": "2208*1756",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "9578d2f61c6f89020ab08fe7fc41ae85",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        3
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          74
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": "android:id/content",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 1,
+      "temp_id": 2,
+      "size": "2208*1682",
+      "signature": "[class]android.widget.FrameLayout[resource_id]android:id/content[text]None[enabled,,]",
+      "view_str": "04753f0f710a2b51ee18e38745639a51",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]android:id/content"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        4,
+        11,
+        27
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          74
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 2,
+      "temp_id": 3,
+      "size": "2208*1682",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "a4a719c622a3a7cc47cd6a2c0950f7fd",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        5,
+        6
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          74
+        ],
+        [
+          2208,
+          233
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/top_layout",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 3,
+      "temp_id": 4,
+      "size": "2208*159",
+      "signature": "[class]android.widget.LinearLayout[resource_id]com.kpmoney.android:id/top_layout[text]None[enabled,,]",
+      "view_str": "15ae9ea2e8a58f5f91527605dff7455e",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]com.kpmoney.android:id/top_layout"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          21,
+          111
+        ],
+        [
+          105,
+          195
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/back",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageButton",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 4,
+      "temp_id": 5,
+      "size": "84*84",
+      "signature": "[class]android.widget.ImageButton[resource_id]com.kpmoney.android:id/back[text]None[enabled,,]",
+      "view_str": "bd2cc9cd174f21e7738897e649eade80",
+      "content_free_signature": "[class]android.widget.ImageButton[resource_id]com.kpmoney.android:id/back"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        7,
+        10
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          147,
+          95
+        ],
+        [
+          2187,
+          212
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 4,
+      "temp_id": 6,
+      "size": "2040*117",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "8bfe359c8d84b5cb868a26565e728880",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        8,
+        9
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          147,
+          95
+        ],
+        [
+          2187,
+          212
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 6,
+      "temp_id": 7,
+      "size": "2040*117",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "a650831339e1ea215e5512cc0625c809",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          147,
+          95
+        ],
+        [
+          369,
+          160
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/title",
+      "checked": false,
+      "text": "Currency",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 7,
+      "temp_id": 8,
+      "size": "222*65",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/title[text]Currency[enabled,,]",
+      "view_str": "1b051d0098d7c952df1e93ebcb9ae931",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/title"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          147,
+          160
+        ],
+        [
+          488,
+          212
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "Long press to modify",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 7,
+      "temp_id": 9,
+      "size": "341*52",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]Long press to modify[enabled,,]",
+      "view_str": "bcba5722f1e2efdac109d46c87fea926",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "AndroMoney",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          2061,
+          114
+        ],
+        [
+          2187,
+          193
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/refresh",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageButton",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 6,
+      "temp_id": 10,
+      "size": "126*79",
+      "signature": "[class]android.widget.ImageButton[resource_id]com.kpmoney.android:id/refresh[text]None[enabled,,]",
+      "view_str": "95df3776524041ff35db78baa1af68c7",
+      "content_free_signature": "[class]android.widget.ImageButton[resource_id]com.kpmoney.android:id/refresh"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        12
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          233
+        ],
+        [
+          2208,
+          1494
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 3,
+      "temp_id": 11,
+      "size": "2208*1261",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "6d49eb54538b08fc3ce9a2ff2ef0ec71",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        13,
+        18,
+        23
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          18,
+          251
+        ],
+        [
+          2190,
+          1476
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/currencylist",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ListView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 11,
+      "temp_id": 12,
+      "size": "2172*1225",
+      "signature": "[class]android.widget.ListView[resource_id]com.kpmoney.android:id/currencylist[text]None[enabled,,]",
+      "view_str": "35d8d4658f949eae1e36e2d17923b0b6",
+      "content_free_signature": "[class]android.widget.ListView[resource_id]com.kpmoney.android:id/currencylist"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 4,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          18,
+          251
+        ],
+        [
+          2190,
+          386
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/bg",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 12,
+      "temp_id": 13,
+      "size": "2172*135",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg[text]None[enabled,,]",
+      "view_str": "202bd8ee238c1a55e803fc7b679386b1",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": "AndroMoney",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          18,
+          253
+        ],
+        [
+          149,
+          384
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/imageView",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 13,
+      "temp_id": 14,
+      "size": "131*131",
+      "signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/imageView[text]None[enabled,,]",
+      "view_str": "9f31fc6a17da3eb4806eb66a0ca22e98",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/imageView"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          149,
+          256
+        ],
+        [
+          2085,
+          319
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/currencyCode",
+      "checked": false,
+      "text": "Same as account",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 13,
+      "temp_id": 15,
+      "size": "1936*63",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyCode[text]Same as account[enabled,,]",
+      "view_str": "6d232c2d5d5252ecaf082db2499d9db0",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyCode"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          149,
+          319
+        ],
+        [
+          2085,
+          386
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/currencyDes",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 13,
+      "temp_id": 16,
+      "size": "1936*67",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyDes[text]None[enabled,,]",
+      "view_str": "fd960b090a3d06319ae74fb63c4c01d7",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyDes"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": false,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          2085,
+          293
+        ],
+        [
+          2085,
+          344
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/currencyRate",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 13,
+      "temp_id": 17,
+      "size": "0*51",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyRate[text]None[enabled,,]",
+      "view_str": "2d9268ac909cd1a20ab239dbe350ab3c",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyRate"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 4,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          18,
+          389
+        ],
+        [
+          2190,
+          524
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/bg",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 12,
+      "temp_id": 18,
+      "size": "2172*135",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg[text]None[enabled,,]",
+      "view_str": "700e3bd4a14967a12e41110d40c37cb4",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": "AndroMoney",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          18,
+          391
+        ],
+        [
+          149,
+          522
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/imageView",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 18,
+      "temp_id": 19,
+      "size": "131*131",
+      "signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/imageView[text]None[enabled,,]",
+      "view_str": "9f31fc6a17da3eb4806eb66a0ca22e98",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/imageView"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          149,
+          394
+        ],
+        [
+          2085,
+          457
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/currencyCode",
+      "checked": false,
+      "text": "USD",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 18,
+      "temp_id": 20,
+      "size": "1936*63",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyCode[text]USD[enabled,,]",
+      "view_str": "e32c76c7abb9c2f6e43b58f244873f60",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyCode"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          149,
+          457
+        ],
+        [
+          2085,
+          524
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/currencyDes",
+      "checked": false,
+      "text": "US Dollar",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 18,
+      "temp_id": 21,
+      "size": "1936*67",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyDes[text]US Dollar[enabled,,]",
+      "view_str": "ad6304ef4fcbd85fd4dfdea4029d0b00",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyDes"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": false,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          2085,
+          431
+        ],
+        [
+          2085,
+          482
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/currencyRate",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 18,
+      "temp_id": 22,
+      "size": "0*51",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyRate[text]None[enabled,,]",
+      "view_str": "2d9268ac909cd1a20ab239dbe350ab3c",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyRate"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        24,
+        25,
+        26
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          18,
+          527
+        ],
+        [
+          2190,
+          662
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/bg",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 12,
+      "temp_id": 23,
+      "size": "2172*135",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg[text]None[enabled,,]",
+      "view_str": "58900e5028de0fb4cd94d2205c0048bb",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          149,
+          532
+        ],
+        [
+          2085,
+          595
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/currencyCode",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 23,
+      "temp_id": 24,
+      "size": "1936*63",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyCode[text]None[enabled,,]",
+      "view_str": "862b1ac88b4c738e81f2bba4f09e6a49",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyCode"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          149,
+          595
+        ],
+        [
+          2085,
+          662
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/currencyDes",
+      "checked": false,
+      "text": "New ..",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 23,
+      "temp_id": 25,
+      "size": "1936*67",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyDes[text]New ..[enabled,,]",
+      "view_str": "014e31400107e592ca9e4c1456b96447",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyDes"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": false,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          2085,
+          569
+        ],
+        [
+          2085,
+          620
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/currencyRate",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 23,
+      "temp_id": 26,
+      "size": "0*51",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyRate[text]None[enabled,,]",
+      "view_str": "2d9268ac909cd1a20ab239dbe350ab3c",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/currencyRate"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        28
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1494
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/ad_layout",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 3,
+      "temp_id": 27,
+      "size": "2208*262",
+      "signature": "[class]android.widget.LinearLayout[resource_id]com.kpmoney.android:id/ad_layout[text]None[enabled,,]",
+      "view_str": "03b0a97c5441404988643009880f24ba",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]com.kpmoney.android:id/ad_layout"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        29
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1494
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.view.ViewGroup",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 27,
+      "temp_id": 28,
+      "size": "2208*262",
+      "signature": "[class]android.view.ViewGroup[resource_id]None[text]None[enabled,,]",
+      "view_str": "07f4f5de8d4f9459246b795b9da8d38a",
+      "content_free_signature": "[class]android.view.ViewGroup[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        30
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          684,
+          1494
+        ],
+        [
+          1524,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 28,
+      "temp_id": 29,
+      "size": "840*262",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "1c24a8e81b9831e20d93eec2913e71ec",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        31
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          684,
+          1494
+        ],
+        [
+          1524,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 29,
+      "temp_id": 30,
+      "size": "840*262",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "2cab201b98eeebaea5dd5fdf7c56fa52",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        32,
+        61
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          684,
+          1494
+        ],
+        [
+          1524,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 30,
+      "temp_id": 31,
+      "size": "840*262",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "cccb120428f219d6a5b671d5da631b6a",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        33
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          684,
+          1494
+        ],
+        [
+          1524,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.webkit.WebView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 31,
+      "temp_id": 32,
+      "size": "840*262",
+      "signature": "[class]android.webkit.WebView[resource_id]None[text]None[enabled,,]",
+      "view_str": "d8f10794b9070e80a2c71e7e0bc62131",
+      "content_free_signature": "[class]android.webkit.WebView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        34,
+        53,
+        60
+      ],
+      "focused": true,
+      "bounds": [
+        [
+          684,
+          1494
+        ],
+        [
+          1524,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.webkit.WebView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 32,
+      "temp_id": 33,
+      "size": "840*262",
+      "signature": "[class]android.webkit.WebView[resource_id]None[text][enabled,,]",
+      "view_str": "c0697f96bfc47b4dd54469b92286aec6",
+      "content_free_signature": "[class]android.webkit.WebView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        35
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          684,
+          1494
+        ],
+        [
+          1524,
+          1756
+        ]
+      ],
+      "resource_id": "mys-wrapper",
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 33,
+      "temp_id": 34,
+      "size": "840*262",
+      "signature": "[class]android.view.View[resource_id]mys-wrapper[text][enabled,,]",
+      "view_str": "470ee5425fabd14e2e3f4d100de83d92",
+      "content_free_signature": "[class]android.view.View[resource_id]mys-wrapper"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        36
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          684,
+          1494
+        ],
+        [
+          1524,
+          1756
+        ]
+      ],
+      "resource_id": "mys-content",
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 34,
+      "temp_id": 35,
+      "size": "840*262",
+      "signature": "[class]android.view.View[resource_id]mys-content[text][enabled,,]",
+      "view_str": "793ddae9f25086a418e794f6302ff0f1",
+      "content_free_signature": "[class]android.view.View[resource_id]mys-content"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        37
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          684,
+          1494
+        ],
+        [
+          1524,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 35,
+      "temp_id": 36,
+      "size": "840*262",
+      "signature": "[class]android.view.View[resource_id]None[text][enabled,,]",
+      "view_str": "9b2f5aea5aa1d7c583525e4a02641b29",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 4,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        38,
+        41,
+        46,
+        49
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          684,
+          1494
+        ],
+        [
+          1524,
+          1756
+        ]
+      ],
+      "resource_id": "banner-small-vanilla",
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 36,
+      "temp_id": 37,
+      "size": "840*262",
+      "signature": "[class]android.view.View[resource_id]banner-small-vanilla[text][enabled,,]",
+      "view_str": "a6cb78dbb1862adddd80aa87186ecb99",
+      "content_free_signature": "[class]android.view.View[resource_id]banner-small-vanilla"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        39
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          705,
+          1501
+        ],
+        [
+          1503,
+          1570
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 37,
+      "temp_id": 38,
+      "size": "798*69",
+      "signature": "[class]android.view.View[resource_id]None[text][enabled,,]",
+      "view_str": "799df171f1ae4b57c0a86f8170d733a0",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "\u4e7e\u5f0f\u8ef8\u627f \u8010\u8150\u8755 \u6297UV \u6297\u9762\u58d3",
+      "children": [
+        40
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          705,
+          1504
+        ],
+        [
+          1321,
+          1575
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 38,
+      "temp_id": 39,
+      "size": "616*71",
+      "signature": "[class]android.view.View[resource_id]None[text]None[enabled,,]",
+      "view_str": "67133197eb8e12f3fb0c78fe95b88942",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          705,
+          1504
+        ],
+        [
+          1321,
+          1575
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "\u4e7e\u5f0f\u8ef8\u627f \u8010\u8150\u8755 \u6297UV \u6297\u9762\u58d3",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 39,
+      "temp_id": 40,
+      "size": "616*71",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]\u4e7e\u5f0f\u8ef8\u627f \u8010\u8150\u8755 \u6297UV \u6297\u9762\u58d3[enabled,,]",
+      "view_str": "5b60aed9e333fa5e78f2b19e47bc8c4a",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        42
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          705,
+          1567
+        ],
+        [
+          1503,
+          1662
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 37,
+      "temp_id": 41,
+      "size": "798*95",
+      "signature": "[class]android.view.View[resource_id]None[text][enabled,,]",
+      "view_str": "799df171f1ae4b57c0a86f8170d733a0",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "\u8ffd\u65e5\u592a\u967d\u80fd\u7cfb\u7d71 igus \u5fb7\u570bESQM\u8ef8\u627f\u96f6\u4ef625\u5e74\u4fdd\u56fa\uff0c\u8010 \u8150\u8755 \u6297UV \u6297\u9762\u58d3 \u98a8\u5439\u65e5\u66ec\u96e8\u6dcb\u4e5f\u4e0d\u6015",
+      "children": [
+        43,
+        44,
+        45
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          705,
+          1572
+        ],
+        [
+          1495,
+          1662
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 41,
+      "temp_id": 42,
+      "size": "790*90",
+      "signature": "[class]android.view.View[resource_id]None[text]None[enabled,,]",
+      "view_str": "b774544cbfc656dcbebb5f0f41d75d44",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          705,
+          1572
+        ],
+        [
+          1495,
+          1622
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "\u8ffd\u65e5\u592a\u967d\u80fd\u7cfb\u7d71 igus \u5fb7\u570bESQM\u8ef8\u627f\u96f6\u4ef625\u5e74\u4fdd\u56fa\uff0c\u8010",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 42,
+      "temp_id": 43,
+      "size": "790*50",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]\u8ffd\u65e5\u592a\u967d\u80fd\u7cfb\u7d71 igus \u5fb7\u570bESQM\u8ef8\u627f\u96f6\u4ef625\u5e74\u4fdd\u56fa\uff0c\u8010[enabled,,]",
+      "view_str": "5fad1ae11e0406c150bd4938368fda95",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": false,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1492,
+          1572
+        ],
+        [
+          1492,
+          1622
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "\n",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 42,
+      "temp_id": 44,
+      "size": "0*50",
+      "signature": "[class]android.view.View[resource_id]None[text]\n[enabled,,]",
+      "view_str": "78c49fd1eceab83108762910d62aa934",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          705,
+          1614
+        ],
+        [
+          1258,
+          1662
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "\u8150\u8755 \u6297UV \u6297\u9762\u58d3 \u98a8\u5439\u65e5\u66ec\u96e8\u6dcb\u4e5f\u4e0d\u6015",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 42,
+      "temp_id": 45,
+      "size": "553*48",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]\u8150\u8755 \u6297UV \u6297\u9762\u58d3 \u98a8\u5439\u65e5\u66ec\u96e8\u6dcb\u4e5f\u4e0d\u6015[enabled,,]",
+      "view_str": "9a64a121af1b7fa9676ffde464caa01c",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        47
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          705,
+          1683
+        ],
+        [
+          1027,
+          1730
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 37,
+      "temp_id": 46,
+      "size": "322*47",
+      "signature": "[class]android.view.View[resource_id]None[text][enabled,,]",
+      "view_str": "799df171f1ae4b57c0a86f8170d733a0",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "igus Taiwan \u53f0\u7063\u6613\u683c\u65af",
+      "children": [
+        48
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          705,
+          1683
+        ],
+        [
+          1027,
+          1730
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 46,
+      "temp_id": 47,
+      "size": "322*47",
+      "signature": "[class]android.view.View[resource_id]None[text]None[enabled,,]",
+      "view_str": "4aad04ad63471e9e339a832126255023",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          705,
+          1683
+        ],
+        [
+          1027,
+          1730
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "igus Taiwan \u53f0\u7063\u6613\u683c\u65af",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 47,
+      "temp_id": 48,
+      "size": "322*47",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]igus Taiwan \u53f0\u7063\u6613\u683c\u65af[enabled,,]",
+      "view_str": "e885c8658f87cccd9f7ae2163b82ad82",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "\u77ad\u89e3\u8a73\u60c5",
+      "children": [
+        50,
+        51,
+        52
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1159,
+          1664
+        ],
+        [
+          1503,
+          1746
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 37,
+      "temp_id": 49,
+      "size": "344*82",
+      "signature": "[class]android.view.View[resource_id]None[text]None[enabled,,]",
+      "view_str": "9b2cb4e54ef74fdb889862d0b6454c4a",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1161,
+          1667
+        ],
+        [
+          1503,
+          1743
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 49,
+      "temp_id": 50,
+      "size": "342*76",
+      "signature": "[class]android.widget.TextView[resource_id]None[text][enabled,,]",
+      "view_str": "323256f1721825c414aa7ff669017597",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1245,
+          1683
+        ],
+        [
+          1377,
+          1727
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "\u77ad\u89e3\u8a73\u60c5",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 49,
+      "temp_id": 51,
+      "size": "132*44",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]\u77ad\u89e3\u8a73\u60c5[enabled,,]",
+      "view_str": "a34635aa63a5d05d1ee20d8e90d0a53e",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1398,
+          1690
+        ],
+        [
+          1416,
+          1722
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.widget.Image",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 49,
+      "temp_id": 52,
+      "size": "18*32",
+      "signature": "[class]android.widget.Image[resource_id]None[text][enabled,,]",
+      "view_str": "637d7b400aed7ff810f4fb8011523915",
+      "content_free_signature": "[class]android.widget.Image[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        54
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1419,
+          1494
+        ],
+        [
+          1524,
+          1562
+        ]
+      ],
+      "resource_id": "abgcp",
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 33,
+      "temp_id": 53,
+      "size": "105*68",
+      "signature": "[class]android.view.View[resource_id]abgcp[text][enabled,,]",
+      "view_str": "a9a73c91555066b100c2b6838c620f42",
+      "content_free_signature": "[class]android.view.View[resource_id]abgcp"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        55,
+        59
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1440,
+          1494
+        ],
+        [
+          1524,
+          1536
+        ]
+      ],
+      "resource_id": "abgc",
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 53,
+      "temp_id": 54,
+      "size": "84*42",
+      "signature": "[class]android.view.View[resource_id]abgc[text][enabled,,]",
+      "view_str": "b6603936d644d64752cc296f7bbe1e7f",
+      "content_free_signature": "[class]android.view.View[resource_id]abgc"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        56
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1440,
+          1494
+        ],
+        [
+          1482,
+          1536
+        ]
+      ],
+      "resource_id": "abgb",
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 54,
+      "temp_id": 55,
+      "size": "42*42",
+      "signature": "[class]android.view.View[resource_id]abgb[text][enabled,,]",
+      "view_str": "bd7d24500d4193d6eee787f912c5dd72",
+      "content_free_signature": "[class]android.view.View[resource_id]abgb"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        57
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1440,
+          1494
+        ],
+        [
+          1482,
+          1536
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 55,
+      "temp_id": 56,
+      "size": "42*42",
+      "signature": "[class]android.view.View[resource_id]None[text][enabled,,]",
+      "view_str": "1a7aeb9e1f3e681d4c24bff6f9083d09",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        58
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1440,
+          1494
+        ],
+        [
+          1482,
+          1536
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 56,
+      "temp_id": 57,
+      "size": "42*42",
+      "signature": "[class]android.view.View[resource_id]None[text][enabled,,]",
+      "view_str": "1affa60312db31f1e6a3d3fb8f393fb6",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1440,
+          1494
+        ],
+        [
+          1482,
+          1536
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.widget.Image",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 57,
+      "temp_id": 58,
+      "size": "42*42",
+      "signature": "[class]android.widget.Image[resource_id]None[text][enabled,,]",
+      "view_str": "43aff03a8370020b063362fb25decfc9",
+      "content_free_signature": "[class]android.widget.Image[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1482,
+          1494
+        ],
+        [
+          1524,
+          1536
+        ]
+      ],
+      "resource_id": "cbb",
+      "checked": false,
+      "text": "",
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 54,
+      "temp_id": 59,
+      "size": "42*42",
+      "signature": "[class]android.widget.Button[resource_id]cbb[text][enabled,,]",
+      "view_str": "b943112f2edcca628f03e34ea3f8079b",
+      "content_free_signature": "[class]android.widget.Button[resource_id]cbb"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          684,
+          1494
+        ],
+        [
+          1524,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 33,
+      "temp_id": 60,
+      "size": "840*262",
+      "signature": "[class]android.widget.TextView[resource_id]None[text][enabled,,]",
+      "view_str": "9136b90bc5a14a170a72ade8f1caf0cf",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1032,
+          1494
+        ],
+        [
+          1175,
+          1547
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "Test Ad",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 31,
+      "temp_id": 61,
+      "size": "143*53",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]Test Ad[enabled,,]",
+      "view_str": "34d880a06cb9570104d832f8ba63def9",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": false,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          0
+        ],
+        [
+          2208,
+          74
+        ]
+      ],
+      "resource_id": "android:id/statusBarBackground",
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 0,
+      "temp_id": 62,
+      "size": "2208*74",
+      "signature": "[class]android.view.View[resource_id]android:id/statusBarBackground[text]None[enabled,,]",
+      "view_str": "a8fac8c8fc588ba4c600c7e527c1d6d5",
+      "content_free_signature": "[class]android.view.View[resource_id]android:id/statusBarBackground"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1756
+        ],
+        [
+          2208,
+          1840
+        ]
+      ],
+      "resource_id": "android:id/navigationBarBackground",
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 0,
+      "temp_id": 63,
+      "size": "2208*84",
+      "signature": "[class]android.view.View[resource_id]android:id/navigationBarBackground[text]None[enabled,,]",
+      "view_str": "00f644f85410d531b504579df08bc8d8",
+      "content_free_signature": "[class]android.view.View[resource_id]android:id/navigationBarBackground"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "task": "Touch the button to add a new record.",
+  "task_end_condition": "The task is known to be completed when Jade successfully navigates to the AddNewRecord page.",
+  "working_memory": [
+    {
+      "description": "Touch on a button that has resource_id \"fab\"",
+      "type": "ACTION",
+      "timestamp": "19:20:48",
+      "page": "HomeRecord"
+    },
+    {
+      "description": "The action of touching the button with resource_id \"fab\" transitioned the user from the HomeRecord screen to the AddNewRecord screen. Notably, a button with content_desc \"Navigate up\" was introduced, indicating an option to return to the previous screen. (page changed from HomeRecord to AddNewRecord)",
+      "type": "OBSERVATION",
+      "timestamp": "19:21:02",
+      "page": "AddNewRecord"
+    }
+  ]
+}

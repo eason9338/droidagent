@@ -1,0 +1,42 @@
+{
+  "task": "Record a USD 15 lunch expense by selecting the cash account, choosing the food category, entering the amount, and adding a note.",
+  "task_end_condition": "The task is known to be completed when the USD 15 lunch expense is successfully recorded and appears in the expense list.",
+  "working_memory": [
+    {
+      "description": "Touch on a dropdown field that has text \"\u73fe\u91d1\"",
+      "type": "ACTION",
+      "timestamp": "17:02:49",
+      "page": "AddOrEdit"
+    },
+    {
+      "description": "The dropdown field labeled \"assetPicker\" was activated, resulting in the button for \"\u73fe\u91d1\" being checked, indicating it is now selected. Additionally, a new button labeled \"\u5e33\u6236\" has appeared, which may suggest further options related to the selected asset type.",
+      "type": "OBSERVATION",
+      "timestamp": "17:02:55",
+      "page": "AddOrEdit"
+    },
+    {
+      "description": "Touch on a button that has text \"\u5e33\u6236\"",
+      "type": "ACTION",
+      "timestamp": "17:03:04",
+      "page": "AddOrEdit"
+    },
+    {
+      "description": "After touching the button labeled \"\u5e33\u6236,\" a new button with the resource ID \"backButton\" appeared on the screen, indicating that the user can now navigate back. Additionally, the interface now includes a dropdown field labeled \"\u8cc7\u7522,\" allowing the user to select an asset, which may help in organizing or categorizing financial entries.",
+      "type": "OBSERVATION",
+      "timestamp": "17:03:10",
+      "page": "AddOrEdit"
+    },
+    {
+      "description": "Touch on a dropdown field that has text \"\u98df\u7269\"",
+      "type": "ACTION",
+      "timestamp": "17:03:25",
+      "page": "AddOrEdit"
+    },
+    {
+      "description": "The dropdown field labeled \"\u985e\u5225\" has been expanded to show additional options, and the button labeled \"\u98df\u7269\" is now checked, indicating that it has been selected as the current category. Other category options such as \"\u4ea4\u901a,\" \"\u904b\u52d5,\" \"\u751f\u6d3b\u7528\u54c1,\" and \"\u5176\u4ed6\" are now visible for selection.",
+      "type": "OBSERVATION",
+      "timestamp": "17:03:31",
+      "page": "AddOrEdit"
+    }
+  ]
+}

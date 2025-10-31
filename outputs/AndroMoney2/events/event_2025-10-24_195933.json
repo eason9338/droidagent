@@ -1,0 +1,13 @@
+{
+  "tag": "2025-10-24_195933",
+  "event": {
+    "event_type": "intent",
+    "log_lines": null,
+    "intent": "am start com.kpmoney.android/com.kpmoney.home.LaunchActivity"
+  },
+  "start_state": "65018f1bf6141fba87cb52cfa290c166",
+  "stop_state": "67c6878e6e5ff51802c95b433ecacb23",
+  "event_str": "IntentEvent(intent='am start com.kpmoney.android/com.kpmoney.home.LaunchActivity')",
+  "task": null,
+  "view_image_dir": null
+}

@@ -1,0 +1,36 @@
+{
+  "tag": "2025-10-24_200622",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 27,
+      "view_str": "bcf216bd2855b41076406835f7abee31",
+      "widget_type": "EditText",
+      "class": "android.widget.EditText",
+      "resource_id": "bill_date",
+      "possible_action_types": [
+        "touch",
+        "long_touch",
+        "set_text"
+      ],
+      "bounds": [
+        [
+          578,
+          837
+        ],
+        [
+          1091,
+          926
+        ]
+      ]
+    }
+  },
+  "start_state": "02cc5dffa24c4ff00507767726b1e043",
+  "stop_state": "02cc5dffa24c4ff00507767726b1e043",
+  "event_str": "TouchEvent(state=02cc5dffa24c4ff00507767726b1e043, view=bcf216bd2855b41076406835f7abee31(HomeAccountActivity/EditText-))",
+  "task": "Touch the \"New ..\" button.",
+  "view_image_dir": "../outputs/AndroMoney2/views/view_bcf216bd2855b41076406835f7abee31.png"
+}

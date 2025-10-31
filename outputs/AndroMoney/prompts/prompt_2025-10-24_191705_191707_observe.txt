@@ -1,0 +1,81 @@
+
+*** System:
+You are a helpful assistant who can interpret two consecutive Android GUI screens before and after a user's action and explain the result of the action to the user.
+
+*** User:
+Describe the result of the performed GUI action regarding the changes between previous and current screens. 
+
+Guidelines:
+- To describe a widget, use only one important property of the widget. 
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened. 
+- Do not judge fail/pass of the action.
+- There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+
+- Performed GUI Action: Touch on a button that has text "Breakfast"
+
+- Changes of widgets from the previous page to the current page:
+"""
+--- Previous (CategorySelection)
++++ Current (CategorySelection)
+-a button that has content_desc "Navigate up"
+-a textview that has text "Category"
+-a textview that has text "Long press to modify"
+-a button that has content_desc "Sort"
+-a button that has content_desc "More options"
+-a textview that has text "Usual Options"
+-a button that has resource_id "bg"
+-a textview that has text "Food"
+-a button that has resource_id "bg"
+-a textview that has text "Clothing/Beauty"
+-a button that has resource_id "bg"
+-a textview that has text "Living"
+-a button that has resource_id "bg"
+-a textview that has text "Transportation"
+-a button that has resource_id "bg"
+-a textview that has text "Education"
+-a button that has resource_id "bg"
+-a textview that has text "Entertainment"
+-a button that has resource_id "bg"
+-a textview that has text "Personal 3C"
+-a button that has resource_id "bg"
+-a textview that has text "Publications"
+-a button that has resource_id "bg"
+-a textview that has text "Car/Motor"
+-a button that has resource_id "bg"
+-a scrollable area that has resource_id "category_selection_category_lv"
+-a textview that has text "Breakfast"
+-a button
+-a textview that has text "Lunch"
+-a button
+-a textview that has text "Dinner"
+-a button
+-a textview that has text "Mid-Night Snack"
+-a button
+-a textview that has text "Refreshment"
+-a button
+-a textview that has text "Fruit"
+-a button
+-a textview that has text "Ingredients"
+-a button
+-a textview that has text "Add ..."
+-a button
+-a listview that has resource_id "category_selection_subcategory_lv"
+-a button that has content_desc "photovoltaics%3Futm_term%3D%26utm_campaign%3D%26utm_source%3Dadwords%26utm_medium%3Dppc%26hsa_acc%3D4462284072%26hsa_cam%3D21468934043%26hsa_grp%3D173334005708%26hsa_ad%3D705742937913%26hsa_src%3Dd%26hsa_tgt%3D%26hsa_kw%3D%26hsa_mt%3D%26hsa_net%3Dadwords%26hsa_ver%3D3%26gad_source%3D5%26gad_campaignid%3D21468934043"
+-a button that has content_desc "photovoltaics%3Futm_term%3D%26utm_campaign%3D%26utm_source%3Dadwords%26utm_medium%3Dppc%26hsa_acc%3D4462284072%26hsa_cam%3D21468934043%26hsa_grp%3D173334005708%26hsa_ad%3D705742937913%26hsa_src%3Dd%26hsa_tgt%3D%26hsa_kw%3D%26hsa_mt%3D%26hsa_net%3Dadwords%26hsa_ver%3D3%26gad_source%3D5%26gad_campaignid%3D21468934043"
+-a button that has text "乾式軸承 耐腐蝕 抗UV 抗面壓"
+-a button that has text "瞭解詳情"
+-a button that has resource_id "cbb"
+-a button that has resource_id "abgc"
+-a textview that has text "Test Ad"
++a textview that has text "Auto fill by category"
++a textview that has text "Auto fill by category on entering transaction?"
++a checked checkbox that has text "Ask every time"
++a button that has text "NO"
++a button that has text "YES"
+"""
+
+=== Below is the template for your answer ===
+Action result summary: <Describe in 1~2 sentences.>
+
+*** Assistant:
+Action result summary: After touching the button labeled "Breakfast," a new text view appears with the message "Auto fill by category," indicating that a prompt for auto-filling transactions based on the selected category has been activated. Additionally, a checkbox labeled "Ask every time" is now checked, suggesting that the user will be prompted for confirmation during future transactions.

@@ -21,17 +21,15 @@ You are a helpful task planner for using an Android mobile application named {ag
 
 {agent_config.persona_name}'s ultimate goal is to {agent_config.ultimate_goal}. 
 
-- {agent_config.app_name} app has following pages: {remove_quotes(str(AppState.activities))} (Note that the pages are listed in random order)
-- Currently, {agent_config.persona_name} has visited the following pages with the following number of times: {remove_quotes(json.dumps(AppState.visited_activities))}
 - Currently, {agent_config.persona_name} is on the {AppState.current_gui_state.activity} page.
-- Pages never visited yet: {remove_quotes(str(unvisited_pages))} 
+- Previously visited pages: {remove_quotes(json.dumps(AppState.visited_activities))} 
 
 {agent_config.persona_name} is not familiar with the app and does not fully know how to navigate to each page and what {agent_config.persona_name} can do on each page.
 To effectively explore the app for their goal, {agent_config.persona_name} needs a new task that aligns with the following desirable properties:
-- (Realism) The task should corresponds to a realistic usage scenario of {agent_config.app_name} app, and reflect user's intent for actually making use of the app's functionality. Do NOT plan vague tasks like "Navigate to X" or "Explore X". Instead, plan a realistic task so that it naturally leads to discover new widgets or pages. For example, "Add X to cart" is more preferred than "Navigate to the cart page" ot "Explore the cart page".
-- (Importance) Prioritize important tasks that make use of core and basic functions of the app. Do not stay on the same page for too long while having unvisited pages. After visiting all the pages, plan more advanced tasks based on {agent_config.persona_name}'s own preferences.
-- (Diversity) You need to plan diverse tasks that are different from the tasks that {agent_config.persona_name} has performed before. If a previous task has failed despite multiple attempts, the task might be too hard or impossible. Postpone the task and plan a different task. Pay attention to the number of previous actions performed on a specific widget, and consider a task that involves an widget that has never been interacted with yet.
-- (Difficulty) The task should not be too hard since {agent_config.persona_name} may not have learned enough knowledge about the app to complete it yet. Plan a task that is highly likely to succeed in a few steps from the current state. However, the task should correspond to a meaningful function unit of the app. For example, "Attach a photo to a message" is more preferred than "Touch a photo button".
+- (Realism) Plan ONE COMPLETE workflow that {agent_config.persona_name} would naturally do. Include concrete details (e.g., "Record a meal expense" not just "Add expense"). Do NOT plan vague tasks like "Navigate to X" or "Explore X".
+- (Importance) Prioritize tasks matching {agent_config.persona_name}'s typical usage patterns from their natural_behaviors. Focus on completing FULL workflows, not exploring individual widgets. Each task should be independently meaningful.
+- (Motivation) Ground the task in {agent_config.persona_name}'s realistic motivation. Why would this persona do this task right now? What is their actual goal? Task should read like: "Record lunch expense because {agent_config.persona_name} eats out daily" rather than "Click category X".
+- (Completion) Plan for the ENTIRE workflow to finish in one task. If a workflow was incomplete in previous attempts, MUST complete it now. Do NOT split one workflow into multiple tasks, and do NOT repeat identical workflows.
 '''.strip()
 
     assistant_messages = []
@@ -66,11 +64,11 @@ Note that `num_prev_actions` means the number of times the widget has been inter
 I am going to provide a template for your output to reason about your next task step by step. Fill out the <...> parts in the template with your own words. Do not include anything else in your answer except the text to fill out the template. Preserve the formatting and overall template.
 
 === Below is the template for your answer ===
-Reasoning about {agent_config.persona_name}'s new task: <1~2 sentences in one line. Use the aforementioned four properties: realism, importance, diversity and difficulty to reason about the next task>
-{agent_config.persona_name}'s next task: <1 sentence, start with a verb>
-End condition of {agent_config.persona_name}'s next task: <1 sentence, start with "The task is known to be completed when">
-Reasoning of the first action of the {agent_config.persona_name}'s next task: <reasoning and description of the first action initiating the task>
-Rough plan for the task in {agent_config.persona_name}'s perspective: <1 sentence, start with "I plan to"; pretend that you are {agent_config.persona_name}>
+Reasoning about {agent_config.persona_name}'s next task: <Why would {agent_config.persona_name} do this task based on their natural behaviors and goals? Is it different from what they've already tested?>
+{agent_config.persona_name}'s next task: <A COMPLETE workflow with concrete details. Example: "Record a USD 50 lunch expense" or "Generate a monthly expense report". NOT just "Add expense" or "Select category". Must include submitting/saving the entry.>
+End condition of {agent_config.persona_name}'s next task: <1 sentence, start with "The task is known to be completed when". Must describe FINAL state: form submitted AND cleared (e.g., "when the expense is submitted and the form is reset ready for next entry").>
+Reasoning of the first action of the {agent_config.persona_name}'s next task: <What is the first step to begin this workflow?>
+Rough plan for the task in {agent_config.persona_name}'s perspective: <1 sentence, start with "I plan to"; pretend that you are {agent_config.persona_name}. Include concrete details of what you're trying to achieve.>
 '''.strip()]
 
     # Let the planner select the first action

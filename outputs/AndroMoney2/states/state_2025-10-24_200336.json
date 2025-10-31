@@ -1,0 +1,305 @@
+{
+  "tag": "2025-10-24_200336",
+  "state_str": "36fe288abd56119c4f3406ef4e2addd6",
+  "state_str_content_free": "61d9d907df255657bd27cd321e049f75",
+  "foreground_activity": "com.kpmoney.android/com.kpmoney.home.HomeAccountActivity",
+  "activity_stack": [
+    "com.kpmoney.android/com.kpmoney.home.HomeAccountActivity"
+  ],
+  "background_services": [
+    "com.google.android.apps.messaging/com.google.android.ims.service.JibeService",
+    "com.google.android.networkstack.tethering/com.android.networkstack.tethering.TetheringService",
+    "com.google.android.adservices.api/com.android.adservices.measurement.MeasurementService",
+    "com.android.vending/com.google.android.finsky.setup.dse.impl.DseService",
+    "com.android.systemui/.keyguard.KeyguardService",
+    "com.google.android.gms/org.chromium.content.app.SandboxedProcessService0",
+    "com.google.android.webview/org.chromium.android_webview.services.MetricsBridgeService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.textclassifier.service.QAiaiTextClassifierService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.superpacks.impl.AiAiSuperpacksService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService",
+    "com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService",
+    "com.google.android.gms/.chimera.PersistentApiService",
+    "com.android.systemui/.wallpapers.ImageWallpaper",
+    "com.google.android.gms/.location.geocode.GeocodeService",
+    "com.android.phone/com.android.internal.telephony.CellularNetworkService",
+    "com.google.android.gms/.chimera.PersistentBoundBrokerService",
+    "com.google.android.gms/.chimera.GmsBoundBrokerService",
+    "com.google.android.gms/.chimera.GmsApiService",
+    "com.android.vending/com.google.android.finsky.crossprofile.ProfileStateService",
+    "io.github.ylimit.droidbotapp/.DroidBotIME",
+    "com.google.android.gms/com.google.android.location.fused.FusedLocationService",
+    "com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl",
+    "com.google.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl",
+    "com.android.phone/com.android.internal.telephony.data.CellularDataService",
+    "io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService",
+    "com.google.android.apps.nexuslauncher/com.android.launcher3.notification.NotificationListener",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationListenerService",
+    "com.android.systemui/.SystemUIService",
+    "android/.hardware.location.GeofenceHardwareService",
+    "com.android.se/.SecureElementService",
+    "com.google.android.gms/.chimera.PersistentDirectBootAwareApiService",
+    "com.google.android.gms/.geotimezone.GeoTimeZoneService",
+    "com.google.android.gms/com.google.android.location.internal.PendingIntentCallbackService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService",
+    "com.google.android.bluetooth/com.android.bluetooth.btservice.AdapterService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureService",
+    "com.google.android.gms/com.google.android.location.internal.server.GoogleLocationService",
+    "com.google.android.gms/com.google.android.contextmanager.service.ContextManagerService",
+    "com.android.systemui/.dump.SystemUIAuxiliaryDumpService",
+    "com.google.android.gms/com.google.android.location.network.NetworkLocationService",
+    "com.android.stk/.StkAppService",
+    "com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService",
+    "com.android.server.telecom/.components.TelecomService",
+    "com.google.android.networkstack/com.android.server.NetworkStackService",
+    "com.android.systemui/com.google.android.systemui.power.batteryevent.domain.BatteryEventService",
+    "com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService",
+    "com.android.emulator.multidisplay/.MultiDisplayService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationAssistantService",
+    "com.android.ons/.OpportunisticNetworkService",
+    "com.google.android.gms/.auth.account.authenticator.GoogleAccountAuthenticatorService",
+    "com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService",
+    "com.google.android.gms/.chimera.GmsInternalBoundBrokerService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService",
+    "com.kpmoney.android/org.chromium.content.app.SandboxedProcessService0",
+    "com.android.phone/.TelephonyDebugService",
+    "com.google.android.apps.nexuslauncher/com.android.quickstep.TouchInteractionService",
+    "com.google.android.cellbroadcastservice/com.android.cellbroadcastservice.DefaultCellBroadcastService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSearchUiService"
+  ],
+  "width": 2208,
+  "height": 1840,
+  "views": [
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        1
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          560,
+          341
+        ],
+        [
+          1522,
+          719
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": -1,
+      "temp_id": 0,
+      "size": "962*378",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "d3c245b2144c49a669ffbcfeef66db44",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        2
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          560,
+          341
+        ],
+        [
+          1522,
+          719
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 0,
+      "temp_id": 1,
+      "size": "962*378",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "52b0905e6f76b934ec4d3cf26673ea99",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        3,
+        4,
+        5
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          560,
+          341
+        ],
+        [
+          1522,
+          719
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ListView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 1,
+      "temp_id": 2,
+      "size": "962*378",
+      "signature": "[class]android.widget.ListView[resource_id]None[text]None[enabled,,]",
+      "view_str": "9eb5d8493e89ebc28f83a6a61c78266a",
+      "content_free_signature": "[class]android.widget.ListView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": true,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          560,
+          341
+        ],
+        [
+          1522,
+          467
+        ]
+      ],
+      "resource_id": "android:id/text1",
+      "checked": true,
+      "text": "Cash",
+      "class": "android.widget.CheckedTextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 2,
+      "temp_id": 3,
+      "size": "962*126",
+      "signature": "[class]android.widget.CheckedTextView[resource_id]android:id/text1[text]Cash[enabled,checked,]",
+      "view_str": "a235f9d849df50659999e54f046fee79",
+      "content_free_signature": "[class]android.widget.CheckedTextView[resource_id]android:id/text1"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": true,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          560,
+          467
+        ],
+        [
+          1522,
+          593
+        ]
+      ],
+      "resource_id": "android:id/text1",
+      "checked": false,
+      "text": "Card",
+      "class": "android.widget.CheckedTextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 2,
+      "temp_id": 4,
+      "size": "962*126",
+      "signature": "[class]android.widget.CheckedTextView[resource_id]android:id/text1[text]Card[enabled,,]",
+      "view_str": "9a87f11ff3b87d7209878758ab1e8786",
+      "content_free_signature": "[class]android.widget.CheckedTextView[resource_id]android:id/text1"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": true,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          560,
+          593
+        ],
+        [
+          1522,
+          719
+        ]
+      ],
+      "resource_id": "android:id/text1",
+      "checked": false,
+      "text": "Bank",
+      "class": "android.widget.CheckedTextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 2,
+      "temp_id": 5,
+      "size": "962*126",
+      "signature": "[class]android.widget.CheckedTextView[resource_id]android:id/text1[text]Bank[enabled,,]",
+      "view_str": "59e5953a5eaf62e215e5a1af0a923e5f",
+      "content_free_signature": "[class]android.widget.CheckedTextView[resource_id]android:id/text1"
+    }
+  ]
+}

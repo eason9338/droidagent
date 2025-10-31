@@ -1,0 +1,12 @@
+{
+  "task": "Record a USD 15 lunch expense by selecting the cash account, choosing the food category, entering the amount, and adding a note.",
+  "task_end_condition": "The task is known to be completed when the USD 15 lunch expense is successfully recorded and appears in the expense list.",
+  "working_memory": [
+    {
+      "description": "Touch on a dropdown field that has text \"\u73fe\u91d1\"",
+      "type": "ACTION",
+      "timestamp": "17:02:49",
+      "page": "AddOrEdit"
+    }
+  ]
+}

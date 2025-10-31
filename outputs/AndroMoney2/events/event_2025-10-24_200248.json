@@ -1,0 +1,34 @@
+{
+  "tag": "2025-10-24_200248",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 7,
+      "view_str": "eaae31d390a82590df631da2a4a1ea92",
+      "widget_type": "ImageButton",
+      "class": "android.widget.ImageButton",
+      "content_description": "AndroMoney",
+      "possible_action_types": [
+        "touch"
+      ],
+      "bounds": [
+        [
+          21,
+          74
+        ],
+        [
+          168,
+          242
+        ]
+      ]
+    }
+  },
+  "start_state": "d97aa6d835066cc8ac834f20b5c043db",
+  "stop_state": "0dc1ac0df4cd22c87cf9b94e2717e6ee",
+  "event_str": "TouchEvent(state=d97aa6d835066cc8ac834f20b5c043db, view=eaae31d390a82590df631da2a4a1ea92(HomeAccountActivity/ImageButton-))",
+  "task": "Touch the AndroMoney icon to open the app.",
+  "view_image_dir": "../outputs/AndroMoney2/views/view_eaae31d390a82590df631da2a4a1ea92.png"
+}

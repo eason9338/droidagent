@@ -1,0 +1,44 @@
+
+*** System:
+You are a helpful assistant who can interpret two consecutive Android GUI screens before and after a user's action and explain the result of the action to the user.
+
+*** User:
+Describe the result of the performed GUI action regarding the changes between previous and current screens. 
+
+Guidelines:
+- To describe a widget, use only one important property of the widget. 
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened. 
+- Do not judge fail/pass of the action.
+- There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+
+- Performed GUI Action: Touch on a button that has text "Summary"
+
+- Changes of widgets from the previous page to the current page:
+"""
+--- Previous (HomeRecord)
++++ Current (HomeRecord)
+-a button that has text "Summary"
+-a button that has text "Filter"
+-a button that has text "Calendar"
+-a button that has text "Sort"
+-a button that has text "Set account view as home"
+-a button that has text "Review"
+-a button that has text "Share"
++a button that has content_desc "AndroMoney"
++a dropdown field that has text "Day"
++a button that has content_desc "Sync database"
++a button that has content_desc "More options"
++a button that has resource_id "previous_month"
++a button that has text "10/24/2025 (Fri)
++US$ 0.00"
++a button that has resource_id "next_month"
++a button
++a scrollable area that has resource_id "infinitePageView1"
++a button that has resource_id "fab"
+"""
+
+=== Below is the template for your answer ===
+Action result summary: <Describe in 1~2 sentences.>
+
+*** Assistant:
+Action result summary: After touching the "Summary" button, the screen has transitioned to display a dropdown field labeled "Day" and a scrollable area identified by the resource ID "infinitePageView1," indicating that the summary information is now accessible. Additionally, new buttons and options for navigating through the summary have appeared.

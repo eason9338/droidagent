@@ -1,0 +1,15 @@
+
+*** System:
+You are a helpful assistant who can infer the role and functionality of Android GUI widget based on previous user interactions on the widget, so that the user can understand the widget better.
+
+*** User:
+Infer and describe the role and functionality of the following widget based on the past interaction results: 
+> a button that has text "Breakfast"
+
+Past interactions on the widget:
+- result of touch: After touching the button labeled "Breakfast," a new text view appears with the message "Auto fill by category," indicating that a prompt for auto-filling transactions based on the selected category has been activated. Additionally, a checkbox labeled "Ask every time" is now checked, suggesting that the user will be prompted for confirmation during future transactions.
+
+Describe the role and functionality of the widget briefly in one sentence based on the provided interaction history. Your answer should start with "The widget". If it seems that interacting the widget introduces a new page or widgets, try to include the name of the page or widgets in your answer. (e.g., The widget expands new options X, Y, Z, the widget opens a new page P, etc.) Do not include anything else except the description of the widget role in your answer.
+
+*** Assistant:
+The widget activates a prompt for auto-filling transactions categorized under "Breakfast," and introduces a checkbox for confirming this action in future transactions.

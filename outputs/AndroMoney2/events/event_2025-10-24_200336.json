@@ -1,0 +1,37 @@
+{
+  "tag": "2025-10-24_200336",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 14,
+      "view_str": "76576f89baa7ca77ed6f3336ba6e3bf7",
+      "widget_type": "Spinner",
+      "class": "android.widget.Spinner",
+      "text": "Cash",
+      "resource_id": "spinnner",
+      "possible_action_types": [
+        "touch",
+        "long_touch",
+        "scroll"
+      ],
+      "bounds": [
+        [
+          560,
+          341
+        ],
+        [
+          1648,
+          404
+        ]
+      ]
+    }
+  },
+  "start_state": "9e6ec5a11a3b9178d730a16e2d798ebd",
+  "stop_state": "36fe288abd56119c4f3406ef4e2addd6",
+  "event_str": "TouchEvent(state=9e6ec5a11a3b9178d730a16e2d798ebd, view=76576f89baa7ca77ed6f3336ba6e3bf7(HomeAccountActivity/Spinner-Cash))",
+  "task": "Touch the \"New ..\" button.",
+  "view_image_dir": "../outputs/AndroMoney2/views/view_76576f89baa7ca77ed6f3336ba6e3bf7.png"
+}

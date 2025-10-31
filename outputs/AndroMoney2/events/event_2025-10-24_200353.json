@@ -1,0 +1,35 @@
+{
+  "tag": "2025-10-24_200353",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 4,
+      "view_str": "9a87f11ff3b87d7209878758ab1e8786",
+      "widget_type": "CheckedTextView",
+      "class": "android.widget.CheckedTextView",
+      "text": "Card",
+      "resource_id": "text1",
+      "possible_action_types": [
+        "touch"
+      ],
+      "bounds": [
+        [
+          560,
+          467
+        ],
+        [
+          1522,
+          593
+        ]
+      ]
+    }
+  },
+  "start_state": "36fe288abd56119c4f3406ef4e2addd6",
+  "stop_state": "aa9bcbef3b5e09526be49712928e7795",
+  "event_str": "TouchEvent(state=36fe288abd56119c4f3406ef4e2addd6, view=9a87f11ff3b87d7209878758ab1e8786(HomeAccountActivity/CheckedTextView-Card))",
+  "task": "Touch the \"New ..\" button.",
+  "view_image_dir": "../outputs/AndroMoney2/views/view_9a87f11ff3b87d7209878758ab1e8786.png"
+}

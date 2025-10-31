@@ -1,0 +1,519 @@
+
+*** System:
+You are a helpful assistant to guide a user named Jade Green to select an appropriate GUI action to accomplish a task on an Android mobile application named AndroMoney.
+
+The profile of Jade Green is as follows:
+(The username and password is what Jade Green generally uses for their accounts.)
+- name: Jade Green
+- phone: 081-827-7650
+- email: anony1017mous@gmail.com
+- username: tester.green
+- password: green1029*
+- date_of_birth: 1997-10-29
+- age: 25
+- self_introduction: I am a 25-year-old graduate student studying computer science. I only want to use the basic function of the app, like record income and expense
+
+Jade Green can perform the following types of actions:
+- Scroll on a scrollable widget
+- Touch on a clickable widget
+- Long touch on a long-clickable widget
+- Fill in an editable widget
+- Navigate back by pressing the back button
+or end the task if the task is already completed.
+
+*** User:
+My name is Jade Green and I am using an application named AndroMoney to accomplish the following task: 
+* Task: Add a new expense record. (The task is known to be completed when the expense record has been successfully saved)
+
+I'm currently on the NexusLauncher page. I plan to open the AndroMoney app and look for an option to add a new expense record, allowing me to familiarize myself with the app's functionality. What should be the first action?
+
+*** Assistant:
+Touch on a button that has text "AndroMoney"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a button that has text "AndroMoney"
+
+*** User:
+I performed the action you suggested. The page changed from AboutUs to HomeRecord. What should be the next action?
+
+*** Assistant:
+Touch on a button that has resource_id "fab"
+
+*** User:
+I performed the action, and as a result, the action of touching the button with resource_id "fab" has navigated the user from the HomeRecord screen to the AddNewRecord screen. In this new screen, a button with content description "Navigate up" has appeared, indicating an option to return to the previous screen. (page changed from HomeRecord to AddNewRecord). What should be the next action?
+
+This time, I'll give you the full content of the current page as follows (I organized the page content as a hierarchical structure):
+```json
+{
+  page_name: AddNewRecord,
+  children: [
+    {
+      ID: 7,
+      widget_type: ImageButton,
+      content_description: Navigate up,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: TextView,
+      text: EXPENSE,
+      state: [
+        selected
+      ]
+    },
+    {
+      ID: 12,
+      widget_type: LinearLayout,
+      text: INCOME,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 14,
+      widget_type: LinearLayout,
+      text: TRANSFER,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 17,
+      widget_type: ImageView,
+      content_description: More options,
+      possible_action_types: [
+        touch,
+        long_touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 18,
+      widget_type: ViewPager,
+      resource_id: activity_add_new_record_view_pager,
+      possible_action_types: [
+        scroll
+      ],
+      num_prev_actions: 0,
+      children: [
+        {
+          ID: 22,
+          widget_type: ImageButton,
+          resource_id: camera,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 26,
+          widget_type: Button,
+          text: US$,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 27,
+          widget_type: Button,
+          text: 0,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 30,
+          widget_type: TextView,
+          text: 10/24/2025 (Fri)[NEWLINE]PM 07:15,
+          possible_action_types: [
+            touch,
+            long_touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 31,
+          widget_type: ImageView,
+          resource_id: date_selection_previous_iv,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 32,
+          widget_type: ImageView,
+          resource_id: date_selection_calendar_iv,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 33,
+          widget_type: ImageView,
+          resource_id: date_selection_next_iv,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 35,
+          widget_type: ListView,
+          resource_id: ListView,
+          possible_action_types: [
+            long_touch,
+            scroll
+          ],
+          num_prev_actions: 0,
+          children: [
+            {
+              ID: 36,
+              widget_type: RelativeLayout,
+              possible_action_types: [
+                touch,
+                long_touch
+              ],
+              text: [
+                Category:,
+                Food - Breakfast
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 40,
+              widget_type: RelativeLayout,
+              possible_action_types: [
+                touch,
+                long_touch
+              ],
+              text: [
+                Account:,
+                Cash
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 44,
+              widget_type: RelativeLayout,
+              possible_action_types: [
+                touch,
+                long_touch
+              ],
+              text: [
+                Project:
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 48,
+              widget_type: RelativeLayout,
+              possible_action_types: [
+                touch,
+                long_touch
+              ],
+              text: [
+                Payee:
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 52,
+              widget_type: RelativeLayout,
+              possible_action_types: [
+                touch,
+                long_touch
+              ],
+              text: [
+                Periodic:,
+                Once
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 56,
+              widget_type: RelativeLayout,
+              possible_action_types: [
+                touch,
+                long_touch
+              ],
+              text: [
+                Note:
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 59,
+              widget_type: RelativeLayout,
+              possible_action_types: [
+                long_touch
+              ],
+              num_prev_actions: 0,
+              children: [
+                {
+                  widget_type: TextView,
+                  text: Status:
+                },
+                {
+                  ID: 62,
+                  widget_type: CheckBox,
+                  text: Included in account total,
+                  state: [
+                    checked
+                  ],
+                  possible_action_types: [
+                    touch
+                  ],
+                  num_prev_actions: 0
+                },
+                {
+                  ID: 63,
+                  widget_type: CheckBox,
+                  text: Included in the budget,
+                  state: [
+                    checked
+                  ],
+                  possible_action_types: [
+                    touch
+                  ],
+                  num_prev_actions: 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          ID: 65,
+          widget_type: Button,
+          text: ADD NEXT,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 66,
+          widget_type: Button,
+          text: SAVE,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 68,
+          widget_type: LinearLayout,
+          resource_id: calculatorLayout,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0,
+          children: [
+            {
+              ID: 70,
+              widget_type: Button,
+              text: AC,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 71,
+              widget_type: Button,
+              text: DEL,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 72,
+              widget_type: Button,
+              text: OK,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 74,
+              widget_type: Button,
+              text: 7,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 75,
+              widget_type: Button,
+              text: 8,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 76,
+              widget_type: Button,
+              text: 9,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 77,
+              widget_type: Button,
+              text: /,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 79,
+              widget_type: Button,
+              text: 4,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 80,
+              widget_type: Button,
+              text: 5,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 81,
+              widget_type: Button,
+              text: 6,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 82,
+              widget_type: Button,
+              text: X,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 84,
+              widget_type: Button,
+              text: 1,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 85,
+              widget_type: Button,
+              text: 2,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 86,
+              widget_type: Button,
+              text: 3,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 87,
+              widget_type: Button,
+              text: -,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 89,
+              widget_type: Button,
+              text: 0,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 90,
+              widget_type: Button,
+              text: ．,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 91,
+              widget_type: Button,
+              text: +,
+              possible_action_types: [
+                touch
+              ],
+              num_prev_actions: 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+Guideline for selecting the next action:
+- Note that `num_prev_actions` property means the number of times the widget has been interacted with so far.
+- Note that `widget_role_inference` property means the role of the widget inferred by previous actions. Use this property to infer what the widget is used for. If the widget has not been interacted yet, `widget_role_inference` property is not included in the widget dictionary.
+- When I am stuck, you might guide me to explore a new widget that has not been used and I don't know its role yet.
+- I don't want to do the same actions repeatedly except it is clearly needed for the task (e.g., navigating back to the first page of the app), so guide me to perform effective actions to complete the task.
+
+Recall that my current task is: Add a new expense record.
+Select the next suitable action to perform, or end the task if the task is already completed.
+
+This time, I am going to provide a template for your output to let you think about my next action step by step. Fill out the <...> parts in the template with your own words. Do not include anything else in your answer except the text to fill out the template. Preserve the formatting and overall template.
+
+=== Below is the template for your answer ===
+1. Summary of my previous interactions for the task: <1~2 sentences according to the task execution history and current app state. Reflect criticizer's feedback if I mentioned any. Be careful not to include any actions that haven't been performed yet>
+2. Description of the current app state: <1~2 sentences, briefly describe in one line according to the hierarchical structure I provided above>
+3. Inference on the remaining steps needed to complete the task: <1~2 sentences according to the task execution history and current app state. Do not immediately judge the next action here>
+4. Reasoning for the next action: <1 sentence reasoning the most logical action to take next on the current state (or justification for ending the task). Refer to the guideline above>
+
+*** Assistant:
+1. Summary of my previous interactions for the task: I have successfully navigated to the AddNewRecord screen after touching the "FAB" button. I am now ready to input details for my new expense record.
+2. Description of the current app state: The AddNewRecord screen is displayed, showing options for selecting categories, accounts, and other details related to the expense record.
+3. Inference on the remaining steps needed to complete the task: I need to fill in the necessary details for the expense record, including the category, account, and amount, before saving the record.
+4. Reasoning for the next action: Since I need to specify a category for the expense, the next logical step is to touch on the widget labeled "Category: Food - Breakfast," which is the first interactive option available for selection.
+
+*** User:
+Based on your reasoning, select the next action or end the task by calling one of the given function that corresponds to a specific action.
+
+*** Assistant:
+{'id': 'call_YwRG7sGtOdcWqA0jLy90I3FY', 'type': 'function', 'function': {'name': 'touch', 'arguments': '{"target_widget_ID":36}'}}

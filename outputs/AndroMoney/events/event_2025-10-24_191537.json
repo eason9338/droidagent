@@ -1,0 +1,36 @@
+{
+  "tag": "2025-10-24_191537",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 37,
+      "view_str": "6847f8fbf250373aa0f5958d6dc2fa67",
+      "widget_type": "TextView",
+      "class": "android.widget.TextView",
+      "text": "AndroMoney",
+      "content_description": "Predicted app: AndroMoney",
+      "possible_action_types": [
+        "touch",
+        "long_touch"
+      ],
+      "bounds": [
+        [
+          1675,
+          1609
+        ],
+        [
+          1848,
+          1804
+        ]
+      ]
+    }
+  },
+  "start_state": "d395f3fc87b69db99600a6b5c593c50a",
+  "stop_state": "dc729a532320d0aeb3cbcba71f5594fb",
+  "event_str": "TouchEvent(state=d395f3fc87b69db99600a6b5c593c50a, view=6847f8fbf250373aa0f5958d6dc2fa67(NexusLauncherActivity/TextView-AndroMoney))",
+  "task": "Add a new expense record.",
+  "view_image_dir": "../outputs/AndroMoney/views/view_6847f8fbf250373aa0f5958d6dc2fa67.png"
+}

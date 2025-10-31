@@ -1,0 +1,24 @@
+{
+  "task": "Fill in the payment date for the new account.",
+  "task_end_condition": "The task is known to be completed when the payment date is successfully entered and the account creation process is finalized.",
+  "working_memory": [
+    {
+      "description": "Touch on a textfield that has resource_id \"pay_date\"",
+      "type": "ACTION",
+      "timestamp": "20:08:44",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Fill a textfield that has resource_id \"pay_date\" with \"2023-10-29\"",
+      "type": "ACTION",
+      "timestamp": "20:09:21",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Touch on a button that has text \"OK\"",
+      "type": "ACTION",
+      "timestamp": "20:10:25",
+      "page": "HomeAccount"
+    }
+  ]
+}

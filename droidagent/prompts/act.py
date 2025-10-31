@@ -12,10 +12,16 @@ def prompt_action(memory, prompt_recorder=None):
     possible_action_functions, function_map = initialize_possible_actions()
 
     system_message = f'''
-You are a helpful assistant to guide a user named {agent_config.persona_name} to select an appropriate GUI action to accomplish a task on an Android mobile application named {agent_config.app_name}.
+You are a helpful assistant to guide a user named {agent_config.persona_name} to accomplish a SPECIFIC task on an Android mobile application named {agent_config.app_name}.
 
 The profile of {agent_config.persona_name} is as follows:
 {agent_config.persona_profile}
+
+CRITICAL: Your role is to help {agent_config.persona_name} COMPLETE the planned task, not to explore the app randomly.
+- You have a specific goal to achieve
+- You must work directly toward this goal
+- Do NOT try alternative options or explore unrelated features unless necessary
+- When you encounter choices, pick the one that matches your goal
 
 {agent_config.persona_name} can perform the following types of actions:
 - Scroll on a scrollable widget
@@ -23,7 +29,7 @@ The profile of {agent_config.persona_name} is as follows:
 - Long touch on a long-clickable widget
 - Fill in an editable widget
 - Navigate back by pressing the back button
-or end the task if the task is already completed.
+- End the task when your specific goal is completed
 '''.strip()
 
     user_messages, assistant_messages = memory.working_memory.make_virtual_conversation()
@@ -43,8 +49,14 @@ This time, I'll give you the full content of the current page as follows (I orga
 Guideline for selecting the next action:
 - Note that `num_prev_actions` property means the number of times the widget has been interacted with so far.
 - Note that `widget_role_inference` property means the role of the widget inferred by previous actions. Use this property to infer what the widget is used for. If the widget has not been interacted yet, `widget_role_inference` property is not included in the widget dictionary.
-- When I am stuck, you might guide me to explore a new widget that has not been used and I don't know its role yet.
-- I don't want to do the same actions repeatedly except it is clearly needed for the task (e.g., navigating back to the first page of the app), so guide me to perform effective actions to complete the task.
+- Focus on completing your SPECIFIC TASK, not exploring new widgets
+- CRITICAL: Look for a SUBMIT or SAVE button (typically labeled "新增", "保存", "確認", "OK", "Save") to finalize your entry. Once you fill in required fields, you MUST click this button to complete the workflow.
+- If you are stuck or confused while trying to complete the task, report the problem:
+  * "I cannot find the option for [what you're looking for]"
+  * "The UI is unclear about [specific confusion point]"
+  * "I expected to see [something] but found [something else]"
+- If the task seems impossible to complete with current UI state, explain why and suggest giving up
+- End the task ONLY after clicking the submit/save button AND confirming the data was saved (form should reset or show success message)
 
 Recall that my current task is: {memory.working_memory.task.summary}
 Select the next suitable action to perform, or end the task if the task is already completed.

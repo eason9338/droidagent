@@ -1,0 +1,36 @@
+{
+  "task": "Record a USD 10 transport expense by selecting the \u4ea4\u901a category, entering the amount, adding a note about the trip, and finalizing the entry.",
+  "task_end_condition": "The task is known to be completed when the transport expense is successfully recorded and reflected in the summary view on the main screen.",
+  "working_memory": [
+    {
+      "description": "Touch on a dropdown field that has text \"\u73fe\u91d1\"",
+      "type": "ACTION",
+      "timestamp": "17:10:43",
+      "page": "AddOrEdit"
+    },
+    {
+      "description": "The dropdown field labeled \"\u8cc7\u7522\" has been expanded to show the available options, and the previously selected option \"\u73fe\u91d1\" is now marked as checked. Additionally, a new button labeled \"\u5e33\u6236\" has appeared, indicating that there are more selection options related to assets.",
+      "type": "OBSERVATION",
+      "timestamp": "17:10:57",
+      "page": "AddOrEdit"
+    },
+    {
+      "description": "Press \"BACK\" button to navigate back",
+      "type": "ACTION",
+      "timestamp": "17:11:05",
+      "page": "AddOrEdit"
+    },
+    {
+      "description": "The user pressed the \"BACK\" button, which led to the display of a new button labeled \"\u6536\u5165\" and a selected button labeled \"\u652f\u51fa.\" Additionally, the previously checked button \"\u73fe\u91d1\" was removed from the current screen, indicating a change in the selection state of the financial options.",
+      "type": "OBSERVATION",
+      "timestamp": "17:11:17",
+      "page": "AddOrEdit"
+    },
+    {
+      "description": "Touch on a dropdown field that has text \"\u4ea4\u901a\"",
+      "type": "ACTION",
+      "timestamp": "17:15:21",
+      "page": "AddOrEdit"
+    }
+  ]
+}

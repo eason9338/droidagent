@@ -1,0 +1,181 @@
+
+*** System:
+You are a helpful task planner for using an Android mobile application named 記帳小助手. You are planning for a person named "Jade Green" with the following profile:
+(The username and password is what Jade Green generally uses for their accounts.)
+- name: Jade Green
+- age: 25
+- phone: 081-827-7650
+- email: anony1017mous@gmail.com
+- username: tester.green
+- password: green1029*
+- date_of_birth: 1997-10-29
+- self_introduction: I am a 25-year-old graduate student studying computer science. I want to explore advance feature, like record expense in different currencies
+- user_segment: "Power User"
+- typical_tasks: ["Add expense in different currencies", "Generate expense reports", "Manage multiple accounts"]
+- pain_points_to_watch: ["Slow currency switching", "Complicated report filters", "Too many clicks for common tasks"]
+- natural_behaviors: Jade Green is a busy student who records expenses regularly (meals, transport, study materials), may use multiple currencies when traveling, wants to analyze spending patterns, and manages different financial accounts for different purposes.
+- task_completion_rule: Each task is ONE COMPLETE workflow from start to finish. Do NOT split a workflow into multiple separate tasks. Do NOT repeat the same workflow multiple times unless testing different variations.
+
+Jade Green's ultimate goal is to Test the app's main features such as adding income and expense records, and according to the current persona settings, test the features that the user prefers to use.. 
+
+- Currently, Jade Green is on the Main page.
+- Previously visited pages: {Main: 1} 
+
+Jade Green is not familiar with the app and does not fully know how to navigate to each page and what Jade Green can do on each page.
+To effectively explore the app for their goal, Jade Green needs a new task that aligns with the following desirable properties:
+- (Realism) Plan ONE COMPLETE workflow that Jade Green would naturally do. Include concrete details (e.g., "Record a meal expense" not just "Add expense"). Do NOT plan vague tasks like "Navigate to X" or "Explore X".
+- (Importance) Prioritize tasks matching Jade Green's typical usage patterns from their natural_behaviors. Focus on completing FULL workflows, not exploring individual widgets. Each task should be independently meaningful.
+- (Motivation) Ground the task in Jade Green's realistic motivation. Why would this persona do this task right now? What is their actual goal? Task should read like: "Record lunch expense because Jade Green eats out daily" rather than "Click category X".
+- (Completion) Plan for the ENTIRE workflow to finish in one task. If a workflow was incomplete in previous attempts, MUST complete it now. Do NOT split one workflow into multiple tasks, and do NOT repeat identical workflows.
+
+*** User:
+Plan Jade Green's next task based on the following information.
+
+Jade Green's prior knowledge and history of previous tasks so far (listed in chronological order):
+===
+2025-10-31 16:57:27: [INITIAL_KNOWLEDGE] Jade Green started the 記帳小助手 app
+===
+
+Jade Green's learnt knowledge from previous tasks (which may be relevant to the current context):
+===
+
+===
+
+Current page (organized in a hierarchical structure):
+```json
+{
+  page_name: Main,
+  children: [
+    {
+      ID: 6,
+      widget_type: ViewPager,
+      resource_id: view_pager,
+      possible_action_types: [
+        scroll
+      ],
+      num_prev_actions: 0,
+      children: [
+        {
+          widget_type: TextView,
+          text: 還沒有資料喔~
+        },
+        {
+          ID: 9,
+          widget_type: ImageButton,
+          resource_id: lastMonth,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 10,
+          widget_type: Button,
+          text: 2025 10月,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 11,
+          widget_type: ImageButton,
+          resource_id: nextMonth,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          widget_type: TextView,
+          text: 收入
+        },
+        {
+          widget_type: TextView,
+          text: 0
+        },
+        {
+          widget_type: TextView,
+          text: 支出
+        },
+        {
+          widget_type: TextView,
+          text: 0
+        },
+        {
+          widget_type: TextView,
+          text: 總額
+        },
+        {
+          widget_type: TextView,
+          text: 0
+        },
+        {
+          ID: 23,
+          widget_type: ImageButton,
+          resource_id: adder,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        }
+      ]
+    },
+    {
+      widget_type: TextView,
+      text: 帳單,
+      state: [
+        selected
+      ]
+    },
+    {
+      ID: 36,
+      widget_type: LinearLayout,
+      text: 圖表,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 39,
+      widget_type: LinearLayout,
+      text: 設定,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    }
+  ]
+}
+```
+Note that `num_prev_actions` means the number of times the widget has been interacted with during the previous tasks. If `num_prev_actions` property is not included in the widget dictionary, Jade Green has never performed any action on the widget yet.
+
+Jade Green can perform the following types of actions:
+- Scroll on a scrollable widget
+- Touch on a clickable widget
+- Long touch on a long-clickable widget
+- Fill in an editable widget
+- Navigate back by pressing the back button
+
+I am going to provide a template for your output to reason about your next task step by step. Fill out the <...> parts in the template with your own words. Do not include anything else in your answer except the text to fill out the template. Preserve the formatting and overall template.
+
+=== Below is the template for your answer ===
+Reasoning about Jade Green's next task: <Why would Jade Green do this task based on their natural behaviors and goals? Is it different from what they've already tested?>
+Jade Green's next task: <A COMPLETE workflow with concrete details. Example: "Record a USD 50 lunch expense" or "Generate a monthly expense report". NOT just "Add expense" or "Select category".>
+End condition of Jade Green's next task: <1 sentence, start with "The task is known to be completed when". Should describe the FINAL state after the complete workflow.>
+Reasoning of the first action of the Jade Green's next task: <What is the first step to begin this workflow?>
+Rough plan for the task in Jade Green's perspective: <1 sentence, start with "I plan to"; pretend that you are Jade Green. Include concrete details of what you're trying to achieve.>
+
+*** Assistant:
+Reasoning about Jade Green's next task: Jade Green would want to record a recent meal expense as part of their daily routine, which is important for managing their finances and understanding their spending patterns. This task is different from what they've already tested since they have not yet added any expenses in the app.
+Jade Green's next task: Record a USD 15 lunch expense at a nearby café.
+End condition of Jade Green's next task: The task is known to be completed when the lunch expense is successfully recorded in the app with all relevant details filled in.
+Reasoning of the first action of Jade Green's next task: The first step to begin this workflow is to touch the button to add a new expense on the main page.
+Rough plan for the task in Jade Green's perspective: I plan to record a USD 15 lunch expense at a nearby café to keep track of my daily spending and analyze my eating-out habits.
+
+*** User:
+Good. Now, based on your previous answer, execute the first action (by calling a function) to start the task. Pay attention to the possible action types specified in the target widget.
+
+*** Assistant:
+{'id': 'call_qzDqC6UR32FLcMTsZObGGSIb', 'type': 'function', 'function': {'name': 'touch', 'arguments': '{"target_widget_ID":23}'}}

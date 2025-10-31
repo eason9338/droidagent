@@ -1,0 +1,34 @@
+{
+  "tag": "2025-10-24_191619",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 90,
+      "view_str": "34c282051881cbb044d5748a1972533e",
+      "widget_type": "ImageButton",
+      "class": "android.widget.ImageButton",
+      "resource_id": "fab",
+      "possible_action_types": [
+        "touch"
+      ],
+      "bounds": [
+        [
+          1031,
+          1567
+        ],
+        [
+          1178,
+          1714
+        ]
+      ]
+    }
+  },
+  "start_state": "0c30519ecdea7fd28cc97b2daadabf4d",
+  "stop_state": "54dd5d39a5d262a9ba772d075b8ab81f",
+  "event_str": "TouchEvent(state=0c30519ecdea7fd28cc97b2daadabf4d, view=34c282051881cbb044d5748a1972533e(HomeRecordActivity/ImageButton-))",
+  "task": "Add a new expense record.",
+  "view_image_dir": "../outputs/AndroMoney/views/view_34c282051881cbb044d5748a1972533e.png"
+}

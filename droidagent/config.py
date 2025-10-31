@@ -7,9 +7,9 @@ from .utils.activity_name_manager import ActivityNameManager
 
 file_dir = os.path.dirname(os.path.realpath(__file__))
 
-GPT_4 = 'gpt-4-0613'
-GPT_3_5 = 'gpt-3.5-turbo-0613'
-GPT_3_5_16k = 'gpt-3.5-turbo-16k-0613'
+GPT_4 = 'gpt-4o-mini'
+GPT_3_5 = 'gpt-4o-mini'
+GPT_3_5_16k = 'gpt-4o-mini'
 
 class Persona:
     def __init__(self, persona_dict):

@@ -1,0 +1,224 @@
+
+*** System:
+You are a helpful inspector who can review the GUI actions performed on an Android mobile app named 記帳小助手. The actions are done by a person named "Jade Green" to accomplish the target task: Record a USD 10 transport expense by selecting the 交通 category, entering the amount, adding a note about the trip, and finalizing the entry. The task is known to be completed when the transport expense is successfully recorded and reflected in the summary view on the main screen.
+
+Jade Green has the following profile:
+(The username and password is what Jade Green generally uses for their accounts.)
+- name: Jade Green
+- age: 25
+- phone: 081-827-7650
+- email: anony1017mous@gmail.com
+- username: tester.green
+- password: green1029*
+- date_of_birth: 1997-10-29
+- self_introduction: I am a 25-year-old graduate student studying computer science. I want to explore advance feature, like record expense in different currencies
+- user_segment: "Power User"
+- typical_tasks: ["Add expense in different currencies", "Generate expense reports", "Manage multiple accounts"]
+- pain_points_to_watch: ["Slow currency switching", "Complicated report filters", "Too many clicks for common tasks"]
+- natural_behaviors: Jade Green is a busy student who records expenses regularly (meals, transport, study materials), may use multiple currencies when traveling, wants to analyze spending patterns, and manages different financial accounts for different purposes.
+- task_completion_rule: Each task is ONE COMPLETE workflow from start to finish. Do NOT split a workflow into multiple separate tasks. Do NOT repeat the same workflow multiple times unless testing different variations.
+
+You are going to provide helpful feedback and suggest a revised plan to help Jade Green successfully accomplish the task.
+
+*** User:
+Critique the actions done by Jade Green with respect to the current task, and give a helpful workaround if Jade Green is struggling to accomplish the task.
+
+Task execution history so far (listed in chronological order):
+===
+17:10:43:AddOrEdit: [ACTION] Jade Green touched on a dropdown field that has text "現金"
+17:10:57:AddOrEdit: [OBSERVATION] The dropdown field labeled "資產" has been expanded to show the available options, and the previously selected option "現金" is now marked as checked. Additionally, a new button labeled "帳戶" has appeared, indicating that there are more selection options related to assets.
+17:11:05:AddOrEdit: [ACTION] Jade Green pressed "BACK" button to navigate back
+17:11:17:AddOrEdit: [OBSERVATION] The user pressed the "BACK" button, which led to the display of a new button labeled "收入" and a selected button labeled "支出." Additionally, the previously checked button "現金" was removed from the current screen, indicating a change in the selection state of the financial options.
+17:15:21:AddOrEdit: [ACTION] Jade Green touched on a dropdown field that has text "交通"
+17:15:35:AddOrEdit: [OBSERVATION] The dropdown field labeled "類別" was expanded, revealing several options, with the button labeled "交通" now checked, indicating that it is the selected category. Other options such as "食物," "運動," "生活用品," and "其他" are also visible in the expanded dropdown.
+17:15:47:AddOrEdit: [ACTION] Jade Green pressed "BACK" button to navigate back
+17:15:57:AddOrEdit: [OBSERVATION] After pressing the "BACK" button, the screen returned to a previous state where the user can see a button labeled "收入" and a selected button labeled "支出," indicating a change in the focus of the input fields related to income and expenses. Additionally, the layout now includes various buttons and text fields for entering details about the financial transaction, which were not present on the previous screen.
+17:16:27:AddOrEdit: [ACTION] Jade Green touched on a textfield that has resource_id "amountEditor"
+17:16:43:com.mark.pocketmanager/.Home.AddOrEditActivity: [ACTION] Jade Green pressed the back button because there was no interactable widgets
+17:16:45:AddOrEdit: [OBSERVATION] The textfield with resource_id "amountEditor" is now focused, indicating that the user can input or edit the amount. This change allows for interaction with the field, which was previously not focused.
+17:17:07:AddOrEdit: [ACTION] Jade Green filled a focused textfield that has resource_id "amountEditor" with the text "10"
+17:17:20:com.mark.pocketmanager/.Home.AddOrEditActivity: [ACTION] Jade Green pressed the back button because there was no interactable widgets
+17:17:21:AddOrEdit: [OBSERVATION] The focused textfield with resource_id "amountEditor" now displays the value "10" that was entered by the user. This indicates that the user has successfully filled in the amount for the transaction.
+17:17:39:AddOrEdit: [ACTION] Jade Green touched on a textfield that has resource_id "noteEditor"
+17:18:05:com.mark.pocketmanager/.Home.AddOrEditActivity: [ACTION] Jade Green pressed the back button because there was no interactable widgets
+17:18:07:AddOrEdit: [OBSERVATION] The textfield with resource_id "noteEditor" is now focused, allowing the user to input text directly into it. This change indicates that the user has activated the textfield for editing, while other elements on the screen remain unchanged.
+17:18:29:AddOrEdit: [ACTION] Jade Green filled a focused textfield that has resource_id "noteEditor" with the text "Daily commute to university"
+17:18:48:com.mark.pocketmanager/.Home.AddOrEditActivity: [ACTION] Jade Green pressed the back button because there was no interactable widgets
+17:18:50:AddOrEdit: [OBSERVATION] The focused textfield with resource_id "noteEditor" now contains the text "Daily commute to university," indicating that the user has successfully entered their note. The presence of this text in the field suggests that the action of filling the textfield was completed.
+===
+
+Current page: AddOrEdit 
+Widgets in current page:
+```json
+{
+  page_name: AddOrEdit,
+  children: [
+    {
+      widget_type: ImageButton,
+      resource_id: backButton,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: Button,
+      text: 收入,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: Button,
+      text: 支出,
+      state: [
+        selected
+      ],
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: Button,
+      resource_id: outButtonLine,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: TextView,
+      text: 日期
+    },
+    {
+      widget_type: Button,
+      text: 2025-10-31,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: Button,
+      text: PM 05:07,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: TextView,
+      text: 資產
+    },
+    {
+      widget_type: Spinner,
+      resource_id: assetPicker,
+      possible_action_types: [
+        touch,
+        long_touch,
+        scroll
+      ],
+      num_prev_actions: 6,
+      widget_role_inference: The widget allows users to select the 現金 option from a dropdown, which upon selection transforms into a checked button and reveals a new button labeled 帳戶 for further asset-related options.,
+      children: [
+        {
+          widget_type: CheckedTextView,
+          text: 現金,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 2,
+          widget_role_inference: The widget allows users to select the 現金 (Cash) option, changing the selection state from 帳戶 (Account) and introducing new buttons and dropdown fields related to income and expense categories on the current screen.
+        }
+      ]
+    },
+    {
+      widget_type: TextView,
+      text: 類別
+    },
+    {
+      widget_type: Spinner,
+      resource_id: categoryPicker,
+      possible_action_types: [
+        touch,
+        long_touch,
+        scroll
+      ],
+      num_prev_actions: 2,
+      widget_role_inference: The widget allows the user to select a category from a dropdown list, with 交通 currently selected among options like 食物, 運動, 生活用品, and 其他.,
+      children: [
+        {
+          widget_type: CheckedTextView,
+          text: 交通,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 6,
+          widget_role_inference: The widget expands new options for entering transportation-related expenses, introducing new buttons and fields such as 收入, 支出, and a categoryPicker for detailed input.
+        }
+      ]
+    },
+    {
+      widget_type: TextView,
+      text: 金額
+    },
+    {
+      widget_type: EditText,
+      text: 10,
+      possible_action_types: [
+        touch,
+        long_touch,
+        set_text
+      ],
+      num_prev_actions: 12,
+      widget_role_inference: The widget is a textfield for entering and editing a specific financial amount for a transaction, currently displaying the value 10 and allowing user interaction within the context of a layout that includes various related buttons and dropdown fields.
+    },
+    {
+      widget_type: TextView,
+      text: 內容
+    },
+    {
+      widget_type: EditText,
+      text: Daily commute to university,
+      state: [
+        focused
+      ],
+      possible_action_types: [
+        touch,
+        long_touch,
+        set_text
+      ],
+      num_prev_actions: 6,
+      widget_role_inference: The widget is a focused textfield that allows the user to enter and edit notes, such as Daily commute to university, within the note editor interface.
+    },
+    {
+      widget_type: Button,
+      text: 新增,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 6,
+      widget_role_inference: The widget allows users to add new financial entries by transitioning from the AddOrEdit screen to the Main screen, which displays a summary view of income, expenses, and totals.
+    }
+  ]
+}
+```
+Guideline for criticizing the actions:
+- Note that `num_prev_actions` property means the number of times the widget has been interacted with so far.
+- Note that `widget_role_inference` property means the role of the widget inferred by previous actions. Use this property to infer what the widget is used for. If `widget_role_inference` property is not included in the widget dictionary, the widget has not been interacted yet.
+- When I am stuck, you might guide me to explore the new widgets that have not been used and doesn't know the role yet.
+- I don't want to do the same actions repeatedly except it is clearly needed for the task (e.g., navigating back to the first page of the app), so guide me to perform effective actions to complete the task.
+
+I am going to provide a template for your output to reason about your choice step by step. Fill out the <...> parts in the template with your own words. Do not include anything else in your answer except the text to fill out the template. Preserve the formatting and overall template.
+
+=== Below is the template for your answer ===
+Critique of task execution so far: <1~2 sentences in one line, say "okay" if everything seems fine.>
+Need a workaround plan?: <yes/no, do not include any other word except "yes" or "no">
+Workaround plan for Jade Green: <Start with "Jade Green needs to", and describe in one line. Say just "none" if Jade Green is doing well and no workaround is needed.>
+
+*** Assistant:
+Critique of task execution so far: Jade Green has made multiple unnecessary back navigations that have not contributed to completing the task, which has delayed progress.  
+Need a workaround plan?: yes  
+Workaround plan for Jade Green: Jade Green needs to focus on completing the entry by selecting the "新增" button to finalize the transport expense after filling in the amount and note.

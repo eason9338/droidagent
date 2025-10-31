@@ -33,7 +33,7 @@ Following types of actions can be performed:
 - Navigate back by pressing the back button
     '''.strip())
 
-    full_prompt['assistant_messages'].append(get_next_assistant_message(full_prompt['system_message'], full_prompt['user_messages'], full_prompt['assistant_messages'], model="gpt-3.5-turbo-16k-0613", functions=list(possible_action_functions.values())))
+    full_prompt['assistant_messages'].append(get_next_assistant_message(full_prompt['system_message'], full_prompt['user_messages'], full_prompt['assistant_messages'], model="gpt-4o-mini", functions=list(possible_action_functions.values())))
     response = full_prompt['assistant_messages'][-1]
 
     if not isinstance(response, dict): # retry if model doesn't do function call
@@ -114,7 +114,7 @@ Following types of actions can be performed:
     else:
         full_prompt['user_messages'].append(error_message)
 
-    full_prompt['assistant_messages'].append(get_next_assistant_message(full_prompt['system_message'], full_prompt['user_messages'], full_prompt['assistant_messages'], model="gpt-3.5-turbo-16k-0613", functions=list(possible_action_functions.values())))
+    full_prompt['assistant_messages'].append(get_next_assistant_message(full_prompt['system_message'], full_prompt['user_messages'], full_prompt['assistant_messages'], model="gpt-4o-mini", functions=list(possible_action_functions.values())))
     response = full_prompt['assistant_messages'][-1]
 
     if not isinstance(response, dict): # retry if model doesn't do function call

@@ -1,0 +1,34 @@
+{
+  "tag": "2025-10-31_165824",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 23,
+      "view_str": "6fa19098ad8f63d5231001a5c18647af",
+      "widget_type": "ImageButton",
+      "class": "android.widget.ImageButton",
+      "resource_id": "adder",
+      "possible_action_types": [
+        "touch"
+      ],
+      "bounds": [
+        [
+          1997,
+          1356
+        ],
+        [
+          2155,
+          1514
+        ]
+      ]
+    }
+  },
+  "start_state": "de5c759c868df540c2f2a28d995aaab6",
+  "stop_state": "c29a71008efd8a8352b6352f57bd8eae",
+  "event_str": "TouchEvent(state=de5c759c868df540c2f2a28d995aaab6, view=6fa19098ad8f63d5231001a5c18647af(MainActivity/ImageButton-))",
+  "task": "Record a USD 15 lunch expense at a nearby caf\u00e9.",
+  "view_image_dir": "../outputs/PocketManager/views/view_6fa19098ad8f63d5231001a5c18647af.png"
+}

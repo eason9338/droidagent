@@ -1,0 +1,745 @@
+{
+  "tag": "2025-10-24_195911",
+  "state_str": "9270393c4aa2121f78b2ee26106d0489",
+  "state_str_content_free": "43175b3d5b24045c6d12ecb62fb147b6",
+  "foreground_activity": "com.google.android.gms/.auth.uiflows.minutemaid.MinuteMaidActivity",
+  "activity_stack": [
+    "com.google.android.gms/.auth.uiflows.minutemaid.MinuteMaidActivity"
+  ],
+  "background_services": [
+    "com.google.android.gms/.chimera.PersistentSingleUserInternalApiService",
+    "com.google.android.gms/.ads.identifier.service.AdvertisingIdService",
+    "com.google.android.apps.messaging/com.google.android.ims.service.JibeService",
+    "com.google.android.networkstack.tethering/com.android.networkstack.tethering.TetheringService",
+    "com.google.android.gms/.auth.frp.FrpService",
+    "com.google.android.adservices.api/com.android.adservices.measurement.MeasurementService",
+    "com.android.vending/com.google.android.finsky.setup.dse.impl.DseService",
+    "com.android.systemui/.keyguard.KeyguardService",
+    "com.google.android.gms/.droidguard.DroidGuardService",
+    "com.google.android.gms/org.chromium.content.app.SandboxedProcessService0",
+    "com.google.android.webview/org.chromium.android_webview.services.MetricsBridgeService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.textclassifier.service.QAiaiTextClassifierService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.superpacks.impl.AiAiSuperpacksService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService",
+    "com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService",
+    "com.google.android.gms/.chimera.PersistentApiService",
+    "com.android.systemui/.wallpapers.ImageWallpaper",
+    "com.google.android.gms/.location.geocode.GeocodeService",
+    "com.android.phone/com.android.internal.telephony.CellularNetworkService",
+    "com.google.android.gms/.chimera.PersistentBoundBrokerService",
+    "com.google.android.gms/.chimera.GmsBoundBrokerService",
+    "com.google.android.gms/.chimera.GmsApiService",
+    "com.android.vending/com.google.android.finsky.crossprofile.ProfileStateService",
+    "io.github.ylimit.droidbotapp/.DroidBotIME",
+    "com.google.android.webview/org.chromium.android_webview.services.ComponentsProviderService",
+    "com.google.android.gms/com.google.android.location.fused.FusedLocationService",
+    "com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl",
+    "com.google.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl",
+    "com.android.phone/com.android.internal.telephony.data.CellularDataService",
+    "io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService",
+    "com.google.android.apps.nexuslauncher/com.android.launcher3.notification.NotificationListener",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationListenerService",
+    "com.android.systemui/.SystemUIService",
+    "android/.hardware.location.GeofenceHardwareService",
+    "com.android.se/.SecureElementService",
+    "com.google.android.gms/.chimera.PersistentDirectBootAwareApiService",
+    "com.google.android.gms/.geotimezone.GeoTimeZoneService",
+    "com.google.android.providers.media.module/com.android.providers.media.MediaService",
+    "com.google.android.gms/com.google.android.location.reporting.service.ReportingAndroidService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService",
+    "com.google.android.bluetooth/com.android.bluetooth.btservice.AdapterService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureService",
+    "com.google.android.gms/com.google.android.location.internal.server.GoogleLocationService",
+    "com.google.android.gms/com.google.android.contextmanager.service.ContextManagerService",
+    "com.android.systemui/.dump.SystemUIAuxiliaryDumpService",
+    "com.google.android.gms/com.google.android.location.network.NetworkLocationService",
+    "com.android.stk/.StkAppService",
+    "com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService",
+    "com.google.android.gms/.stats.service.DropBoxEntryAddedService",
+    "com.android.server.telecom/.components.TelecomService",
+    "com.google.android.networkstack/com.android.server.NetworkStackService",
+    "com.android.systemui/com.google.android.systemui.power.batteryevent.domain.BatteryEventService",
+    "com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService",
+    "com.android.emulator.multidisplay/.MultiDisplayService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationAssistantService",
+    "com.android.ons/.OpportunisticNetworkService",
+    "com.google.android.gms/.auth.account.authenticator.GoogleAccountAuthenticatorService",
+    "com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService",
+    "com.google.android.gms/.chimera.GmsInternalBoundBrokerService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService",
+    "com.kpmoney.android/org.chromium.content.app.SandboxedProcessService0",
+    "com.android.phone/.TelephonyDebugService",
+    "com.google.android.gms/.wearable.service.WearableService",
+    "com.google.android.apps.nexuslauncher/com.android.quickstep.TouchInteractionService",
+    "com.google.android.cellbroadcastservice/com.android.cellbroadcastservice.DefaultCellBroadcastService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSearchUiService",
+    "com.google.android.gms/.checkin.CheckinApiService",
+    "com.google.android.gms/.droidguard.DroidGuardService"
+  ],
+  "width": 2208,
+  "height": 1840,
+  "views": [
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        1
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          6,
+          0
+        ],
+        [
+          2214,
+          1840
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": -1,
+      "temp_id": 0,
+      "size": "2208*1840",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "13cf4d3696238cbd4963f55b62bf0c52",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        2
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          6,
+          0
+        ],
+        [
+          2214,
+          1840
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 0,
+      "temp_id": 1,
+      "size": "2208*1840",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "1cb3f5e570c977ca090a30d263cd5de7",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        3
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          6,
+          0
+        ],
+        [
+          2214,
+          1840
+        ]
+      ],
+      "resource_id": "android:id/content",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 1,
+      "temp_id": 2,
+      "size": "2208*1840",
+      "signature": "[class]android.widget.FrameLayout[resource_id]android:id/content[text]None[enabled,,]",
+      "view_str": "8a7d669785cc47427a8684196e69fabe",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]android:id/content"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        4
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          6,
+          0
+        ],
+        [
+          2214,
+          1840
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 2,
+      "temp_id": 3,
+      "size": "2208*1840",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "35c49a669895ca28994a7d2584012a59",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        5
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          6,
+          0
+        ],
+        [
+          2214,
+          1840
+        ]
+      ],
+      "resource_id": "com.google.android.gms:id/glif_layout",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 3,
+      "temp_id": 4,
+      "size": "2208*1840",
+      "signature": "[class]android.widget.FrameLayout[resource_id]com.google.android.gms:id/glif_layout[text]None[enabled,,]",
+      "view_str": "c724d7fd74503313581a0339b42e1ab9",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]com.google.android.gms:id/glif_layout"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        6
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          6,
+          0
+        ],
+        [
+          2214,
+          1840
+        ]
+      ],
+      "resource_id": "com.google.android.gms:id/suc_layout_status",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 4,
+      "temp_id": 5,
+      "size": "2208*1840",
+      "signature": "[class]android.widget.LinearLayout[resource_id]com.google.android.gms:id/suc_layout_status[text]None[enabled,,]",
+      "view_str": "5fb3908d2e781a2763e8a7e2fddb4127",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]com.google.android.gms:id/suc_layout_status"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        7
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          228,
+          180
+        ],
+        [
+          1992,
+          1650
+        ]
+      ],
+      "resource_id": "com.google.android.gms:id/suc_intrinsic_size_layout",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 6,
+      "size": "1764*1470",
+      "signature": "[class]android.widget.FrameLayout[resource_id]com.google.android.gms:id/suc_intrinsic_size_layout[text]None[enabled,,]",
+      "view_str": "18a8c20a00e1ff185bc27178ae94836b",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]com.google.android.gms:id/suc_intrinsic_size_layout"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        8
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          228,
+          180
+        ],
+        [
+          1992,
+          1650
+        ]
+      ],
+      "resource_id": "com.google.android.gms:id/sud_layout_template_content",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 6,
+      "temp_id": 7,
+      "size": "1764*1470",
+      "signature": "[class]android.widget.LinearLayout[resource_id]com.google.android.gms:id/sud_layout_template_content[text]None[enabled,,]",
+      "view_str": "957db072e7be2084094edb749e4cab9c",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]com.google.android.gms:id/sud_layout_template_content"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        9,
+        11
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          228,
+          180
+        ],
+        [
+          1992,
+          1650
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 7,
+      "temp_id": 8,
+      "size": "1764*1470",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "0af52292c81954b1db47ba4fdb69df6a",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        10
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          228,
+          180
+        ],
+        [
+          1110,
+          1650
+        ]
+      ],
+      "resource_id": "com.google.android.gms:id/sud_landscape_header_area",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 8,
+      "temp_id": 9,
+      "size": "882*1470",
+      "signature": "[class]android.widget.LinearLayout[resource_id]com.google.android.gms:id/sud_landscape_header_area[text]None[enabled,,]",
+      "view_str": "a52ac4f8faa165f142697a816e26963b",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]com.google.android.gms:id/sud_landscape_header_area"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          228,
+          180
+        ],
+        [
+          1110,
+          1650
+        ]
+      ],
+      "resource_id": "com.google.android.gms:id/sud_header_scroll_view",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ScrollView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 9,
+      "temp_id": 10,
+      "size": "882*1470",
+      "signature": "[class]android.widget.ScrollView[resource_id]com.google.android.gms:id/sud_header_scroll_view[text]None[enabled,,]",
+      "view_str": "693c885c9cb1ea8ff9d44e370ccf5e1c",
+      "content_free_signature": "[class]android.widget.ScrollView[resource_id]com.google.android.gms:id/sud_header_scroll_view"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        12
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1110,
+          180
+        ],
+        [
+          1992,
+          1650
+        ]
+      ],
+      "resource_id": "com.google.android.gms:id/sud_landscape_content_area",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 8,
+      "temp_id": 11,
+      "size": "882*1470",
+      "signature": "[class]android.widget.LinearLayout[resource_id]com.google.android.gms:id/sud_landscape_content_area[text]None[enabled,,]",
+      "view_str": "db842abd1f63b2d8a0c44588f4f7a6c4",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]com.google.android.gms:id/sud_landscape_content_area"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        13
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1110,
+          180
+        ],
+        [
+          1992,
+          1650
+        ]
+      ],
+      "resource_id": "com.google.android.gms:id/sud_scroll_view",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ScrollView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 11,
+      "temp_id": 12,
+      "size": "882*1470",
+      "signature": "[class]android.widget.ScrollView[resource_id]com.google.android.gms:id/sud_scroll_view[text]None[enabled,,]",
+      "view_str": "7acb3fe52332ee1528b6da4b564ef972",
+      "content_free_signature": "[class]android.widget.ScrollView[resource_id]com.google.android.gms:id/sud_scroll_view"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        14
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1110,
+          180
+        ],
+        [
+          1992,
+          1650
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 12,
+      "temp_id": 13,
+      "size": "882*1470",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "94a79206642510e48e0251558dc1d645",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        15
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1110,
+          180
+        ],
+        [
+          1992,
+          1650
+        ]
+      ],
+      "resource_id": "com.google.android.gms:id/sud_layout_content",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 13,
+      "temp_id": 14,
+      "size": "882*1470",
+      "signature": "[class]android.widget.FrameLayout[resource_id]com.google.android.gms:id/sud_layout_content[text]None[enabled,,]",
+      "view_str": "0d9483853649749093ac764604afea49",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]com.google.android.gms:id/sud_layout_content"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        16
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1110,
+          411
+        ],
+        [
+          1992,
+          1650
+        ]
+      ],
+      "resource_id": "com.google.android.gms:id/progress_bar_layout",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 14,
+      "temp_id": 15,
+      "size": "882*1239",
+      "signature": "[class]android.widget.FrameLayout[resource_id]com.google.android.gms:id/progress_bar_layout[text]None[enabled,,]",
+      "view_str": "399db6c2774228e94a84585e7ce9b266",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]com.google.android.gms:id/progress_bar_layout"
+    },
+    {
+      "package": "com.google.android.gms",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1128,
+          684
+        ],
+        [
+          1947,
+          1377
+        ]
+      ],
+      "resource_id": "com.google.android.gms:id/progress_bar",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ProgressBar",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 15,
+      "temp_id": 16,
+      "size": "819*693",
+      "signature": "[class]android.widget.ProgressBar[resource_id]com.google.android.gms:id/progress_bar[text]None[enabled,,]",
+      "view_str": "13ad9ca94a006dcf0bf244a2cc90369e",
+      "content_free_signature": "[class]android.widget.ProgressBar[resource_id]com.google.android.gms:id/progress_bar"
+    }
+  ]
+}

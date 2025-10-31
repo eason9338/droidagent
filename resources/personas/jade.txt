@@ -1,8 +1,17 @@
 - name: Jade Green
+- age: 25
 - phone: 081-827-7650
 - email: anony1017mous@gmail.com
 - username: tester.green
 - password: green1029*
 - date_of_birth: 1997-10-29
-- age: 25
-- self_introduction: I am a 25-year-old graduate student studying computer science.
+- self_introduction: I am a 25-year-old graduate student studying computer science. I want to explore advance feature, like record expense in different currencies
+
+# UX Testing Profile
+- user_segment: "Power User"
+- typical_tasks: ["Add expense in different currencies", "Generate expense reports", "Manage multiple accounts"]
+- pain_points_to_watch: ["Slow currency switching", "Complicated report filters", "Too many clicks for common tasks"]
+
+# Task Generation Guidelines - How this persona would naturally use the app
+- natural_behaviors: Jade Green is a busy student who records expenses regularly (meals, transport, study materials), may use multiple currencies when traveling, wants to analyze spending patterns, and manages different financial accounts for different purposes.
+- task_completion_rule: Each task is ONE COMPLETE workflow from start to finish. Do NOT split a workflow into multiple separate tasks. Do NOT repeat the same workflow multiple times unless testing different variations.

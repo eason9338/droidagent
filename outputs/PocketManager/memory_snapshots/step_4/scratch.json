@@ -1,0 +1,42 @@
+{
+  "task": "Record a USD 15 lunch expense at a nearby caf\u00e9.",
+  "task_end_condition": "The task is known to be completed when the lunch expense is successfully recorded in the app with all relevant details filled in.",
+  "working_memory": [
+    {
+      "description": "Touch on a button that has resource_id \"adder\"",
+      "type": "ACTION",
+      "timestamp": "16:57:55",
+      "page": "Main"
+    },
+    {
+      "description": "Open the app again because the previous action led to closing the app",
+      "type": "ACTION",
+      "timestamp": "16:58:30",
+      "page": "Main"
+    },
+    {
+      "description": "After touching the button with resource_id \"adder,\" a new button with text \"Fri, Oct 31\" appeared on the screen, along with several additional buttons and widgets such as \"Play Store,\" \"Gmail,\" and \"Photos.\" The previous textview indicating \"\u9084\u6c92\u6709\u8cc7\u6599\u5594~\" and other financial summary widgets are no longer visible, suggesting a shift to a different interface or functionality.",
+      "type": "OBSERVATION",
+      "timestamp": "16:58:33",
+      "page": "Main"
+    },
+    {
+      "description": "Press \"BACK\" button to navigate back",
+      "type": "ACTION",
+      "timestamp": "16:58:40",
+      "page": "Main"
+    },
+    {
+      "description": "Open the app again because the previous action led to closing the app",
+      "type": "ACTION",
+      "timestamp": "16:58:58",
+      "page": "Main"
+    },
+    {
+      "description": "After pressing the \"BACK\" button, the current screen now displays a text view with the message \"\u9084\u6c92\u6709\u8cc7\u6599\u5594~\" indicating that no data is available, along with several buttons and text views related to financial tracking, which were not present on the previous screen. This change may be confusing for users as it shifts from a main app interface to a more specific financial summary without clear context.",
+      "type": "OBSERVATION",
+      "timestamp": "16:59:00",
+      "page": "Main"
+    }
+  ]
+}

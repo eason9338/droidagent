@@ -1,0 +1,48 @@
+{
+  "task": "Fill in the payment date for the new account.",
+  "task_end_condition": "The task is known to be completed when the payment date is successfully entered and the account creation process is finalized.",
+  "working_memory": [
+    {
+      "description": "Touch on a textfield that has resource_id \"pay_date\"",
+      "type": "ACTION",
+      "timestamp": "20:08:44",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Fill a textfield that has resource_id \"pay_date\" with \"2023-10-29\"",
+      "type": "ACTION",
+      "timestamp": "20:09:21",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Touch on a button that has text \"OK\"",
+      "type": "ACTION",
+      "timestamp": "20:10:25",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Touch on a button that has text \"OK\"",
+      "type": "ACTION",
+      "timestamp": "20:11:26",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Jade Green has successfully filled in the payment date and attempted to finalize the account creation by pressing the \"OK\" button twice, which is unnecessary. Jade Green needs to ensure that the correct \"OK\" button is pressed once to proceed with the account creation after entering the payment date.",
+      "type": "CRITIQUE",
+      "timestamp": "20:12:22",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Touch on a button that has text \"OK\"",
+      "type": "ACTION",
+      "timestamp": "20:12:31",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Touch on a textfield that has resource_id \"amount\"",
+      "type": "ACTION",
+      "timestamp": "20:13:45",
+      "page": "HomeAccount"
+    }
+  ]
+}

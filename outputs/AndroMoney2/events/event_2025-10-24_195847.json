@@ -1,0 +1,35 @@
+{
+  "tag": "2025-10-24_195847",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 12,
+      "view_str": "73d3bb5ba4c67748de55b071eb4ef405",
+      "widget_type": "Button",
+      "class": "android.widget.Button",
+      "content_description": "Sync database",
+      "resource_id": "menu_sync",
+      "possible_action_types": [
+        "touch"
+      ],
+      "bounds": [
+        [
+          1934,
+          95
+        ],
+        [
+          2082,
+          221
+        ]
+      ]
+    }
+  },
+  "start_state": "67c6878e6e5ff51802c95b433ecacb23",
+  "stop_state": "afe5a26a2c36a49a6aa54dbbfcf589e9",
+  "event_str": "TouchEvent(state=67c6878e6e5ff51802c95b433ecacb23, view=73d3bb5ba4c67748de55b071eb4ef405(HomeRecordActivity/Button-))",
+  "task": "Touch the AndroMoney icon to open the app.",
+  "view_image_dir": "../outputs/AndroMoney2/views/view_73d3bb5ba4c67748de55b071eb4ef405.png"
+}

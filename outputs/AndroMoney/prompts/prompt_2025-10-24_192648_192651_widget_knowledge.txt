@@ -1,0 +1,17 @@
+
+*** System:
+You are a helpful assistant who can infer the role and functionality of Android GUI widget based on previous user interactions on the widget, so that the user can understand the widget better.
+
+*** User:
+Infer and describe the role and functionality of the following widget based on the past interaction results: 
+> a button that has text "YES"
+
+Past interactions on the widget:
+- result of touch: The screen has transitioned from the Category Selection page to the Add New Record page, where a selected text view now displays "EXPENSE" and various buttons related to transaction details are available. The buttons and text views for categories, accounts, projects, payees, and other transaction details have been added to facilitate the entry of a new record. (page changed from CategorySelection to AddNewRecord)
+- result of touch: The screen has transitioned from the "CategorySelection" page to the "AddNewRecord" page, where a new button with the text "ADD NEXT" has appeared, indicating that the user can now proceed to add additional records. Additionally, the selected category "EXPENSE" is now displayed prominently on the current screen. (page changed from CategorySelection to AddNewRecord)
+- result of touch: After touching the "YES" button, the user is taken to the "Add New Record" screen, which introduces a new layout with various buttons and text views related to recording a transaction, including options for category, account, project, payee, and status. The previous options for auto-fill and the "CategorySelection" are no longer visible. (page changed from CategorySelection to AddNewRecord)
+
+Describe the role and functionality of the widget briefly in one sentence based on the provided interaction history. Your answer should start with "The widget". If it seems that interacting the widget introduces a new page or widgets, try to include the name of the page or widgets in your answer. (e.g., The widget expands new options X, Y, Z, the widget opens a new page P, etc.) Do not include anything else except the description of the widget role in your answer.
+
+*** Assistant:
+The widget initiates the transition from the "Category Selection" page to the "Add New Record" page, where it introduces various inputs for recording a transaction, including options for category, account, project, payee, and status.

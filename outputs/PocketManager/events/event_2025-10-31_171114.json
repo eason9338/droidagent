@@ -1,0 +1,13 @@
+{
+  "tag": "2025-10-31_171114",
+  "event": {
+    "event_type": "key",
+    "log_lines": null,
+    "name": "BACK"
+  },
+  "start_state": "491781fff00b41a226b1a3239cf8175d",
+  "stop_state": "570cba6e2692447827f9416376161fff",
+  "event_str": "KeyEvent(state=491781fff00b41a226b1a3239cf8175d, name=BACK)",
+  "task": "Record a USD 10 transport expense by selecting the \u4ea4\u901a category, entering the amount, adding a note about the trip, and finalizing the entry.",
+  "view_image_dir": null
+}

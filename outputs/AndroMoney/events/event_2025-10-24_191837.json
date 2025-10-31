@@ -1,0 +1,35 @@
+{
+  "tag": "2025-10-24_191837",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 16,
+      "view_str": "5c20996502b47ac7d3a83ff35cfcb29f",
+      "widget_type": "Button",
+      "class": "android.widget.Button",
+      "text": "DON'T REMIND",
+      "resource_id": "button2",
+      "possible_action_types": [
+        "touch"
+      ],
+      "bounds": [
+        [
+          1133,
+          984
+        ],
+        [
+          1444,
+          1110
+        ]
+      ]
+    }
+  },
+  "start_state": "d6106904e04d30d382b6a8fc5193edfd",
+  "stop_state": "5dfe4d8d3304dadec8b608b67dec1f28",
+  "event_str": "TouchEvent(state=d6106904e04d30d382b6a8fc5193edfd, view=5c20996502b47ac7d3a83ff35cfcb29f(AddNewRecordActivity/Button-DON'T REMI))",
+  "task": "Add a new expense record.",
+  "view_image_dir": "../outputs/AndroMoney/views/view_5c20996502b47ac7d3a83ff35cfcb29f.png"
+}

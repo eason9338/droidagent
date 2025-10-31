@@ -38,6 +38,11 @@ Widgets in the current page (page name: {AppState.current_gui_state.activity}):
 ===
 
 Guideline for the task reflection based on the task result:
+- CRITICAL: Mark "Task done successfully?: YES" ONLY if:
+  * The form/entry was submitted (clicked submit/save button)
+  * AND the form was cleared/reset (confirming the data was saved)
+  * AND the task described in the history was FULLY completed from start to finish
+  * Do NOT mark as successful if the task was aborted, incomplete, or form was never submitted
 - If the task is successful, provide a learned knowledge about the app functionality. (e.g., "The app supports the task X by doing Y.")
 - If the task is failed and seems to be impossible to accomplish (e.g., the app does not support the task), reflect on the reason why the task is impossible to accomplish. (e.g., "{agent_config.persona_name} once tried to do X but couldn't do Y. It seems that the app does not support Z.")
 - If the task is failed but still seems to be possible to accomplish, reflect why {agent_config.persona_name} failed to accomplish the task and provide lessons learned from the failure. (e.g., "{agent_config.persona_name} once tried to do X but couldn't do Y. It seems that {agent_config.persona_name} might have to do Z before doing Y.")
@@ -46,10 +51,13 @@ Guideline for the task reflection based on the task result:
 I am going to provide a template for your output to reason about your answer step by step. Fill out the <...> parts in the template with your own words. Do not include anything else in your answer except the text to fill out the template. Preserve the formatting and overall template.
 
 === Below is the template for your answer ===
-Summary of the task result: <1~2 sentences, summary of the result of the task>
-Task done successfully?: <yes/no, do not include anything else in your answer>
+Summary of the task result: <1~2 sentences, what exactly happened and whether the COMPLETE workflow was achieved>
+Task done successfully?: <yes/no - YES only if the ENTIRE workflow from start to finish was completed>
+UI/UX Feedback (if task failed or had difficulties):
+- <Specific UI elements that caused confusion or difficulty>
+- <Whether the flow was intuitive for {agent_config.persona_name}'s use case>
 Reflections on the task:
-- <1 sentence for each item>
+- <1 sentence for each useful learning>
 <...provide up to 3 items>'''.strip())
 
     assistant_messages.append(get_next_assistant_message(system_message, user_messages, assistant_messages, model=agent_config.reflector_model))

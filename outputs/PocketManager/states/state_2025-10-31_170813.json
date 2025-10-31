@@ -1,0 +1,1140 @@
+{
+  "tag": "2025-10-31_170813",
+  "state_str": "4b7f854b05f6be7f42c17508197c7b5a",
+  "state_str_content_free": "bedaffe2863ddea917e8834839a81657",
+  "foreground_activity": "com.mark.pocketmanager/.Home.AddOrEditActivity",
+  "activity_stack": [
+    "com.mark.pocketmanager/.Home.AddOrEditActivity",
+    "com.mark.pocketmanager/.MainActivity"
+  ],
+  "background_services": [
+    "com.google.android.apps.messaging/com.google.android.ims.service.JibeService",
+    "com.google.android.networkstack.tethering/com.android.networkstack.tethering.TetheringService",
+    "com.google.android.adservices.api/com.android.adservices.measurement.MeasurementService",
+    "com.android.systemui/.keyguard.KeyguardService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.textclassifier.service.QAiaiTextClassifierService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.superpacks.impl.AiAiSuperpacksService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService",
+    "com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService",
+    "com.google.android.gms/.chimera.PersistentApiService",
+    "com.android.systemui/.wallpapers.ImageWallpaper",
+    "com.google.android.gms/.location.geocode.GeocodeService",
+    "com.android.phone/com.android.internal.telephony.CellularNetworkService",
+    "com.google.android.gms/.chimera.PersistentBoundBrokerService",
+    "io.github.ylimit.droidbotapp/.DroidBotIME",
+    "com.google.android.gms/com.google.android.location.fused.FusedLocationService",
+    "com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl",
+    "com.google.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl",
+    "com.android.phone/com.android.internal.telephony.data.CellularDataService",
+    "io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService",
+    "com.google.android.apps.nexuslauncher/com.android.launcher3.notification.NotificationListener",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationListenerService",
+    "com.android.systemui/.SystemUIService",
+    "android/.hardware.location.GeofenceHardwareService",
+    "com.android.se/.SecureElementService",
+    "com.google.android.gms/.chimera.PersistentDirectBootAwareApiService",
+    "com.google.android.gms/.geotimezone.GeoTimeZoneService",
+    "com.google.android.gms/.nearby.discovery.service.DiscoveryService",
+    "com.google.android.gms/com.google.android.location.internal.PendingIntentCallbackService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService",
+    "com.google.android.bluetooth/com.android.bluetooth.btservice.AdapterService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureService",
+    "com.google.android.gms/com.google.android.location.internal.server.GoogleLocationService",
+    "com.google.android.gms/com.google.android.contextmanager.service.ContextManagerService",
+    "com.android.systemui/.dump.SystemUIAuxiliaryDumpService",
+    "com.google.android.gms/com.google.android.location.network.NetworkLocationService",
+    "com.android.stk/.StkAppService",
+    "com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService",
+    "com.android.server.telecom/.components.TelecomService",
+    "com.google.android.networkstack/com.android.server.NetworkStackService",
+    "com.android.systemui/com.google.android.systemui.power.batteryevent.domain.BatteryEventService",
+    "com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService",
+    "com.android.emulator.multidisplay/.MultiDisplayService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationAssistantService",
+    "com.android.ons/.OpportunisticNetworkService",
+    "com.google.android.gms/.auth.account.authenticator.GoogleAccountAuthenticatorService",
+    "com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService",
+    "com.android.phone/.TelephonyDebugService",
+    "com.google.android.apps.nexuslauncher/com.android.quickstep.TouchInteractionService",
+    "com.google.android.cellbroadcastservice/com.android.cellbroadcastservice.DefaultCellBroadcastService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSearchUiService"
+  ],
+  "width": 2208,
+  "height": 1840,
+  "views": [
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        1,
+        26,
+        27
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          0
+        ],
+        [
+          2208,
+          1840
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": -1,
+      "temp_id": 0,
+      "size": "2208*1840",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "5c88139252e3ead36e74cf80ad9de738",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        2
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          0
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 0,
+      "temp_id": 1,
+      "size": "2208*1756",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "2b320411cfd4f1bb24923f4fcbe3e713",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        3
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          74
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 1,
+      "temp_id": 2,
+      "size": "2208*1682",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "73b4e9d0d5758eb88746c7fd72b7878f",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        4
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          74
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/action_bar_root",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 2,
+      "temp_id": 3,
+      "size": "2208*1682",
+      "signature": "[class]android.widget.LinearLayout[resource_id]com.mark.pocketmanager:id/action_bar_root[text]None[enabled,,]",
+      "view_str": "589889f8705e4eb934c33f23bb3bf47b",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]com.mark.pocketmanager:id/action_bar_root"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        5
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          74
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": "android:id/content",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 3,
+      "temp_id": 4,
+      "size": "2208*1682",
+      "signature": "[class]android.widget.FrameLayout[resource_id]android:id/content[text]None[enabled,,]",
+      "view_str": "0178f9d8ae58e2538b4bc2625a682f79",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]android:id/content"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 16,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        6,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          74
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.view.ViewGroup",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 4,
+      "temp_id": 5,
+      "size": "2208*1682",
+      "signature": "[class]android.view.ViewGroup[resource_id]None[text]None[enabled,,]",
+      "view_str": "254fce6d70e8627cbb8b1760f8ced8b7",
+      "content_free_signature": "[class]android.view.ViewGroup[resource_id]None"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        7,
+        8
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          74
+        ],
+        [
+          2208,
+          232
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/my_actionBar",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 6,
+      "size": "2208*158",
+      "signature": "[class]android.widget.LinearLayout[resource_id]com.mark.pocketmanager:id/my_actionBar[text]None[enabled,,]",
+      "view_str": "4c30979791f3658138b74fa4cfa574b3",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]com.mark.pocketmanager:id/my_actionBar"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          39,
+          117
+        ],
+        [
+          110,
+          188
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/backButton",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageButton",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 6,
+      "temp_id": 7,
+      "size": "71*71",
+      "signature": "[class]android.widget.ImageButton[resource_id]com.mark.pocketmanager:id/backButton[text]None[enabled,,]",
+      "view_str": "c003589f590b8b8332331f68ada0b7ef",
+      "content_free_signature": "[class]android.widget.ImageButton[resource_id]com.mark.pocketmanager:id/backButton"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": false,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          163,
+          109
+        ],
+        [
+          163,
+          197
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/title",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 6,
+      "temp_id": 8,
+      "size": "0*88",
+      "signature": "[class]android.widget.TextView[resource_id]com.mark.pocketmanager:id/title[text]None[enabled,,]",
+      "view_str": "dbac6c8be719034ccee21dba5719e809",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.mark.pocketmanager:id/title"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          26,
+          232
+        ],
+        [
+          1091,
+          358
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/inButton",
+      "checked": false,
+      "text": "\u6536\u5165",
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 9,
+      "size": "1065*126",
+      "signature": "[class]android.widget.Button[resource_id]com.mark.pocketmanager:id/inButton[text]\u6536\u5165[enabled,,]",
+      "view_str": "9d8e7d036c9faff5cfd47960fb5f8ce7",
+      "content_free_signature": "[class]android.widget.Button[resource_id]com.mark.pocketmanager:id/inButton"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1117,
+          232
+        ],
+        [
+          2182,
+          358
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/outButton",
+      "checked": false,
+      "text": "\u652f\u51fa",
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": true,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 10,
+      "size": "1065*126",
+      "signature": "[class]android.widget.Button[resource_id]com.mark.pocketmanager:id/outButton[text]\u652f\u51fa[enabled,,selected]",
+      "view_str": "60d76f54f847e59e766eb70ab79a11e9",
+      "content_free_signature": "[class]android.widget.Button[resource_id]com.mark.pocketmanager:id/outButton"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1117,
+          232
+        ],
+        [
+          2182,
+          358
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/outButtonLine",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 11,
+      "size": "1065*126",
+      "signature": "[class]android.widget.Button[resource_id]com.mark.pocketmanager:id/outButtonLine[text]None[enabled,,]",
+      "view_str": "4721b3a860391632779500d47554ee19",
+      "content_free_signature": "[class]android.widget.Button[resource_id]com.mark.pocketmanager:id/outButtonLine"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          53,
+          404
+        ],
+        [
+          158,
+          470
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/dateText",
+      "checked": false,
+      "text": "\u65e5\u671f",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 12,
+      "size": "105*66",
+      "signature": "[class]android.widget.TextView[resource_id]com.mark.pocketmanager:id/dateText[text]\u65e5\u671f[enabled,,]",
+      "view_str": "406619424442d440ea22d45fb01f730a",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.mark.pocketmanager:id/dateText"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1526,
+          384
+        ],
+        [
+          1854,
+          489
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/datePickButton",
+      "checked": false,
+      "text": "2025-10-31",
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 13,
+      "size": "328*105",
+      "signature": "[class]android.widget.Button[resource_id]com.mark.pocketmanager:id/datePickButton[text]2025-10-31[enabled,,]",
+      "view_str": "2b5b3f6c51f74d1834f5b28c75b7a974",
+      "content_free_signature": "[class]android.widget.Button[resource_id]com.mark.pocketmanager:id/datePickButton"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1854,
+          384
+        ],
+        [
+          2129,
+          489
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/timePickButton",
+      "checked": false,
+      "text": "PM 05:07",
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 14,
+      "size": "275*105",
+      "signature": "[class]android.widget.Button[resource_id]com.mark.pocketmanager:id/timePickButton[text]PM 05:07[enabled,,]",
+      "view_str": "d0dd224c3150b963499f8c3f9bf43b97",
+      "content_free_signature": "[class]android.widget.Button[resource_id]com.mark.pocketmanager:id/timePickButton"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          53,
+          535
+        ],
+        [
+          158,
+          601
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/assetText",
+      "checked": false,
+      "text": "\u8cc7\u7522",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 15,
+      "size": "105*66",
+      "signature": "[class]android.widget.TextView[resource_id]com.mark.pocketmanager:id/assetText[text]\u8cc7\u7522[enabled,,]",
+      "view_str": "121ff5eddba4c77ed33318139f74d5a3",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.mark.pocketmanager:id/assetText"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        17
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1473,
+          515
+        ],
+        [
+          2129,
+          620
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/assetPicker",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.Spinner",
+      "scrollable": true,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 5,
+      "temp_id": 16,
+      "size": "656*105",
+      "signature": "[class]android.widget.Spinner[resource_id]com.mark.pocketmanager:id/assetPicker[text]None[enabled,,]",
+      "view_str": "dbfa3f24732b9980b3a7a700fd57ca66",
+      "content_free_signature": "[class]android.widget.Spinner[resource_id]com.mark.pocketmanager:id/assetPicker"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": true,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1473,
+          515
+        ],
+        [
+          2003,
+          620
+        ]
+      ],
+      "resource_id": "android:id/text1",
+      "checked": false,
+      "text": "\u73fe\u91d1",
+      "class": "android.widget.CheckedTextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 16,
+      "temp_id": 17,
+      "size": "530*105",
+      "signature": "[class]android.widget.CheckedTextView[resource_id]android:id/text1[text]\u73fe\u91d1[enabled,,]",
+      "view_str": "b31885dc0c3728732a5cb1dd2a4672ec",
+      "content_free_signature": "[class]android.widget.CheckedTextView[resource_id]android:id/text1"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          53,
+          666
+        ],
+        [
+          158,
+          732
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/categoryText",
+      "checked": false,
+      "text": "\u985e\u5225",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 18,
+      "size": "105*66",
+      "signature": "[class]android.widget.TextView[resource_id]com.mark.pocketmanager:id/categoryText[text]\u985e\u5225[enabled,,]",
+      "view_str": "73f460629feae88cd8ebb444d0888cae",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.mark.pocketmanager:id/categoryText"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        20
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1473,
+          646
+        ],
+        [
+          2129,
+          751
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/categoryPicker",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.Spinner",
+      "scrollable": true,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 5,
+      "temp_id": 19,
+      "size": "656*105",
+      "signature": "[class]android.widget.Spinner[resource_id]com.mark.pocketmanager:id/categoryPicker[text]None[enabled,,]",
+      "view_str": "227d4618b4ea08344da5f84b109a672a",
+      "content_free_signature": "[class]android.widget.Spinner[resource_id]com.mark.pocketmanager:id/categoryPicker"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": true,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1473,
+          646
+        ],
+        [
+          2003,
+          751
+        ]
+      ],
+      "resource_id": "android:id/text1",
+      "checked": false,
+      "text": "\u98df\u7269",
+      "class": "android.widget.CheckedTextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 19,
+      "temp_id": 20,
+      "size": "530*105",
+      "signature": "[class]android.widget.CheckedTextView[resource_id]android:id/text1[text]\u98df\u7269[enabled,,]",
+      "view_str": "c78f50a67a58bd4aacabd36efc90c7e7",
+      "content_free_signature": "[class]android.widget.CheckedTextView[resource_id]android:id/text1"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          53,
+          797
+        ],
+        [
+          158,
+          863
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/amountText",
+      "checked": false,
+      "text": "\u91d1\u984d",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 21,
+      "size": "105*66",
+      "signature": "[class]android.widget.TextView[resource_id]com.mark.pocketmanager:id/amountText[text]\u91d1\u984d[enabled,,]",
+      "view_str": "d84f8b999c1928de87c4060e8e2b15ae",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.mark.pocketmanager:id/amountText"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": true,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1473,
+          777
+        ],
+        [
+          2129,
+          882
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/amountEditor",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.EditText",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 5,
+      "temp_id": 22,
+      "size": "656*105",
+      "signature": "[class]android.widget.EditText[resource_id]com.mark.pocketmanager:id/amountEditor[text]None[enabled,,]",
+      "view_str": "470f248768219eb0bab5e8782d079617",
+      "content_free_signature": "[class]android.widget.EditText[resource_id]com.mark.pocketmanager:id/amountEditor"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          53,
+          928
+        ],
+        [
+          158,
+          994
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/noteText",
+      "checked": false,
+      "text": "\u5167\u5bb9",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 23,
+      "size": "105*66",
+      "signature": "[class]android.widget.TextView[resource_id]com.mark.pocketmanager:id/noteText[text]\u5167\u5bb9[enabled,,]",
+      "view_str": "1a62fd68b3eedd0cead2d2383f9a3aa2",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.mark.pocketmanager:id/noteText"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": true,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1473,
+          908
+        ],
+        [
+          2129,
+          1013
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/noteEditor",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.EditText",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 5,
+      "temp_id": 24,
+      "size": "656*105",
+      "signature": "[class]android.widget.EditText[resource_id]com.mark.pocketmanager:id/noteEditor[text]None[enabled,,]",
+      "view_str": "65198e8a0d04a839bae737d81816650f",
+      "content_free_signature": "[class]android.widget.EditText[resource_id]com.mark.pocketmanager:id/noteEditor"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          26,
+          1066
+        ],
+        [
+          2182,
+          1192
+        ]
+      ],
+      "resource_id": "com.mark.pocketmanager:id/addButton",
+      "checked": false,
+      "text": "\u65b0\u589e",
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 25,
+      "size": "2156*126",
+      "signature": "[class]android.widget.Button[resource_id]com.mark.pocketmanager:id/addButton[text]\u65b0\u589e[enabled,,]",
+      "view_str": "4a3e8f03b16750d50d5f754819743610",
+      "content_free_signature": "[class]android.widget.Button[resource_id]com.mark.pocketmanager:id/addButton"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": false,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          0
+        ],
+        [
+          2208,
+          74
+        ]
+      ],
+      "resource_id": "android:id/statusBarBackground",
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 0,
+      "temp_id": 26,
+      "size": "2208*74",
+      "signature": "[class]android.view.View[resource_id]android:id/statusBarBackground[text]None[enabled,,]",
+      "view_str": "870c7dce81185f783ec1427b1ebc9390",
+      "content_free_signature": "[class]android.view.View[resource_id]android:id/statusBarBackground"
+    },
+    {
+      "package": "com.mark.pocketmanager",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1756
+        ],
+        [
+          2208,
+          1840
+        ]
+      ],
+      "resource_id": "android:id/navigationBarBackground",
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 0,
+      "temp_id": 27,
+      "size": "2208*84",
+      "signature": "[class]android.view.View[resource_id]android:id/navigationBarBackground[text]None[enabled,,]",
+      "view_str": "c96077be46c17483caadadb259eadcf5",
+      "content_free_signature": "[class]android.view.View[resource_id]android:id/navigationBarBackground"
+    }
+  ]
+}

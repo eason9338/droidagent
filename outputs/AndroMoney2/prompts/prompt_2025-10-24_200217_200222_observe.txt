@@ -1,0 +1,58 @@
+
+*** System:
+You are a helpful assistant who can interpret two consecutive Android GUI screens before and after a user's action and explain the result of the action to the user.
+
+*** User:
+Describe the result of the performed GUI action regarding the changes between previous and current screens. 
+
+Guidelines:
+- To describe a widget, use only one important property of the widget. 
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened. 
+- Do not judge fail/pass of the action.
+- There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+
+- Performed GUI Action: Touch on a button that has content_desc "AndroMoney"
+
+- Changes of widgets from the previous page to the current page:
+"""
+--- Previous (HomeAccount)
++++ Current (HomeAccount)
+ a button that has content_desc "Sort"
+ a button that has content_desc "New .."
+ a button that has content_desc "More options"
++a button
++a textview that has text "Search"
++a button
++a button
++a textview that has text "Record"
++a button
++a textview that has text "Budget"
++a button
++a textview that has text "Category"
++a button
++a textview that has text "Report"
++a button
++a textview that has text "Share"
++a button
++a textview that has text "Comment"
++a button
++a button
++a textview that has text "Settings"
++a button
++a textview that has text "Export/Import"
++a button
++a button
++a textview that has text "About Us"
++a button
++a scrollable area that has resource_id "left_drawer_lv"
++a button that has text "AD-FREE"
+ a focused textfield that has text "Account"
+ a textview that has text "Total Assets"
+ a textview that has text "US$ 0.00"
+"""
+
+=== Below is the template for your answer ===
+Action result summary: <Describe in 1~2 sentences.>
+
+*** Assistant:
+Action result summary: After touching the button with content description "AndroMoney," several new buttons and text views appeared on the screen, including a text view labeled "Search" and a button labeled "AD-FREE," indicating that additional features or options are now accessible.

@@ -1,0 +1,52 @@
+
+*** System:
+You are a helpful assistant who can interpret two consecutive Android GUI screens before and after a user's action and explain the result of the action to the user.
+
+*** User:
+Describe the result of the performed GUI action regarding the changes between previous and current screens. 
+
+Guidelines:
+- To describe a widget, use only one important property of the widget. 
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened. 
+- Do not judge fail/pass of the action.
+- There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+
+- Performed GUI Action: Touch on a button that has text "DON'T REMIND"
+
+- Changes of widgets from the previous page to the current page:
+"""
+--- Previous (AddNewRecord)
++++ Current (AddNewRecord)
+-a textview that has text "Tip"
+-a textview that has text "1. Please add the currency first 
+-2. Long press the currency can modify the content of the currency"
+-a button that has text "DON'T REMIND"
+-a button that has text "REMIND NEXT"
++a button that has resource_id "back"
++a textview that has text "Currency"
++a textview that has text "Long press to modify"
++a button that has content_desc "AndroMoney"
++a textview that has text "Same as account"
++a button that has resource_id "bg"
++a textview that has text "USD"
++a textview that has text "US Dollar"
++a button that has resource_id "bg"
++a textview that has text "New .."
++a button that has resource_id "bg"
++a listview that has resource_id "currencylist"
++a button that has text "乾式軸承 耐腐蝕 抗UV 抗面壓"
++a textview that has text "追日太陽能系統 igus 德國ESQM軸承零件25年保固，耐"
++a textview that has text "腐蝕 抗UV 抗面壓 風吹日曬雨淋也不怕"
++a button that has content_desc "追日太陽能系統 igus 德國ESQM軸承零件25年保固，耐 腐蝕 抗UV 抗面壓 風吹日曬雨淋也不怕"
++a button that has text "igus Taiwan 台灣易格斯"
++a button that has text "瞭解詳情"
++a button that has resource_id "cbb"
++a button that has resource_id "abgc"
++a textview that has text "Test Ad"
+"""
+
+=== Below is the template for your answer ===
+Action result summary: <Describe in 1~2 sentences.>
+
+*** Assistant:
+Action result summary: After touching the "DON'T REMIND" button, the screen now includes a new button with the resource_id "back" and additional text views that provide information about currency, indicating a transition to a different context within the application.

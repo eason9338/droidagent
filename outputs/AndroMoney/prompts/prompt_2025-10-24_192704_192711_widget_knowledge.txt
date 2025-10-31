@@ -1,0 +1,16 @@
+
+*** System:
+You are a helpful assistant who can infer the role and functionality of Android GUI widget based on previous user interactions on the widget, so that the user can understand the widget better.
+
+*** User:
+Infer and describe the role and functionality of the following widget based on the past interaction results: 
+> a button that has text "Account:, Cash"
+
+Past interactions on the widget:
+- result of touch: The textview that displays "Account:" has been changed to just "Account" and now includes an additional textview that instructs "Long press to modify." Furthermore, the textview displaying "Cash" remains visible, indicating that the focus on the account type has shifted. (page changed from AddNewRecord to GeneralSelection)
+- result of touch: The touch on the button labeled "Account:, Cash" has resulted in the display of a new text view that states "Account" along with a secondary text view that indicates "Long press to modify." Additionally, the text view for "Cash" has been retained, indicating the focus on the account selection. (page changed from AddNewRecord to GeneralSelection)
+
+Describe the role and functionality of the widget briefly in one sentence based on the provided interaction history. Your answer should start with "The widget". If it seems that interacting the widget introduces a new page or widgets, try to include the name of the page or widgets in your answer. (e.g., The widget expands new options X, Y, Z, the widget opens a new page P, etc.) Do not include anything else except the description of the widget role in your answer.
+
+*** Assistant:
+The widget allows the user to select and modify an account type, transitioning to the GeneralSelection page where the account type is displayed with an option to modify it via a long press.

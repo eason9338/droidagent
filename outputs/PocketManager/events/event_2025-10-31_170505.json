@@ -1,0 +1,37 @@
+{
+  "tag": "2025-10-31_170505",
+  "event": {
+    "event_type": "set_text",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 24,
+      "view_str": "65198e8a0d04a839bae737d81816650f",
+      "widget_type": "EditText",
+      "class": "android.widget.EditText",
+      "resource_id": "noteEditor",
+      "possible_action_types": [
+        "touch",
+        "long_touch",
+        "set_text"
+      ],
+      "bounds": [
+        [
+          1473,
+          908
+        ],
+        [
+          2129,
+          1013
+        ]
+      ]
+    },
+    "text": "Daily commute to university"
+  },
+  "start_state": "17d9e14442532559d7802ad2e1669077",
+  "stop_state": "3c536e87cf4475856cc66dc7dadd3a6f",
+  "event_str": "SetTextEvent(state=17d9e14442532559d7802ad2e1669077, view=65198e8a0d04a839bae737d81816650f(AddOrEditActivity/EditText-), text=Daily commute to university)",
+  "task": "Record a USD 10 transport expense by selecting the \u4ea4\u901a category, entering the amount, and adding a note about the trip.",
+  "view_image_dir": "../outputs/PocketManager/views/view_65198e8a0d04a839bae737d81816650f.png"
+}

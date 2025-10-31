@@ -1,0 +1,4129 @@
+{
+  "tag": "2025-10-24_191651",
+  "state_str": "bd2e1d127dd440df83317624097cd4b3",
+  "state_str_content_free": "435bf5d2cabc68b776216134c9e738bf",
+  "foreground_activity": "com.kpmoney.android/.category.CategorySelectionActivity",
+  "activity_stack": [
+    "com.kpmoney.android/.category.CategorySelectionActivity",
+    "com.kpmoney.android/.addnewrecord.AddNewRecordActivity",
+    "com.kpmoney.android/com.kpmoney.home.HomeRecordActivity"
+  ],
+  "background_services": [
+    "com.google.android.gms/.chimera.PersistentSingleUserInternalApiService",
+    "com.google.android.gms/.ads.identifier.service.AdvertisingIdService",
+    "com.google.android.apps.messaging/com.google.android.ims.service.JibeService",
+    "com.google.android.networkstack.tethering/com.android.networkstack.tethering.TetheringService",
+    "com.google.android.adservices.api/com.android.adservices.measurement.MeasurementService",
+    "com.android.systemui/.keyguard.KeyguardService",
+    "com.google.android.gms/org.chromium.content.app.SandboxedProcessService0",
+    "com.google.android.webview/org.chromium.android_webview.services.MetricsBridgeService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.textclassifier.service.QAiaiTextClassifierService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.superpacks.impl.AiAiSuperpacksService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService",
+    "com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService",
+    "com.google.android.gms/.chimera.PersistentApiService",
+    "com.android.systemui/.wallpapers.ImageWallpaper",
+    "com.google.android.gms/.location.geocode.GeocodeService",
+    "com.android.phone/com.android.internal.telephony.CellularNetworkService",
+    "com.google.android.gms/.chimera.PersistentBoundBrokerService",
+    "com.google.android.gms/.chimera.GmsBoundBrokerService",
+    "com.android.vending/com.google.android.finsky.crossprofile.ProfileStateService",
+    "io.github.ylimit.droidbotapp/.DroidBotIME",
+    "com.google.android.gms/com.google.android.location.fused.FusedLocationService",
+    "com.google.android.gms/.semanticlocation.service.SemanticLocationService",
+    "com.google.android.ext.services/android.ext.services.autofill.InlineSuggestionRenderServiceImpl",
+    "com.google.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl",
+    "com.android.phone/com.android.internal.telephony.data.CellularDataService",
+    "io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService",
+    "com.google.android.apps.nexuslauncher/com.android.launcher3.notification.NotificationListener",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationListenerService",
+    "com.android.systemui/.SystemUIService",
+    "android/.hardware.location.GeofenceHardwareService",
+    "com.android.se/.SecureElementService",
+    "com.google.android.gms/.chimera.PersistentDirectBootAwareApiService",
+    "com.google.android.gms/.chimera.PersistentIntentOperationService",
+    "com.google.android.gms/.geotimezone.GeoTimeZoneService",
+    "com.google.android.gms/com.google.android.location.internal.PendingIntentCallbackService",
+    "com.google.android.gms/com.google.android.location.reporting.service.ReportingAndroidService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService",
+    "com.google.android.bluetooth/com.android.bluetooth.btservice.AdapterService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureService",
+    "com.google.android.gms/com.google.android.location.internal.server.GoogleLocationService",
+    "com.google.android.gms/com.google.android.contextmanager.service.ContextManagerService",
+    "com.android.systemui/.dump.SystemUIAuxiliaryDumpService",
+    "com.google.android.gms/com.google.android.location.network.NetworkLocationService",
+    "com.android.stk/.StkAppService",
+    "com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService",
+    "com.android.server.telecom/.components.TelecomService",
+    "com.google.android.networkstack/com.android.server.NetworkStackService",
+    "com.android.systemui/com.google.android.systemui.power.batteryevent.domain.BatteryEventService",
+    "com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService",
+    "com.android.emulator.multidisplay/.MultiDisplayService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationAssistantService",
+    "com.android.ons/.OpportunisticNetworkService",
+    "com.google.android.gms/.auth.account.authenticator.GoogleAccountAuthenticatorService",
+    "com.google.android.gms/com.google.android.location.internal.server.HardwareArProviderService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService",
+    "com.kpmoney.android/org.chromium.content.app.SandboxedProcessService0",
+    "com.android.phone/.TelephonyDebugService",
+    "com.google.android.gms/.wearable.service.WearableService",
+    "com.google.android.apps.nexuslauncher/com.android.quickstep.TouchInteractionService",
+    "com.google.android.cellbroadcastservice/com.android.cellbroadcastservice.DefaultCellBroadcastService",
+    "com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSearchUiService",
+    "com.google.android.gms/.checkin.CheckinApiService"
+  ],
+  "width": 2208,
+  "height": 1840,
+  "views": [
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        1,
+        103,
+        104
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          0
+        ],
+        [
+          2208,
+          1840
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": -1,
+      "temp_id": 0,
+      "size": "2208*1840",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "180f2fca61a516b2c5b3dd20e74b0569",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        2
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          0
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 0,
+      "temp_id": 1,
+      "size": "2208*1756",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "4f35fe4a1a63d90681edcbfbe1223477",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        3
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          74
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 1,
+      "temp_id": 2,
+      "size": "2208*1682",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "b09a8a1d33826952dd76e337d70c36f3",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        4,
+        5,
+        13
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          74
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/decor_content_parent",
+      "checked": false,
+      "text": null,
+      "class": "android.view.ViewGroup",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 2,
+      "temp_id": 3,
+      "size": "2208*1682",
+      "signature": "[class]android.view.ViewGroup[resource_id]com.kpmoney.android:id/decor_content_parent[text]None[enabled,,]",
+      "view_str": "28fe4c1fe4a0872ae76c00195e7d3cec",
+      "content_free_signature": "[class]android.view.ViewGroup[resource_id]com.kpmoney.android:id/decor_content_parent"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": false,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          74
+        ],
+        [
+          0,
+          74
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 3,
+      "temp_id": 4,
+      "size": "0*0",
+      "signature": "[class]android.view.View[resource_id]None[text]None[enabled,,]",
+      "view_str": "ebe22bf75c595c952d677cf5c8f02205",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        6
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          74
+        ],
+        [
+          2208,
+          242
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/action_bar_container",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 3,
+      "temp_id": 5,
+      "size": "2208*168",
+      "signature": "[class]android.widget.FrameLayout[resource_id]com.kpmoney.android:id/action_bar_container[text]None[enabled,,]",
+      "view_str": "77ecd844ca62da4adc4aad8fdcb90f0d",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]com.kpmoney.android:id/action_bar_container"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 4,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          74
+        ],
+        [
+          2208,
+          242
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/action_bar",
+      "checked": false,
+      "text": null,
+      "class": "android.view.ViewGroup",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 5,
+      "temp_id": 6,
+      "size": "2208*168",
+      "signature": "[class]android.view.ViewGroup[resource_id]com.kpmoney.android:id/action_bar[text]None[enabled,,]",
+      "view_str": "e992f91dabc89637d617f1523d6b1e4e",
+      "content_free_signature": "[class]android.view.ViewGroup[resource_id]com.kpmoney.android:id/action_bar"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "Navigate up",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          21,
+          74
+        ],
+        [
+          168,
+          242
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageButton",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 6,
+      "temp_id": 7,
+      "size": "147*168",
+      "signature": "[class]android.widget.ImageButton[resource_id]None[text]None[enabled,,]",
+      "view_str": "e11a130f083afc4de87a8cb6dc6ea551",
+      "content_free_signature": "[class]android.widget.ImageButton[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          210,
+          94
+        ],
+        [
+          426,
+          165
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "Category",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 6,
+      "temp_id": 8,
+      "size": "216*71",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]Category[enabled,,]",
+      "view_str": "a4c71ee9f6e210d7446a52758e14ae3a",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          210,
+          165
+        ],
+        [
+          606,
+          222
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "Long press to modify",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 6,
+      "temp_id": 9,
+      "size": "396*57",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]Long press to modify[enabled,,]",
+      "view_str": "d00a5d387c051436504d6255279fc91c",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        11,
+        12
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1934,
+          74
+        ],
+        [
+          2187,
+          242
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "androidx.appcompat.widget.LinearLayoutCompat",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 6,
+      "temp_id": 10,
+      "size": "253*168",
+      "signature": "[class]androidx.appcompat.widget.LinearLayoutCompat[resource_id]None[text]None[enabled,,]",
+      "view_str": "9b54f190404acacd0ca89ba1fb001f2b",
+      "content_free_signature": "[class]androidx.appcompat.widget.LinearLayoutCompat[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "Sort",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1934,
+          95
+        ],
+        [
+          2082,
+          221
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/menu_sort",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 10,
+      "temp_id": 11,
+      "size": "148*126",
+      "signature": "[class]android.widget.Button[resource_id]com.kpmoney.android:id/menu_sort[text]None[enabled,,]",
+      "view_str": "e54fbee48fc76615584dfdb73a77a404",
+      "content_free_signature": "[class]android.widget.Button[resource_id]com.kpmoney.android:id/menu_sort"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "More options",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          2082,
+          95
+        ],
+        [
+          2187,
+          221
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 10,
+      "temp_id": 12,
+      "size": "105*126",
+      "signature": "[class]android.widget.ImageView[resource_id]None[text]None[enabled,,]",
+      "view_str": "b71f549875d9fc6438798ab0959b245e",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        14
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          242
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": "android:id/content",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 3,
+      "temp_id": 13,
+      "size": "2208*1514",
+      "signature": "[class]android.widget.FrameLayout[resource_id]android:id/content[text]None[enabled,,]",
+      "view_str": "84ce59c71eac1febee8cbf67947daed6",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]android:id/content"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        15,
+        75
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          242
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 13,
+      "temp_id": 14,
+      "size": "2208*1514",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "3606353d4e296a21aa012a3e01101caf",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        16,
+        57,
+        58
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          242
+        ],
+        [
+          2208,
+          1625
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 14,
+      "temp_id": 15,
+      "size": "2208*1383",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "67d2f6e2ac19ee6b268c5ffc95bc5aa7",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 10,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        17,
+        21,
+        25,
+        29,
+        33,
+        37,
+        41,
+        45,
+        49,
+        53
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          242
+        ],
+        [
+          1211,
+          1625
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_category_lv",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ListView",
+      "scrollable": true,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 15,
+      "temp_id": 16,
+      "size": "1211*1383",
+      "signature": "[class]android.widget.ListView[resource_id]com.kpmoney.android:id/category_selection_category_lv[text]None[enabled,,]",
+      "view_str": "0dff3d75ac6b2f16b096f5d16f21a8fc",
+      "content_free_signature": "[class]android.widget.ListView[resource_id]com.kpmoney.android:id/category_selection_category_lv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        18,
+        20
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          242
+        ],
+        [
+          1211,
+          339
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/bg",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 16,
+      "temp_id": 17,
+      "size": "1211*97",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg[text]None[enabled,,]",
+      "view_str": "4a1753a77ca799176287cdcc0f019689",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        19
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          16,
+          242
+        ],
+        [
+          1195,
+          293
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 17,
+      "temp_id": 18,
+      "size": "1179*51",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "14ae13f1ff9272b8900cb90b170807f6",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          29,
+          242
+        ],
+        [
+          271,
+          293
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_name_tv",
+      "checked": false,
+      "text": "Usual Options",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 18,
+      "temp_id": 19,
+      "size": "242*51",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv[text]Usual Options[enabled,,]",
+      "view_str": "05718f4e53c2f6248d52e49a5d1a464c",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1082,
+          242
+        ],
+        [
+          1174,
+          313
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_left_iv",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 17,
+      "temp_id": 20,
+      "size": "92*71",
+      "signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv[text]None[enabled,,]",
+      "view_str": "668bd386dacbabdf72cf99bd655cad53",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        22,
+        24
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          342
+        ],
+        [
+          1211,
+          486
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/bg",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 16,
+      "temp_id": 21,
+      "size": "1211*144",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg[text]None[enabled,,]",
+      "view_str": "4a1753a77ca799176287cdcc0f019689",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        23
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          16,
+          387
+        ],
+        [
+          1195,
+          440
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 21,
+      "temp_id": 22,
+      "size": "1179*53",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "741fb01d451a68b6b01b236b8c8aa6bc",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          29,
+          387
+        ],
+        [
+          117,
+          440
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_name_tv",
+      "checked": false,
+      "text": "Food",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 22,
+      "temp_id": 23,
+      "size": "88*53",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv[text]Food[enabled,,]",
+      "view_str": "7d182f96f3daa7daae6c49be9ef4c128",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1082,
+          368
+        ],
+        [
+          1174,
+          460
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_left_iv",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 21,
+      "temp_id": 24,
+      "size": "92*92",
+      "signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv[text]None[enabled,,]",
+      "view_str": "668bd386dacbabdf72cf99bd655cad53",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        26,
+        28
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          489
+        ],
+        [
+          1211,
+          633
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/bg",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 16,
+      "temp_id": 25,
+      "size": "1211*144",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg[text]None[enabled,,]",
+      "view_str": "4a1753a77ca799176287cdcc0f019689",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        27
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          16,
+          534
+        ],
+        [
+          1195,
+          587
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 25,
+      "temp_id": 26,
+      "size": "1179*53",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "c567051bf1ac872c6b4f3c31bb096323",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          29,
+          534
+        ],
+        [
+          307,
+          587
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_name_tv",
+      "checked": false,
+      "text": "Clothing/Beauty",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 26,
+      "temp_id": 27,
+      "size": "278*53",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv[text]Clothing/Beauty[enabled,,]",
+      "view_str": "ed7ba97cd88d457a148c0e3edd4a6ed8",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1082,
+          515
+        ],
+        [
+          1174,
+          607
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_left_iv",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 25,
+      "temp_id": 28,
+      "size": "92*92",
+      "signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv[text]None[enabled,,]",
+      "view_str": "668bd386dacbabdf72cf99bd655cad53",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        30,
+        32
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          636
+        ],
+        [
+          1211,
+          780
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/bg",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 16,
+      "temp_id": 29,
+      "size": "1211*144",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg[text]None[enabled,,]",
+      "view_str": "4a1753a77ca799176287cdcc0f019689",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        31
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          16,
+          681
+        ],
+        [
+          1195,
+          734
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 29,
+      "temp_id": 30,
+      "size": "1179*53",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "eeaf4647f8a9014d750c7d5f256cd0f8",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          29,
+          681
+        ],
+        [
+          131,
+          734
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_name_tv",
+      "checked": false,
+      "text": "Living",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 30,
+      "temp_id": 31,
+      "size": "102*53",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv[text]Living[enabled,,]",
+      "view_str": "087b055ed1848edfc5c1d68513f17e7a",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1082,
+          662
+        ],
+        [
+          1174,
+          754
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_left_iv",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 29,
+      "temp_id": 32,
+      "size": "92*92",
+      "signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv[text]None[enabled,,]",
+      "view_str": "668bd386dacbabdf72cf99bd655cad53",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        34,
+        36
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          783
+        ],
+        [
+          1211,
+          927
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/bg",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 16,
+      "temp_id": 33,
+      "size": "1211*144",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg[text]None[enabled,,]",
+      "view_str": "4a1753a77ca799176287cdcc0f019689",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        35
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          16,
+          828
+        ],
+        [
+          1195,
+          881
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 33,
+      "temp_id": 34,
+      "size": "1179*53",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "a39fa9c05f91279eae586cc779ad9501",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          29,
+          828
+        ],
+        [
+          284,
+          881
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_name_tv",
+      "checked": false,
+      "text": "Transportation",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 34,
+      "temp_id": 35,
+      "size": "255*53",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv[text]Transportation[enabled,,]",
+      "view_str": "32a1c84a81753a50767ab69f82c4b466",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1082,
+          809
+        ],
+        [
+          1174,
+          901
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_left_iv",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 33,
+      "temp_id": 36,
+      "size": "92*92",
+      "signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv[text]None[enabled,,]",
+      "view_str": "668bd386dacbabdf72cf99bd655cad53",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        38,
+        40
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          930
+        ],
+        [
+          1211,
+          1074
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/bg",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 16,
+      "temp_id": 37,
+      "size": "1211*144",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg[text]None[enabled,,]",
+      "view_str": "4a1753a77ca799176287cdcc0f019689",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        39
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          16,
+          975
+        ],
+        [
+          1195,
+          1028
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 37,
+      "temp_id": 38,
+      "size": "1179*53",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "e34a9e8f55d5c3c7888316257f751f25",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          29,
+          975
+        ],
+        [
+          202,
+          1028
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_name_tv",
+      "checked": false,
+      "text": "Education",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 38,
+      "temp_id": 39,
+      "size": "173*53",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv[text]Education[enabled,,]",
+      "view_str": "9a7902f7d71b99b45f6fef8a8a933546",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1082,
+          956
+        ],
+        [
+          1174,
+          1048
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_left_iv",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 37,
+      "temp_id": 40,
+      "size": "92*92",
+      "signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv[text]None[enabled,,]",
+      "view_str": "668bd386dacbabdf72cf99bd655cad53",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        42,
+        44
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1077
+        ],
+        [
+          1211,
+          1221
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/bg",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 16,
+      "temp_id": 41,
+      "size": "1211*144",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg[text]None[enabled,,]",
+      "view_str": "4a1753a77ca799176287cdcc0f019689",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        43
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          16,
+          1122
+        ],
+        [
+          1195,
+          1175
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 41,
+      "temp_id": 42,
+      "size": "1179*53",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "eb5775976b992d3212200669f98fb08b",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          29,
+          1122
+        ],
+        [
+          276,
+          1175
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_name_tv",
+      "checked": false,
+      "text": "Entertainment",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 42,
+      "temp_id": 43,
+      "size": "247*53",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv[text]Entertainment[enabled,,]",
+      "view_str": "ef5e52068f35da47d14017b77f4cd3b8",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1082,
+          1103
+        ],
+        [
+          1174,
+          1195
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_left_iv",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 41,
+      "temp_id": 44,
+      "size": "92*92",
+      "signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv[text]None[enabled,,]",
+      "view_str": "668bd386dacbabdf72cf99bd655cad53",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        46,
+        48
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1224
+        ],
+        [
+          1211,
+          1368
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/bg",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 16,
+      "temp_id": 45,
+      "size": "1211*144",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg[text]None[enabled,,]",
+      "view_str": "4a1753a77ca799176287cdcc0f019689",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        47
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          16,
+          1269
+        ],
+        [
+          1195,
+          1322
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 45,
+      "temp_id": 46,
+      "size": "1179*53",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "46e2bb33f202b70cf8e014abfd594aef",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          29,
+          1269
+        ],
+        [
+          239,
+          1322
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_name_tv",
+      "checked": false,
+      "text": "Personal 3C",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 46,
+      "temp_id": 47,
+      "size": "210*53",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv[text]Personal 3C[enabled,,]",
+      "view_str": "8d71489b8f5c82eb685e7d9de5f071da",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1082,
+          1250
+        ],
+        [
+          1174,
+          1342
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_left_iv",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 45,
+      "temp_id": 48,
+      "size": "92*92",
+      "signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv[text]None[enabled,,]",
+      "view_str": "668bd386dacbabdf72cf99bd655cad53",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        50,
+        52
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1371
+        ],
+        [
+          1211,
+          1515
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/bg",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 16,
+      "temp_id": 49,
+      "size": "1211*144",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg[text]None[enabled,,]",
+      "view_str": "4a1753a77ca799176287cdcc0f019689",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        51
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          16,
+          1416
+        ],
+        [
+          1195,
+          1469
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 49,
+      "temp_id": 50,
+      "size": "1179*53",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "b2235cc684c4565bf62b8d15e22291ef",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          29,
+          1416
+        ],
+        [
+          243,
+          1469
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_name_tv",
+      "checked": false,
+      "text": "Publications",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 50,
+      "temp_id": 51,
+      "size": "214*53",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv[text]Publications[enabled,,]",
+      "view_str": "257563fe96c7223a82ca2f55cf215549",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1082,
+          1397
+        ],
+        [
+          1174,
+          1489
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_left_iv",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 49,
+      "temp_id": 52,
+      "size": "92*92",
+      "signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv[text]None[enabled,,]",
+      "view_str": "668bd386dacbabdf72cf99bd655cad53",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        54,
+        56
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1518
+        ],
+        [
+          1211,
+          1625
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/bg",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 16,
+      "temp_id": 53,
+      "size": "1211*107",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg[text]None[enabled,,]",
+      "view_str": "4a1753a77ca799176287cdcc0f019689",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.kpmoney.android:id/bg"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        55
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          16,
+          1563
+        ],
+        [
+          1195,
+          1616
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 53,
+      "temp_id": 54,
+      "size": "1179*53",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "13dab37215c7460a2075d757bce0171e",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          29,
+          1563
+        ],
+        [
+          208,
+          1616
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_name_tv",
+      "checked": false,
+      "text": "Car/Motor",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 54,
+      "temp_id": 55,
+      "size": "179*53",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv[text]Car/Motor[enabled,,]",
+      "view_str": "f1f34a169595f6bb4df6f1b8b45b13dd",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_name_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1082,
+          1544
+        ],
+        [
+          1174,
+          1625
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_left_iv",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 53,
+      "temp_id": 56,
+      "size": "92*81",
+      "signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv[text]None[enabled,,]",
+      "view_str": "668bd386dacbabdf72cf99bd655cad53",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.kpmoney.android:id/category_selection_left_iv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1211,
+          242
+        ],
+        [
+          1216,
+          1625
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 15,
+      "temp_id": 57,
+      "size": "5*1383",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "c1baf23f5b2dbf11e446d8e895289e94",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 8,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        59,
+        61,
+        63,
+        65,
+        67,
+        69,
+        71,
+        73
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1216,
+          242
+        ],
+        [
+          2208,
+          1625
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_subcategory_lv",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ListView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 15,
+      "temp_id": 58,
+      "size": "992*1383",
+      "signature": "[class]android.widget.ListView[resource_id]com.kpmoney.android:id/category_selection_subcategory_lv[text]None[enabled,,]",
+      "view_str": "c7ba1cf6250b639bbc26bc2484ab10a4",
+      "content_free_signature": "[class]android.widget.ListView[resource_id]com.kpmoney.android:id/category_selection_subcategory_lv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        60
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1216,
+          242
+        ],
+        [
+          2208,
+          387
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 58,
+      "temp_id": 59,
+      "size": "992*145",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "cf624ece9c912d8225b0a92e6b86fb71",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1245,
+          251
+        ],
+        [
+          2192,
+          377
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_right_subcategory_tv",
+      "checked": false,
+      "text": "Breakfast",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 59,
+      "temp_id": 60,
+      "size": "947*126",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv[text]Breakfast[enabled,,]",
+      "view_str": "867a8e1cba7066fd9fdc0a8f146c55c6",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        62
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1216,
+          390
+        ],
+        [
+          2208,
+          535
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 58,
+      "temp_id": 61,
+      "size": "992*145",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "a76b180e64ae12773354240fba8c6ee1",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1245,
+          399
+        ],
+        [
+          2192,
+          525
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_right_subcategory_tv",
+      "checked": false,
+      "text": "Lunch",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 61,
+      "temp_id": 62,
+      "size": "947*126",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv[text]Lunch[enabled,,]",
+      "view_str": "e7b6878ee847825f8b6d5fdb50530fc2",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        64
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1216,
+          538
+        ],
+        [
+          2208,
+          683
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 58,
+      "temp_id": 63,
+      "size": "992*145",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "0cfb106a2b95ec26b08930f002331eac",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1245,
+          547
+        ],
+        [
+          2192,
+          673
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_right_subcategory_tv",
+      "checked": false,
+      "text": "Dinner",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 63,
+      "temp_id": 64,
+      "size": "947*126",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv[text]Dinner[enabled,,]",
+      "view_str": "3709921284eb09afd9e41823d2331325",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        66
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1216,
+          686
+        ],
+        [
+          2208,
+          831
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 58,
+      "temp_id": 65,
+      "size": "992*145",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "feed09b5ee601c0df008310ded9191e7",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1245,
+          695
+        ],
+        [
+          2192,
+          821
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_right_subcategory_tv",
+      "checked": false,
+      "text": "Mid-Night Snack",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 65,
+      "temp_id": 66,
+      "size": "947*126",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv[text]Mid-Night Snack[enabled,,]",
+      "view_str": "66961a320ef2209c2815033099eb317b",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        68
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1216,
+          834
+        ],
+        [
+          2208,
+          979
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 58,
+      "temp_id": 67,
+      "size": "992*145",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "619968b6d1b727968844428fde7892ed",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1245,
+          843
+        ],
+        [
+          2192,
+          969
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_right_subcategory_tv",
+      "checked": false,
+      "text": "Refreshment",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 67,
+      "temp_id": 68,
+      "size": "947*126",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv[text]Refreshment[enabled,,]",
+      "view_str": "ccbd310128dc7dd17fe4641d2356b481",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        70
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1216,
+          982
+        ],
+        [
+          2208,
+          1127
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 58,
+      "temp_id": 69,
+      "size": "992*145",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "29a1a10beabd85abcc164c2b82bbd67a",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1245,
+          991
+        ],
+        [
+          2192,
+          1117
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_right_subcategory_tv",
+      "checked": false,
+      "text": "Fruit",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 69,
+      "temp_id": 70,
+      "size": "947*126",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv[text]Fruit[enabled,,]",
+      "view_str": "9c56c53180b3115e34578991403ecd20",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        72
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1216,
+          1130
+        ],
+        [
+          2208,
+          1275
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 58,
+      "temp_id": 71,
+      "size": "992*145",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "ed3933912ae752c77d6aca32386640c0",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1245,
+          1139
+        ],
+        [
+          2192,
+          1265
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_right_subcategory_tv",
+      "checked": false,
+      "text": "Ingredients",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 71,
+      "temp_id": 72,
+      "size": "947*126",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv[text]Ingredients[enabled,,]",
+      "view_str": "a94de31f993886b88cc05c47f47362f2",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        74
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1216,
+          1278
+        ],
+        [
+          2208,
+          1423
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 58,
+      "temp_id": 73,
+      "size": "992*145",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "64b54839ffb184dab8ea7d3def0fbac4",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1245,
+          1287
+        ],
+        [
+          2192,
+          1413
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/category_selection_right_subcategory_tv",
+      "checked": false,
+      "text": "Add ...",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 73,
+      "temp_id": 74,
+      "size": "947*126",
+      "signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv[text]Add ...[enabled,,]",
+      "view_str": "21b5bd7b95eecde1656f9f4d05106476",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.kpmoney.android:id/category_selection_right_subcategory_tv"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        76
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1625
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": "com.kpmoney.android:id/ad_layout",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 14,
+      "temp_id": 75,
+      "size": "2208*131",
+      "signature": "[class]android.widget.LinearLayout[resource_id]com.kpmoney.android:id/ad_layout[text]None[enabled,,]",
+      "view_str": "d18183a1e99e84aad92edbc93269ea55",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]com.kpmoney.android:id/ad_layout"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        77
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1625
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.view.ViewGroup",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 75,
+      "temp_id": 76,
+      "size": "2208*131",
+      "signature": "[class]android.view.ViewGroup[resource_id]None[text]None[enabled,,]",
+      "view_str": "3359a87fa4ea681852cf6adea6ed8f93",
+      "content_free_signature": "[class]android.view.ViewGroup[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        78
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1625
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 76,
+      "temp_id": 77,
+      "size": "2208*131",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "40f8addf1e68d757bf0eae929537bd4d",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        79
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1625
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 77,
+      "temp_id": 78,
+      "size": "2208*131",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "df14bcf20223e878f5b149b6e17d59c8",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        80,
+        102
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1625
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 78,
+      "temp_id": 79,
+      "size": "2208*131",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "a270dfe6e9adcff2e0576a69313233ba",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        81
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1625
+        ],
+        [
+          2208,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.webkit.WebView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 79,
+      "temp_id": 80,
+      "size": "2208*131",
+      "signature": "[class]android.webkit.WebView[resource_id]None[text]None[enabled,,]",
+      "view_str": "1acc22572c18f790052806f4ba323a95",
+      "content_free_signature": "[class]android.webkit.WebView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        82,
+        94,
+        101
+      ],
+      "focused": true,
+      "bounds": [
+        [
+          0,
+          1625
+        ],
+        [
+          2210,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.webkit.WebView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 80,
+      "temp_id": 81,
+      "size": "2210*131",
+      "signature": "[class]android.webkit.WebView[resource_id]None[text][enabled,,]",
+      "view_str": "7f862a43bfcfdfa608be15da113eea6d",
+      "content_free_signature": "[class]android.webkit.WebView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        83,
+        84
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1625
+        ],
+        [
+          2210,
+          1756
+        ]
+      ],
+      "resource_id": "mys-wrapper",
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 81,
+      "temp_id": 82,
+      "size": "2210*131",
+      "signature": "[class]android.view.View[resource_id]mys-wrapper[text][enabled,,]",
+      "view_str": "7377822947583d01caf3060a2249cae3",
+      "content_free_signature": "[class]android.view.View[resource_id]mys-wrapper"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1625
+        ],
+        [
+          2210,
+          1756
+        ]
+      ],
+      "resource_id": "mys-overlay",
+      "checked": false,
+      "text": "",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 82,
+      "temp_id": 83,
+      "size": "2210*131",
+      "signature": "[class]android.widget.TextView[resource_id]mys-overlay[text][enabled,,]",
+      "view_str": "66e9390821d53271ee285ce5e3f88009",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]mys-overlay"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        85
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1625
+        ],
+        [
+          2210,
+          1756
+        ]
+      ],
+      "resource_id": "mys-content",
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 82,
+      "temp_id": 84,
+      "size": "2210*131",
+      "signature": "[class]android.view.View[resource_id]mys-content[text][enabled,,]",
+      "view_str": "338784f843a4801c4a500124f51f381e",
+      "content_free_signature": "[class]android.view.View[resource_id]mys-content"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        86
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1625
+        ],
+        [
+          2210,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 84,
+      "temp_id": 85,
+      "size": "2210*131",
+      "signature": "[class]android.view.View[resource_id]None[text][enabled,,]",
+      "view_str": "0c5e7a1e41cf1647d79b5e41426cf62e",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 4,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        87,
+        88,
+        89,
+        92
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1625
+        ],
+        [
+          2210,
+          1756
+        ]
+      ],
+      "resource_id": "bannerAWithoutBody",
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 85,
+      "temp_id": 86,
+      "size": "2210*131",
+      "signature": "[class]android.view.View[resource_id]bannerAWithoutBody[text][enabled,,]",
+      "view_str": "ed66cb53291850fe35a55b63fccd1ba7",
+      "content_free_signature": "[class]android.view.View[resource_id]bannerAWithoutBody"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "photovoltaics%3Futm_term%3D%26utm_campaign%3D%26utm_source%3Dadwords%26utm_medium%3Dppc%26hsa_acc%3D4462284072%26hsa_cam%3D21468934043%26hsa_grp%3D173334005708%26hsa_ad%3D705742937913%26hsa_src%3Dd%26hsa_tgt%3D%26hsa_kw%3D%26hsa_mt%3D%26hsa_net%3Dadwords%26hsa_ver%3D3%26gad_source%3D5%26gad_campaignid%3D21468934043",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1625
+        ],
+        [
+          252,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 86,
+      "temp_id": 87,
+      "size": "252*131",
+      "signature": "[class]android.view.View[resource_id]None[text]None[enabled,,]",
+      "view_str": "9e36aefd25841b40d0399b17707f1257",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "photovoltaics%3Futm_term%3D%26utm_campaign%3D%26utm_source%3Dadwords%26utm_medium%3Dppc%26hsa_acc%3D4462284072%26hsa_cam%3D21468934043%26hsa_grp%3D173334005708%26hsa_ad%3D705742937913%26hsa_src%3Dd%26hsa_tgt%3D%26hsa_kw%3D%26hsa_mt%3D%26hsa_net%3Dadwords%26hsa_ver%3D3%26gad_source%3D5%26gad_campaignid%3D21468934043",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          362,
+          1653
+        ],
+        [
+          435,
+          1727
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 86,
+      "temp_id": 88,
+      "size": "73*74",
+      "signature": "[class]android.view.View[resource_id]None[text]None[enabled,,]",
+      "view_str": "9e36aefd25841b40d0399b17707f1257",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        90
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          546,
+          1638
+        ],
+        [
+          1653,
+          1743
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 86,
+      "temp_id": 89,
+      "size": "1107*105",
+      "signature": "[class]android.view.View[resource_id]None[text][enabled,,]",
+      "view_str": "ea9946c64a0bd2dd69aa1db70a5de58b",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "\u4e7e\u5f0f\u8ef8\u627f \u8010\u8150\u8755 \u6297UV \u6297\u9762\u58d3",
+      "children": [
+        91
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          546,
+          1643
+        ],
+        [
+          1577,
+          1737
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 89,
+      "temp_id": 90,
+      "size": "1031*94",
+      "signature": "[class]android.view.View[resource_id]None[text]None[enabled,,]",
+      "view_str": "de2baab5ed570f98fd6861d3a6c59757",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          546,
+          1643
+        ],
+        [
+          1577,
+          1737
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "\u4e7e\u5f0f\u8ef8\u627f \u8010\u8150\u8755 \u6297UV \u6297\u9762\u58d3",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 90,
+      "temp_id": 91,
+      "size": "1031*94",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]\u4e7e\u5f0f\u8ef8\u627f \u8010\u8150\u8755 \u6297UV \u6297\u9762\u58d3[enabled,,]",
+      "view_str": "3ac83479a944c4eb85f3bc0f940a68c0",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "\u77ad\u89e3\u8a73\u60c5",
+      "children": [
+        93
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1719,
+          1661
+        ],
+        [
+          2121,
+          1719
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 86,
+      "temp_id": 92,
+      "size": "402*58",
+      "signature": "[class]android.view.View[resource_id]None[text]None[enabled,,]",
+      "view_str": "dcdd6741043a8e8aad59afbaa73a09d5",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1813,
+          1635
+        ],
+        [
+          2026,
+          1743
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "\u77ad\u89e3\u8a73\u60c5",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 92,
+      "temp_id": 93,
+      "size": "213*108",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]\u77ad\u89e3\u8a73\u60c5[enabled,,]",
+      "view_str": "214ffc77b7cf1f0a8ea291219ad77d7a",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        95
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          2102,
+          1625
+        ],
+        [
+          2210,
+          1693
+        ]
+      ],
+      "resource_id": "abgcp",
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 81,
+      "temp_id": 94,
+      "size": "108*68",
+      "signature": "[class]android.view.View[resource_id]abgcp[text][enabled,,]",
+      "view_str": "0b8a781620397863bc460d0786596fa5",
+      "content_free_signature": "[class]android.view.View[resource_id]abgcp"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        96,
+        100
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          2126,
+          1625
+        ],
+        [
+          2210,
+          1667
+        ]
+      ],
+      "resource_id": "abgc",
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 94,
+      "temp_id": 95,
+      "size": "84*42",
+      "signature": "[class]android.view.View[resource_id]abgc[text][enabled,,]",
+      "view_str": "05e70966fd3568a7794585822de38f07",
+      "content_free_signature": "[class]android.view.View[resource_id]abgc"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        97
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          2126,
+          1625
+        ],
+        [
+          2168,
+          1667
+        ]
+      ],
+      "resource_id": "abgb",
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 95,
+      "temp_id": 96,
+      "size": "42*42",
+      "signature": "[class]android.view.View[resource_id]abgb[text][enabled,,]",
+      "view_str": "1d11c0056c2023bff61189442ec5c4b6",
+      "content_free_signature": "[class]android.view.View[resource_id]abgb"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        98
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          2126,
+          1625
+        ],
+        [
+          2168,
+          1667
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 96,
+      "temp_id": 97,
+      "size": "42*42",
+      "signature": "[class]android.view.View[resource_id]None[text][enabled,,]",
+      "view_str": "be39b418570f087cc35797665eccf6db",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        99
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          2126,
+          1625
+        ],
+        [
+          2168,
+          1667
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 97,
+      "temp_id": 98,
+      "size": "42*42",
+      "signature": "[class]android.view.View[resource_id]None[text][enabled,,]",
+      "view_str": "2b35fdb9dfd3f20e4b197ff6a0816ec8",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          2126,
+          1625
+        ],
+        [
+          2168,
+          1667
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.widget.Image",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 98,
+      "temp_id": 99,
+      "size": "42*42",
+      "signature": "[class]android.widget.Image[resource_id]None[text][enabled,,]",
+      "view_str": "d5d0007af4a68c877eb5843aeb21c84c",
+      "content_free_signature": "[class]android.widget.Image[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          2165,
+          1625
+        ],
+        [
+          2210,
+          1667
+        ]
+      ],
+      "resource_id": "cbb",
+      "checked": false,
+      "text": "",
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 95,
+      "temp_id": 100,
+      "size": "45*42",
+      "signature": "[class]android.widget.Button[resource_id]cbb[text][enabled,,]",
+      "view_str": "98ff80f3a1771563d0b2536d53b854a0",
+      "content_free_signature": "[class]android.widget.Button[resource_id]cbb"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1625
+        ],
+        [
+          2210,
+          1756
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 81,
+      "temp_id": 101,
+      "size": "2210*131",
+      "signature": "[class]android.widget.TextView[resource_id]None[text][enabled,,]",
+      "view_str": "1097dbc746fa1b44a00fe7edce059cf7",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1032,
+          1625
+        ],
+        [
+          1175,
+          1678
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "Test Ad",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 79,
+      "temp_id": 102,
+      "size": "143*53",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]Test Ad[enabled,,]",
+      "view_str": "ceec59a0664257b3b4edbb8a5e2aa03a",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": false,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          0
+        ],
+        [
+          2208,
+          74
+        ]
+      ],
+      "resource_id": "android:id/statusBarBackground",
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 0,
+      "temp_id": 103,
+      "size": "2208*74",
+      "signature": "[class]android.view.View[resource_id]android:id/statusBarBackground[text]None[enabled,,]",
+      "view_str": "bdd199e0ebfd9038083f8c12eefc1f32",
+      "content_free_signature": "[class]android.view.View[resource_id]android:id/statusBarBackground"
+    },
+    {
+      "package": "com.kpmoney.android",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          1756
+        ],
+        [
+          2208,
+          1840
+        ]
+      ],
+      "resource_id": "android:id/navigationBarBackground",
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 0,
+      "temp_id": 104,
+      "size": "2208*84",
+      "signature": "[class]android.view.View[resource_id]android:id/navigationBarBackground[text]None[enabled,,]",
+      "view_str": "fc0a62590d5dce91a513c851169ab68a",
+      "content_free_signature": "[class]android.view.View[resource_id]android:id/navigationBarBackground"
+    }
+  ]
+}

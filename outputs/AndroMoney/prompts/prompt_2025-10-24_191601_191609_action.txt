@@ -1,0 +1,225 @@
+
+*** System:
+You are a helpful assistant to guide a user named Jade Green to select an appropriate GUI action to accomplish a task on an Android mobile application named AndroMoney.
+
+The profile of Jade Green is as follows:
+(The username and password is what Jade Green generally uses for their accounts.)
+- name: Jade Green
+- phone: 081-827-7650
+- email: anony1017mous@gmail.com
+- username: tester.green
+- password: green1029*
+- date_of_birth: 1997-10-29
+- age: 25
+- self_introduction: I am a 25-year-old graduate student studying computer science. I only want to use the basic function of the app, like record income and expense
+
+Jade Green can perform the following types of actions:
+- Scroll on a scrollable widget
+- Touch on a clickable widget
+- Long touch on a long-clickable widget
+- Fill in an editable widget
+- Navigate back by pressing the back button
+or end the task if the task is already completed.
+
+*** User:
+My name is Jade Green and I am using an application named AndroMoney to accomplish the following task: 
+* Task: Add a new expense record. (The task is known to be completed when the expense record has been successfully saved)
+
+I'm currently on the NexusLauncher page. I plan to open the AndroMoney app and look for an option to add a new expense record, allowing me to familiarize myself with the app's functionality. What should be the first action?
+
+*** Assistant:
+Touch on a button that has text "AndroMoney"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a button that has text "AndroMoney"
+
+*** User:
+I performed the action, and as a result, the button labeled "AndroMoney" has changed from displaying text to having a content description, indicating a shift in focus to the application's home record interface. Additionally, new widgets such as a dropdown field for "Day" and various buttons related to financial management have been introduced on the current screen. (page changed from AboutUs to HomeRecord). What should be the next action?
+
+This time, I'll give you the full content of the current page as follows (I organized the page content as a hierarchical structure):
+```json
+{
+  page_name: HomeRecord,
+  children: [
+    {
+      ID: 7,
+      widget_type: ImageButton,
+      content_description: AndroMoney,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 8,
+      widget_type: Spinner,
+      text: Day,
+      possible_action_types: [
+        touch,
+        long_touch,
+        scroll
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 12,
+      widget_type: Button,
+      content_description: Sync database,
+      resource_id: menu_sync,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 13,
+      widget_type: ImageView,
+      content_description: More options,
+      possible_action_types: [
+        touch,
+        long_touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 19,
+      widget_type: ImageView,
+      resource_id: previous_month,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 20,
+      widget_type: TextView,
+      text: 10/24/2025 (Fri)[NEWLINE]US$ 0.00,
+      possible_action_types: [
+        touch,
+        long_touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 21,
+      widget_type: ImageView,
+      resource_id: next_month,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: TextView,
+      text: Expense,
+      state: [
+        selected
+      ]
+    },
+    {
+      ID: 27,
+      widget_type: LinearLayout,
+      text: Cash Flow,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 29,
+      widget_type: LinearLayout,
+      text: Budget,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 31,
+      widget_type: LinearLayout,
+      text: Account,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 33,
+      widget_type: ViewPager,
+      resource_id: main_view_fragment_summary_vp,
+      possible_action_types: [
+        scroll
+      ],
+      text: [
+        Expense,
+        US$ 0.00,
+        Daily Expense,
+        US$ 0.00,
+        Top Expense,
+        No record
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 49,
+      widget_type: ViewPager,
+      resource_id: infinitePageView1,
+      possible_action_types: [
+        scroll
+      ],
+      num_prev_actions: 0,
+      children: [
+        {
+          ID: 67,
+          widget_type: RelativeLayout,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        }
+      ]
+    },
+    {
+      ID: 90,
+      widget_type: ImageButton,
+      resource_id: fab,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    }
+  ]
+}
+```
+
+Guideline for selecting the next action:
+- Note that `num_prev_actions` property means the number of times the widget has been interacted with so far.
+- Note that `widget_role_inference` property means the role of the widget inferred by previous actions. Use this property to infer what the widget is used for. If the widget has not been interacted yet, `widget_role_inference` property is not included in the widget dictionary.
+- When I am stuck, you might guide me to explore a new widget that has not been used and I don't know its role yet.
+- I don't want to do the same actions repeatedly except it is clearly needed for the task (e.g., navigating back to the first page of the app), so guide me to perform effective actions to complete the task.
+
+Recall that my current task is: Add a new expense record.
+Select the next suitable action to perform, or end the task if the task is already completed.
+
+This time, I am going to provide a template for your output to let you think about my next action step by step. Fill out the <...> parts in the template with your own words. Do not include anything else in your answer except the text to fill out the template. Preserve the formatting and overall template.
+
+=== Below is the template for your answer ===
+1. Summary of my previous interactions for the task: <1~2 sentences according to the task execution history and current app state. Reflect criticizer's feedback if I mentioned any. Be careful not to include any actions that haven't been performed yet>
+2. Description of the current app state: <1~2 sentences, briefly describe in one line according to the hierarchical structure I provided above>
+3. Inference on the remaining steps needed to complete the task: <1~2 sentences according to the task execution history and current app state. Do not immediately judge the next action here>
+4. Reasoning for the next action: <1 sentence reasoning the most logical action to take next on the current state (or justification for ending the task). Refer to the guideline above>
+
+*** Assistant:
+1. Summary of my previous interactions for the task: I have opened the AndroMoney app and navigated to the HomeRecord page, where I see options related to financial management. I am ready to add a new expense record.
+2. Description of the current app state: The HomeRecord page displays various widgets, including options for Cash Flow, Budget, and Account, along with an "Expense" section that is currently selected.
+3. Inference on the remaining steps needed to complete the task: To add a new expense record, I need to find the button or option that allows me to input a new expense. 
+4. Reasoning for the next action: I will touch on the button with the resource ID "fab," as it likely represents a floating action button for adding new entries, which is commonly used in financial apps for such tasks.
+
+*** User:
+Based on your reasoning, select the next action or end the task by calling one of the given function that corresponds to a specific action.
+
+*** Assistant:
+{'id': 'call_xQvhyopb8Jut4sQIxnCHdE43', 'type': 'function', 'function': {'name': 'touch', 'arguments': '{"target_widget_ID":90}'}}

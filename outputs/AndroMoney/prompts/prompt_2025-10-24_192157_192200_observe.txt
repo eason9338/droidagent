@@ -1,0 +1,86 @@
+
+*** System:
+You are a helpful assistant who can interpret two consecutive Android GUI screens before and after a user's action and explain the result of the action to the user.
+
+*** User:
+Describe the result of the performed GUI action regarding the changes between previous and current screens. 
+
+Guidelines:
+- To describe a widget, use only one important property of the widget. 
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened. 
+- Do not judge fail/pass of the action.
+- There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+
+- Performed GUI Action: Touch on a button that has text "YES"
+
+- Changes of widgets from the previous page to the current page:
+"""
+--- Previous (CategorySelection)
++++ Current (AddNewRecord)
+-a textview that has text "Auto fill by category"
+-a textview that has text "Auto fill by category on entering transaction?"
+-a checked checkbox that has text "Ask every time"
+-a button that has text "NO"
+-a button that has text "YES"
++a button that has content_desc "Navigate up"
++a selected textview that has text "EXPENSE"
++a button that has text "INCOME"
++a button that has text "TRANSFER"
++a button that has content_desc "More options"
++a button that has resource_id "camera"
++a button that has text "US$"
++a button that has text "0"
++a button that has text "10/24/2025 (Fri)
++PM 07:19"
++a button that has resource_id "date_selection_previous_iv"
++a button that has resource_id "date_selection_calendar_iv"
++a button that has resource_id "date_selection_next_iv"
++a textview that has text "Category:"
++a textview that has text "Food - Breakfast"
++a button
++a textview that has text "Account:"
++a textview that has text "Cash"
++a button
++a textview that has text "Project:"
++a button
++a textview that has text "Payee:"
++a button
++a textview that has text "Periodic:"
++a textview that has text "Once"
++a button
++a textview that has text "Note:"
++a button
++a textview that has text "Status:"
++a checked checkbox that has text "Included in account total"
++a checked checkbox that has text "Included in the budget"
++a relativelayout
++a scrollable area that has resource_id "ListView"
++a button that has text "ADD NEXT"
++a button that has text "SAVE"
++a button that has text "AC"
++a button that has text "DEL"
++a button that has text "OK"
++a button that has text "7"
++a button that has text "8"
++a button that has text "9"
++a button that has text "/"
++a button that has text "4"
++a button that has text "5"
++a button that has text "6"
++a button that has text "X"
++a button that has text "1"
++a button that has text "2"
++a button that has text "3"
++a button that has text "-"
++a button that has text "0"
++a button that has text "．"
++a button that has text "+"
++a button that has resource_id "calculatorLayout"
++a scrollable area that has resource_id "activity_add_new_record_view_pager"
+"""
+
+=== Below is the template for your answer ===
+Action result summary: <Describe in 1~2 sentences.>
+
+*** Assistant:
+Action result summary: After touching the "YES" button, the user is taken to the "Add New Record" screen, which introduces a new layout with various buttons and text views related to recording a transaction, including options for category, account, project, payee, and status. The previous options for auto-fill and the "CategorySelection" are no longer visible.

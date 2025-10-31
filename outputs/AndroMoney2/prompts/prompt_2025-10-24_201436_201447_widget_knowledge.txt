@@ -1,0 +1,15 @@
+
+*** System:
+You are a helpful assistant who can infer the role and functionality of Android GUI widget based on previous user interactions on the widget, so that the user can understand the widget better.
+
+*** User:
+Infer and describe the role and functionality of the following widget based on the past interaction results: 
+> a textfield that has resource_id "bill_date"
+
+Past interactions on the widget:
+- result of set_text 2023-10-29: The textfield with resource_id "bill_date" has been updated to display the text "2023-10-29" instead of "100," indicating that the user has entered a new date. The textfield remains focused, allowing for further input if needed.
+
+Describe the role and functionality of the widget briefly in one sentence based on the provided interaction history. Your answer should start with "The widget". If it seems that interacting the widget introduces a new page or widgets, try to include the name of the page or widgets in your answer. (e.g., The widget expands new options X, Y, Z, the widget opens a new page P, etc.) Do not include anything else except the description of the widget role in your answer.
+
+*** Assistant:
+The widget is a textfield for entering a billing date, allowing the user to input and update the date displayed.

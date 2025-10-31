@@ -1,0 +1,346 @@
+
+*** System:
+You are a helpful task planner for using an Android mobile application named AndroMoney. You are planning for a person named "Jade Green" with the following profile:
+(The username and password is what Jade Green generally uses for their accounts.)
+- name: Jade Green
+- phone: 081-827-7650
+- email: anony1017mous@gmail.com
+- username: tester.green
+- password: green1029*
+- date_of_birth: 1997-10-29
+- age: 25
+- self_introduction: I am a 25-year-old graduate student studying computer science. I only want to use the basic function of the app, like record income and expense
+
+Jade Green's ultimate goal is to Test the app's main features such as adding income and expense records, and according to the current persona settings, test the features that the user prefers to use.. 
+
+- AndroMoney app has following pages: [AdWebView, EinvoiceLogin, Launch, HomeAccount, HomeRecord, Record, AddNewRecord, AboutUs, BarChart, CurveChart, PieChart, Settings, NotificationSettings, ColorPicker, AccountManagement, RecordListReport, AccountDetail, SortView, CategoryManagement, SubCategoryManagement, Statistic, BudgetManagement, CategoryIconItemList, GoogleDriveBackup, ImportExport, CategorySelection, GeneralSelection, AddRecordProject, SelectTransferPayment, Question, Help, AccountShare, CalendarView, Good, SearchView, SearchResultView, SplitView, IncomeTax, EInvoice, CarrierDetail, AddCarrier, CarrierWinningInv, CheckWinningInv, BarcodeCapture, NewBarcodeCapture, Lock, Comments, SelectPeriod, Installment, AddRemark, LoadShareLink, ShareUrl, AddShareLink, SelectProjectWithAd, AssertLineChartWithAd, ComicList, ComicSections, ComicBookWithAd, LoanTrailWithAd, CommentRecordWithAd, BaseWebView, BaseEinvoiceLogin, Gallery, SelectedImages, ZoomImages, Sync, AssetsLineChart, ComicBook, SelectProject] (Note that the pages are listed in random order)
+- Currently, Jade Green has visited the following pages with the following number of times: {AboutUs: 1, HomeRecord: 1, AddNewRecord: 8, CategorySelection: 3}
+- Currently, Jade Green is on the AddNewRecord page.
+- Pages never visited yet: [SelectPeriod, Lock, BarcodeCapture, Comments, AddCarrier, AdWebView, RecordListReport, BudgetManagement, EinvoiceLogin, AccountDetail, AccountManagement, SplitView, ZoomImages, SelectProjectWithAd, BaseEinvoiceLogin, SelectProject, CarrierWinningInv, LoadShareLink, Installment, HomeAccount, Statistic, Question, AddRemark, SelectedImages, SearchResultView, Launch, PieChart, Record, GeneralSelection, CategoryManagement, ComicSections, EInvoice, LoanTrailWithAd, Good, ComicList, ColorPicker, CategoryIconItemList, SearchView, NotificationSettings, GoogleDriveBackup, ComicBook, AssertLineChartWithAd, AddShareLink, Sync, SubCategoryManagement, SortView, SelectTransferPayment, BarChart, IncomeTax, AccountShare, CalendarView, ShareUrl, Gallery, CheckWinningInv, Help, ImportExport, AddRecordProject, AssetsLineChart, CurveChart, CarrierDetail, NewBarcodeCapture, CommentRecordWithAd, Settings, ComicBookWithAd, BaseWebView] 
+
+Jade Green is not familiar with the app and does not fully know how to navigate to each page and what Jade Green can do on each page.
+To effectively explore the app for their goal, Jade Green needs a new task that aligns with the following desirable properties:
+- (Realism) The task should corresponds to a realistic usage scenario of AndroMoney app, and reflect user's intent for actually making use of the app's functionality. Do NOT plan vague tasks like "Navigate to X" or "Explore X". Instead, plan a realistic task so that it naturally leads to discover new widgets or pages. For example, "Add X to cart" is more preferred than "Navigate to the cart page" ot "Explore the cart page".
+- (Importance) Prioritize important tasks that make use of core and basic functions of the app. Do not stay on the same page for too long while having unvisited pages. After visiting all the pages, plan more advanced tasks based on Jade Green's own preferences.
+- (Diversity) You need to plan diverse tasks that are different from the tasks that Jade Green has performed before. If a previous task has failed despite multiple attempts, the task might be too hard or impossible. Postpone the task and plan a different task. Pay attention to the number of previous actions performed on a specific widget, and consider a task that involves an widget that has never been interacted with yet.
+- (Difficulty) The task should not be too hard since Jade Green may not have learned enough knowledge about the app to complete it yet. Plan a task that is highly likely to succeed in a few steps from the current state. However, the task should correspond to a meaningful function unit of the app. For example, "Attach a photo to a message" is more preferred than "Touch a photo button".
+
+*** User:
+Plan Jade Green's next task based on the following information.
+
+Jade Green's prior knowledge and history of previous tasks so far (listed in chronological order):
+===
+2025-10-24 19:14:35: [INITIAL_KNOWLEDGE] Jade Green started the AndroMoney app
+2025-10-24 19:19:12: [TASK_RESULT] Jade Green attempted to add a new expense record but did not complete the task due to the complexity and length of the process. The app's interface provided various options for recording the expense, but Jade Green found it overwhelming.
+===
+
+Jade Green's learnt knowledge from previous tasks (which may be relevant to the current context):
+===
+- Jade Green learned that the app supports adding expense records by allowing users to select categories, accounts, and other transaction details.
+- The task was not completed, possibly due to the numerous steps and options available, which may have led to confusion.
+- To improve the experience, Jade Green might consider focusing on simpler tasks first or breaking down the process into smaller steps to better understand the app's functionalities.
+===
+
+Current page (organized in a hierarchical structure):
+```json
+{
+  page_name: AddNewRecord,
+  children: [
+    {
+      ID: 7,
+      widget_type: ImageButton,
+      content_description: Navigate up,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: TextView,
+      text: EXPENSE,
+      state: [
+        selected
+      ]
+    },
+    {
+      ID: 12,
+      widget_type: LinearLayout,
+      text: INCOME,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 14,
+      widget_type: LinearLayout,
+      text: TRANSFER,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 17,
+      widget_type: ImageView,
+      content_description: More options,
+      possible_action_types: [
+        touch,
+        long_touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 18,
+      widget_type: ViewPager,
+      resource_id: activity_add_new_record_view_pager,
+      possible_action_types: [
+        scroll
+      ],
+      num_prev_actions: 0,
+      children: [
+        {
+          ID: 22,
+          widget_type: ImageButton,
+          resource_id: camera,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 26,
+          widget_type: Button,
+          text: US$,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 2,
+          widget_role_inference: The widget opens a new section that includes a textview labeled Tip for adding and modifying currency content, along with two buttons labeled DONT REMIND and REMIND NEXT.
+        },
+        {
+          ID: 27,
+          widget_type: Button,
+          text: 0,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 2,
+          widget_role_inference: The widget is a button that, when interacted with, removes itself from the screen, indicating it may serve as a toggle or selection option that limits further interactions.
+        },
+        {
+          ID: 30,
+          widget_type: TextView,
+          text: 10/24/2025 (Fri)[NEWLINE]PM 07:15,
+          possible_action_types: [
+            touch,
+            long_touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 31,
+          widget_type: ImageView,
+          resource_id: date_selection_previous_iv,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 32,
+          widget_type: ImageView,
+          resource_id: date_selection_calendar_iv,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 33,
+          widget_type: ImageView,
+          resource_id: date_selection_next_iv,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 35,
+          widget_type: ListView,
+          resource_id: ListView,
+          possible_action_types: [
+            long_touch,
+            scroll
+          ],
+          num_prev_actions: 0,
+          children: [
+            {
+              ID: 36,
+              widget_type: RelativeLayout,
+              possible_action_types: [
+                touch,
+                long_touch
+              ],
+              text: [
+                Category:,
+                Food - Breakfast
+              ],
+              num_prev_actions: 2,
+              widget_role_inference: The widget opens a new page for category selection, allowing the user to choose a category for their record with options like Food, Clothing/Beauty, and others.
+            },
+            {
+              ID: 40,
+              widget_type: RelativeLayout,
+              possible_action_types: [
+                touch,
+                long_touch
+              ],
+              text: [
+                Account:,
+                Cash
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 44,
+              widget_type: RelativeLayout,
+              possible_action_types: [
+                touch,
+                long_touch
+              ],
+              text: [
+                Project:
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 48,
+              widget_type: RelativeLayout,
+              possible_action_types: [
+                touch,
+                long_touch
+              ],
+              text: [
+                Payee:
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 52,
+              widget_type: RelativeLayout,
+              possible_action_types: [
+                touch,
+                long_touch
+              ],
+              text: [
+                Periodic:,
+                Once
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 56,
+              widget_type: RelativeLayout,
+              possible_action_types: [
+                touch,
+                long_touch
+              ],
+              text: [
+                Note:
+              ],
+              num_prev_actions: 0
+            },
+            {
+              ID: 59,
+              widget_type: RelativeLayout,
+              possible_action_types: [
+                long_touch
+              ],
+              num_prev_actions: 0,
+              children: [
+                {
+                  widget_type: TextView,
+                  text: Status:
+                },
+                {
+                  ID: 62,
+                  widget_type: CheckBox,
+                  text: Included in account total,
+                  state: [
+                    checked
+                  ],
+                  possible_action_types: [
+                    touch
+                  ],
+                  num_prev_actions: 0
+                },
+                {
+                  ID: 63,
+                  widget_type: CheckBox,
+                  text: Included in the budget,
+                  state: [
+                    checked
+                  ],
+                  possible_action_types: [
+                    touch
+                  ],
+                  num_prev_actions: 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          ID: 65,
+          widget_type: Button,
+          text: ADD NEXT,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 66,
+          widget_type: Button,
+          text: SAVE,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        }
+      ]
+    }
+  ]
+}
+```
+Note that `num_prev_actions` means the number of times the widget has been interacted with during the previous tasks. If `num_prev_actions` property is not included in the widget dictionary, Jade Green has never performed any action on the widget yet.
+
+Jade Green can perform the following types of actions:
+- Scroll on a scrollable widget
+- Touch on a clickable widget
+- Long touch on a long-clickable widget
+- Fill in an editable widget
+- Navigate back by pressing the back button
+
+I am going to provide a template for your output to reason about your next task step by step. Fill out the <...> parts in the template with your own words. Do not include anything else in your answer except the text to fill out the template. Preserve the formatting and overall template.
+
+=== Below is the template for your answer ===
+Reasoning about Jade Green's new task: <1~2 sentences in one line. Use the aforementioned four properties: realism, importance, diversity and difficulty to reason about the next task>
+Jade Green's next task: <1 sentence, start with a verb>
+End condition of Jade Green's next task: <1 sentence, start with "The task is known to be completed when">
+Reasoning of the first action of the Jade Green's next task: <reasoning and description of the first action initiating the task>
+Rough plan for the task in Jade Green's perspective: <1 sentence, start with "I plan to"; pretend that you are Jade Green>
+
+*** Assistant:
+Reasoning about Jade Green's new task: Jade Green needs to simplify the process of adding an expense record to avoid overwhelming complexity and to gain familiarity with the app's core functionalities, thus the next task should involve selecting a category for the expense, which is crucial yet straightforward. This task is important for understanding the app's basic operations, introduces a new widget that Jade Green hasn't interacted with yet, and should be easy to complete.  
+Jade Green's next task: Select a category for the expense record.  
+End condition of Jade Green's next task: The task is known to be completed when Jade Green successfully chooses a category from the list.  
+Reasoning of the first action of Jade Green's next task: I will touch on the category selection widget, which has not been interacted with yet, to explore the available options for categorizing my expense.  
+Rough plan for the task in Jade Green's perspective: I plan to select a category for my expense to better understand how to record my spending.
+
+*** User:
+Good. Now, based on your previous answer, execute the first action (by calling a function) to start the task. Pay attention to the possible action types specified in the target widget.
+
+*** Assistant:
+{'id': 'call_VCjOF3opyTjnZ41qqjxBvP6n', 'type': 'function', 'function': {'name': 'touch', 'arguments': '{"target_widget_ID":36}'}}

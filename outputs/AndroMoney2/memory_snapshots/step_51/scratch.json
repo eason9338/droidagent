@@ -1,0 +1,114 @@
+{
+  "task": "Touch the \"New ..\" button.",
+  "task_end_condition": "The task is known to be completed when the new record entry screen appears.",
+  "working_memory": [
+    {
+      "description": "Touch on a button that has content_desc \"New ..\"",
+      "type": "ACTION",
+      "timestamp": "20:03:07",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "After touching the button with content description \"New ..\", a new screen appears that includes a text view labeled \"New Account\" and various input fields for entering account details, indicating the initiation of creating a new account.",
+      "type": "OBSERVATION",
+      "timestamp": "20:03:20",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Touch on a dropdown field that has text \"Cash\"",
+      "type": "ACTION",
+      "timestamp": "20:03:23",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "The dropdown field with the text \"Cash\" has been expanded to display additional options, which include buttons labeled \"Cash,\" \"Card,\" and \"Bank.\" This change allows the user to select from multiple payment types.",
+      "type": "OBSERVATION",
+      "timestamp": "20:03:38",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Touch on a button that has text \"Card\"",
+      "type": "ACTION",
+      "timestamp": "20:03:44",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "After touching the button labeled \"Card,\" a new text view displaying \"New Account\" appeared along with several additional fields, including a dropdown field labeled \"Card\" and multiple text fields for entering account details such as \"Name,\" \"Initial Amount,\" \"Billing Date,\" \"Payment Date,\" and \"Notes.\"",
+      "type": "OBSERVATION",
+      "timestamp": "20:03:56",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Fill a textfield that has resource_id \"account_name\" with \"Jade Green's Card\"",
+      "type": "ACTION",
+      "timestamp": "20:04:02",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "The textfield with resource_id \"account_name\" is now focused and contains the text \"Jade Green's Card,\" indicating that the user has successfully entered their account name. This change reflects the user's input in the textfield compared to the previous screen.",
+      "type": "OBSERVATION",
+      "timestamp": "20:04:21",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Touch on a button that has text \"US$\"",
+      "type": "ACTION",
+      "timestamp": "20:04:31",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Touch on a button that has text \"US$\"",
+      "type": "ACTION",
+      "timestamp": "20:04:44",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Touch on a button that has text \"US$\"",
+      "type": "ACTION",
+      "timestamp": "20:04:54",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Fill a textfield that has resource_id \"amount\" with \"100\"",
+      "type": "ACTION",
+      "timestamp": "20:05:15",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "The textfield with resource_id \"amount\" has been filled with the value \"100,\" replacing the previously focused textfield that contained \"Jade Green's Card.\" The current screen now shows the input of \"100\" in the specified textfield.",
+      "type": "OBSERVATION",
+      "timestamp": "20:05:45",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Jade Green has successfully navigated through the process of creating a new account and has filled in the account name and amount fields, but has repeated the action of touching the \"US$\" button without any apparent need. Jade Green needs to proceed by filling in the remaining fields, such as \"Billing Date,\" \"Payment Date,\" and \"Notes,\" and then touch the \"OK\" button to complete the record entry.",
+      "type": "CRITIQUE",
+      "timestamp": "20:05:52",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Touch on a textfield that has resource_id \"bill_date\"",
+      "type": "ACTION",
+      "timestamp": "20:06:08",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Touch on a textfield that has resource_id \"bill_date\"",
+      "type": "ACTION",
+      "timestamp": "20:06:39",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Touch on a textfield that has resource_id \"bill_date\"",
+      "type": "ACTION",
+      "timestamp": "20:07:01",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "Fill a textfield that has resource_id \"bill_date\" with \"2023-10-29\"",
+      "type": "ACTION",
+      "timestamp": "20:07:27",
+      "page": "HomeAccount"
+    }
+  ]
+}

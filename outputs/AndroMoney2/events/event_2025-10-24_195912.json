@@ -1,0 +1,35 @@
+{
+  "tag": "2025-10-24_195912",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 16,
+      "view_str": "9a7abdd9289a301e32a63cc84cb3e08e",
+      "widget_type": "CheckedTextView",
+      "class": "android.widget.CheckedTextView",
+      "text": "Add account",
+      "resource_id": "text1",
+      "possible_action_types": [
+        "touch"
+      ],
+      "bounds": [
+        [
+          385,
+          847
+        ],
+        [
+          1823,
+          973
+        ]
+      ]
+    }
+  },
+  "start_state": "afe5a26a2c36a49a6aa54dbbfcf589e9",
+  "stop_state": "9270393c4aa2121f78b2ee26106d0489",
+  "event_str": "TouchEvent(state=afe5a26a2c36a49a6aa54dbbfcf589e9, view=9a7abdd9289a301e32a63cc84cb3e08e(SimpleDialogAccountPickerActivity/CheckedTextView-Add accoun))",
+  "task": "Touch the AndroMoney icon to open the app.",
+  "view_image_dir": "../outputs/AndroMoney2/views/view_9a7abdd9289a301e32a63cc84cb3e08e.png"
+}

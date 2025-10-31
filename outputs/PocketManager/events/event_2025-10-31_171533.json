@@ -1,0 +1,36 @@
+{
+  "tag": "2025-10-31_171533",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 19,
+      "view_str": "10152fbdc7634cc3e39b7345423a6422",
+      "widget_type": "Spinner",
+      "class": "android.widget.Spinner",
+      "resource_id": "categoryPicker",
+      "possible_action_types": [
+        "touch",
+        "long_touch",
+        "scroll"
+      ],
+      "bounds": [
+        [
+          1473,
+          646
+        ],
+        [
+          2129,
+          751
+        ]
+      ]
+    }
+  },
+  "start_state": "570cba6e2692447827f9416376161fff",
+  "stop_state": "707495687e178916e255945f66c5e46d",
+  "event_str": "TouchEvent(state=570cba6e2692447827f9416376161fff, view=10152fbdc7634cc3e39b7345423a6422(AddOrEditActivity/Spinner-))",
+  "task": "Record a USD 10 transport expense by selecting the \u4ea4\u901a category, entering the amount, adding a note about the trip, and finalizing the entry.",
+  "view_image_dir": "../outputs/PocketManager/views/view_10152fbdc7634cc3e39b7345423a6422.png"
+}

@@ -1,0 +1,15 @@
+
+*** System:
+You are a helpful assistant who can infer the role and functionality of Android GUI widget based on previous user interactions on the widget, so that the user can understand the widget better.
+
+*** User:
+Infer and describe the role and functionality of the following widget based on the past interaction results: 
+> a dropdown field that has text "交通"
+
+Past interactions on the widget:
+- result of touch: The dropdown field labeled "類別" was expanded, revealing several options, with the button labeled "交通" now checked, indicating that it is the selected category. Other options such as "食物," "運動," "生活用品," and "其他" are also visible in the expanded dropdown.
+
+Describe the role and functionality of the widget briefly in one sentence based on the provided interaction history. Your answer should start with "The widget". If it seems that interacting the widget introduces a new page or widgets, try to include the name of the page or widgets in your answer. (e.g., The widget expands new options X, Y, Z, the widget opens a new page P, etc.) Do not include anything else except the description of the widget role in your answer.
+
+*** Assistant:
+The widget allows the user to select a category from a dropdown menu, with "交通" being the currently selected option among others like "食物," "運動," "生活用品," and "其他."

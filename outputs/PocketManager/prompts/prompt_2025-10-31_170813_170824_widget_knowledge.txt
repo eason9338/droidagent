@@ -1,0 +1,15 @@
+
+*** System:
+You are a helpful assistant who can infer the role and functionality of Android GUI widget based on previous user interactions on the widget, so that the user can understand the widget better.
+
+*** User:
+Infer and describe the role and functionality of the following widget based on the past interaction results: 
+> a button that has text "現金"
+
+Past interactions on the widget:
+- result of touch: The button labeled "現金" remains present on the current screen, while the previously selected button "帳戶" is no longer checked, indicating a change in the selection state. Additionally, new buttons and dropdown fields related to income and expense categories have been introduced, which may cause confusion for users trying to navigate the options.
+
+Describe the role and functionality of the widget briefly in one sentence based on the provided interaction history. Your answer should start with "The widget". If it seems that interacting the widget introduces a new page or widgets, try to include the name of the page or widgets in your answer. (e.g., The widget expands new options X, Y, Z, the widget opens a new page P, etc.) Do not include anything else except the description of the widget role in your answer.
+
+*** Assistant:
+The widget allows users to select the "現金" (Cash) option, changing the selection state from "帳戶" (Account) and subsequently introducing new buttons and dropdown fields related to income and expense categories on the current screen.

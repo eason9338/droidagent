@@ -1,0 +1,56 @@
+
+*** System:
+You are a helpful assistant who can interpret two consecutive Android GUI screens before and after a user's action and explain the result of the action to the user.
+
+*** User:
+Describe the result of the performed GUI action regarding the changes between previous and current screens. 
+
+Guidelines:
+- To describe a widget, use only one important property of the widget. 
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened. 
+- Do not judge fail/pass of the action.
+- There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+
+- Performed GUI Action: Touch on a button that has text "AndroMoney"
+
+- Changes of widgets from the previous page to the current page:
+"""
+--- Previous (NexusLauncher)
++++ Current (AboutUs)
+-a button that has text "Fri, Oct 24"
+-a button that has resource_id "base_template_card_with_date"
+-a widget that has content_desc "At a glance"
+-a button that has text "Play Store"
+-a button that has text "Gmail"
+-a button that has text "Photos"
+-a button that has text "YouTube"
+-a scrollable area that has resource_id "workspace"
+-a button that has content_desc "Google app"
+-a button that has content_desc "Voice search"
+-a button that has content_desc "Google Lens"
+-a button that has content_desc "Google search"
+-a button that has text "Phone"
+-a button that has text "Messages"
+-a button that has text "Chrome"
+-a button that has text "Play Store"
+-a button that has text "Gmail"
+-a button that has text "AndroMoney"
++a button that has content_desc "Navigate up"
++a textview that has text "AndroMoney  3a.13.23"
++a button that has resource_id "icon"
++a textview that has text "AndroMoney is a personal finance tool for use on your mobile phone. By using this tool, we hope you [...]"
++a textview that has text "Ad-free"
++a button that has resource_id "pro_icon"
++a textview that has text "Mobile Phone Programming"
++a textview that has text "The AndroMoney Team"
++a textview that has text "Website:https://www.andromoney.com/"
++a textview that has text "Email:service@andromoney.com"
++a textview that has text "©2010~2013 All Rights Reserved"
+"""
+After the action, the following popup message(s) were shown and soon disappeared: ['Automatically set your main currency to:USDIf this is not the main currency you use. Please go to Settings to change., AndroMoney']
+
+=== Below is the template for your answer ===
+Action result summary: <Describe in 1~2 sentences.>
+
+*** Assistant:
+Action result summary: After touching the "AndroMoney" button, the screen changed to the "AboutUs" page, which now displays a text view with the version information "AndroMoney  3a.13.23" along with additional details about the app and its developers. A popup message briefly appeared, indicating that the main currency was automatically set to USD.

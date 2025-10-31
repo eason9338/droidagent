@@ -1,0 +1,18 @@
+{
+  "task": "Touch the \"New ..\" button.",
+  "task_end_condition": "The task is known to be completed when the new record entry screen appears.",
+  "working_memory": [
+    {
+      "description": "Touch on a button that has content_desc \"New ..\"",
+      "type": "ACTION",
+      "timestamp": "20:03:07",
+      "page": "HomeAccount"
+    },
+    {
+      "description": "After touching the button with content description \"New ..\", a new screen appears that includes a text view labeled \"New Account\" and various input fields for entering account details, indicating the initiation of creating a new account.",
+      "type": "OBSERVATION",
+      "timestamp": "20:03:20",
+      "page": "HomeAccount"
+    }
+  ]
+}

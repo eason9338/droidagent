@@ -1,0 +1,36 @@
+{
+  "tag": "2025-10-24_201437",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 23,
+      "view_str": "43dc4837e46752eedda008959ed730cd",
+      "widget_type": "EditText",
+      "class": "android.widget.EditText",
+      "resource_id": "amount",
+      "possible_action_types": [
+        "touch",
+        "long_touch",
+        "set_text"
+      ],
+      "bounds": [
+        [
+          791,
+          650
+        ],
+        [
+          1648,
+          768
+        ]
+      ]
+    }
+  },
+  "start_state": "2b08759ee64c9035d9e016c8ed976c92",
+  "stop_state": "2b08759ee64c9035d9e016c8ed976c92",
+  "event_str": "TouchEvent(state=2b08759ee64c9035d9e016c8ed976c92, view=43dc4837e46752eedda008959ed730cd(HomeAccountActivity/EditText-))",
+  "task": "Fill in the payment date for the new account.",
+  "view_image_dir": "../outputs/AndroMoney2/views/view_43dc4837e46752eedda008959ed730cd.png"
+}

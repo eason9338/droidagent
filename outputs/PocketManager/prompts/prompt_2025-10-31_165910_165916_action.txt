@@ -1,0 +1,263 @@
+
+*** System:
+You are a helpful assistant to guide a user named Jade Green to accomplish a SPECIFIC task on an Android mobile application named 記帳小助手.
+
+The profile of Jade Green is as follows:
+(The username and password is what Jade Green generally uses for their accounts.)
+- name: Jade Green
+- age: 25
+- phone: 081-827-7650
+- email: anony1017mous@gmail.com
+- username: tester.green
+- password: green1029*
+- date_of_birth: 1997-10-29
+- self_introduction: I am a 25-year-old graduate student studying computer science. I want to explore advance feature, like record expense in different currencies
+- user_segment: "Power User"
+- typical_tasks: ["Add expense in different currencies", "Generate expense reports", "Manage multiple accounts"]
+- pain_points_to_watch: ["Slow currency switching", "Complicated report filters", "Too many clicks for common tasks"]
+- natural_behaviors: Jade Green is a busy student who records expenses regularly (meals, transport, study materials), may use multiple currencies when traveling, wants to analyze spending patterns, and manages different financial accounts for different purposes.
+- task_completion_rule: Each task is ONE COMPLETE workflow from start to finish. Do NOT split a workflow into multiple separate tasks. Do NOT repeat the same workflow multiple times unless testing different variations.
+
+CRITICAL: Your role is to help Jade Green COMPLETE the planned task, not to explore the app randomly.
+- You have a specific goal to achieve
+- You must work directly toward this goal
+- Do NOT try alternative options or explore unrelated features unless necessary
+- When you encounter choices, pick the one that matches your goal
+
+Jade Green can perform the following types of actions:
+- Scroll on a scrollable widget
+- Touch on a clickable widget
+- Long touch on a long-clickable widget
+- Fill in an editable widget
+- Navigate back by pressing the back button
+- End the task when your specific goal is completed
+
+*** User:
+My name is Jade Green and I am using an application named 記帳小助手 to accomplish the following task: 
+* Task: Record a USD 15 lunch expense at a nearby café. (The task is known to be completed when the lunch expense is successfully recorded in the app with all relevant details filled in)
+
+I'm currently on the Main page. I plan to record a USD 15 lunch expense at a nearby café to keep track of my daily spending and analyze my eating-out habits. What should be the first action?
+
+*** Assistant:
+Touch on a button that has resource_id "adder"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Open the app again because the previous action led to closing the app
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Press "BACK" button to navigate back
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Open the app again because the previous action led to closing the app
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a button that has resource_id "adder"
+
+*** User:
+I performed the action, and as a result, the action of touching the button with resource_id "adder" has transitioned the user from the main screen to the AddOrEdit screen, where new input fields and options for entering financial data are now available, including dropdowns for asset and category selection, as well as text fields for amount and notes. Additionally, a back button has been introduced for navigation back to the previous screen. (page changed from Main to AddOrEdit). What should be the next action?
+
+This time, I'll give you the full content of the current page as follows (I organized the page content as a hierarchical structure):
+```json
+{
+  page_name: AddOrEdit,
+  children: [
+    {
+      ID: 7,
+      widget_type: ImageButton,
+      resource_id: backButton,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 9,
+      widget_type: Button,
+      text: 收入,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 10,
+      widget_type: Button,
+      text: 支出,
+      state: [
+        selected
+      ],
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 11,
+      widget_type: Button,
+      resource_id: outButtonLine,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: TextView,
+      text: 日期
+    },
+    {
+      ID: 13,
+      widget_type: Button,
+      text: 2025-10-31,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 14,
+      widget_type: Button,
+      text: PM 04:58,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: TextView,
+      text: 資產
+    },
+    {
+      ID: 16,
+      widget_type: Spinner,
+      resource_id: assetPicker,
+      possible_action_types: [
+        touch,
+        long_touch,
+        scroll
+      ],
+      num_prev_actions: 0,
+      children: [
+        {
+          ID: 17,
+          widget_type: CheckedTextView,
+          text: 現金,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        }
+      ]
+    },
+    {
+      widget_type: TextView,
+      text: 類別
+    },
+    {
+      ID: 19,
+      widget_type: Spinner,
+      resource_id: categoryPicker,
+      possible_action_types: [
+        touch,
+        long_touch,
+        scroll
+      ],
+      num_prev_actions: 0,
+      children: [
+        {
+          ID: 20,
+          widget_type: CheckedTextView,
+          text: 食物,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        }
+      ]
+    },
+    {
+      widget_type: TextView,
+      text: 金額
+    },
+    {
+      ID: 22,
+      widget_type: EditText,
+      resource_id: amountEditor,
+      possible_action_types: [
+        touch,
+        long_touch,
+        set_text
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: TextView,
+      text: 內容
+    },
+    {
+      ID: 24,
+      widget_type: EditText,
+      resource_id: noteEditor,
+      possible_action_types: [
+        touch,
+        long_touch,
+        set_text
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 25,
+      widget_type: Button,
+      text: 新增,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    }
+  ]
+}
+```
+
+Guideline for selecting the next action:
+- Note that `num_prev_actions` property means the number of times the widget has been interacted with so far.
+- Note that `widget_role_inference` property means the role of the widget inferred by previous actions. Use this property to infer what the widget is used for. If the widget has not been interacted yet, `widget_role_inference` property is not included in the widget dictionary.
+- Focus on completing your SPECIFIC TASK, not exploring new widgets
+- If you are stuck or confused while trying to complete the task, report the problem:
+  * "I cannot find the option for [what you're looking for]"
+  * "The UI is unclear about [specific confusion point]"
+  * "I expected to see [something] but found [something else]"
+- If the task seems impossible to complete with current UI state, explain why and suggest giving up
+
+Recall that my current task is: Record a USD 15 lunch expense at a nearby café.
+Select the next suitable action to perform, or end the task if the task is already completed.
+
+This time, I am going to provide a template for your output to let you think about my next action step by step. Fill out the <...> parts in the template with your own words. Do not include anything else in your answer except the text to fill out the template. Preserve the formatting and overall template.
+
+=== Below is the template for your answer ===
+1. Summary of my previous interactions for the task: <1~2 sentences according to the task execution history and current app state. Reflect criticizer's feedback if I mentioned any. Be careful not to include any actions that haven't been performed yet>
+2. Description of the current app state: <1~2 sentences, briefly describe in one line according to the hierarchical structure I provided above>
+3. Inference on the remaining steps needed to complete the task: <1~2 sentences according to the task execution history and current app state. Do not immediately judge the next action here>
+4. Reasoning for the next action: <1 sentence reasoning the most logical action to take next on the current state (or justification for ending the task). Refer to the guideline above>
+
+*** Assistant:
+1. Summary of my previous interactions for the task: I have opened the app and navigated to the AddOrEdit screen where I can input details for a new expense. I have not yet filled in any details for the lunch expense.
+2. Description of the current app state: The AddOrEdit screen is displayed, featuring input fields for date, asset, category, amount, and notes, along with buttons for income, expenses, and adding the entry.
+3. Inference on the remaining steps needed to complete the task: I need to select the appropriate asset and category, fill in the amount of the expense, and add any notes before submitting the entry.
+4. Reasoning for the next action: The first step to recording the expense is to fill in the amount, so I will touch on the amount input field to enter the expense amount of USD 15.
+
+*** User:
+Based on your reasoning, select the next action or end the task by calling one of the given function that corresponds to a specific action.
+
+*** Assistant:
+{'id': 'call_6N7X7Wufpa1Sllgm9qRlTogr', 'type': 'function', 'function': {'name': 'touch', 'arguments': '{"target_widget_ID":22}'}}

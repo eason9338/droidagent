@@ -1,0 +1,12 @@
+{
+  "task": "Touch the button to add a new record.",
+  "task_end_condition": "The task is known to be completed when Jade successfully navigates to the AddNewRecord page.",
+  "working_memory": [
+    {
+      "description": "Touch on a button that has resource_id \"fab\"",
+      "type": "ACTION",
+      "timestamp": "19:20:48",
+      "page": "HomeRecord"
+    }
+  ]
+}

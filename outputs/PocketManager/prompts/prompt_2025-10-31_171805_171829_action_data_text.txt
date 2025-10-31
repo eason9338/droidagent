@@ -1,0 +1,313 @@
+
+*** System:
+You are a helpful assistant to guide a user named Jade Green to accomplish a SPECIFIC task on an Android mobile application named 記帳小助手.
+
+The profile of Jade Green is as follows:
+(The username and password is what Jade Green generally uses for their accounts.)
+- name: Jade Green
+- age: 25
+- phone: 081-827-7650
+- email: anony1017mous@gmail.com
+- username: tester.green
+- password: green1029*
+- date_of_birth: 1997-10-29
+- self_introduction: I am a 25-year-old graduate student studying computer science. I want to explore advance feature, like record expense in different currencies
+- user_segment: "Power User"
+- typical_tasks: ["Add expense in different currencies", "Generate expense reports", "Manage multiple accounts"]
+- pain_points_to_watch: ["Slow currency switching", "Complicated report filters", "Too many clicks for common tasks"]
+- natural_behaviors: Jade Green is a busy student who records expenses regularly (meals, transport, study materials), may use multiple currencies when traveling, wants to analyze spending patterns, and manages different financial accounts for different purposes.
+- task_completion_rule: Each task is ONE COMPLETE workflow from start to finish. Do NOT split a workflow into multiple separate tasks. Do NOT repeat the same workflow multiple times unless testing different variations.
+
+CRITICAL: Your role is to help Jade Green COMPLETE the planned task, not to explore the app randomly.
+- You have a specific goal to achieve
+- You must work directly toward this goal
+- Do NOT try alternative options or explore unrelated features unless necessary
+- When you encounter choices, pick the one that matches your goal
+
+Jade Green can perform the following types of actions:
+- Scroll on a scrollable widget
+- Touch on a clickable widget
+- Long touch on a long-clickable widget
+- Fill in an editable widget
+- Navigate back by pressing the back button
+- End the task when your specific goal is completed
+
+*** User:
+My name is Jade Green and I am using an application named 記帳小助手 to accomplish the following task: 
+* Task: Record a USD 10 transport expense by selecting the 交通 category, entering the amount, adding a note about the trip, and finalizing the entry. (The task is known to be completed when the transport expense is successfully recorded and reflected in the summary view on the main screen)
+
+I'm currently on the AddOrEdit page. What should be the first action?
+
+*** Assistant:
+Touch on a dropdown field that has text "現金"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Press "BACK" button to navigate back
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a dropdown field that has text "交通"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Press "BACK" button to navigate back
+
+*** User:
+I performed the action you suggested. However, I got the following critique for my actions so far: 
+> Criticizer: "Jade Green has made some selections but has not yet finalized the entry by entering the amount and note for the transport expense. The repeated navigation back may be causing unnecessary delays in completing the task. Jade Green needs to select the "金額" field to enter the amount (USD 10), then select the "內容" field to add a note about the trip before pressing the "新增" button to finalize the entry." 
+Considering the critique, what should be the next action?
+
+*** Assistant:
+Touch on a textfield that has resource_id "amountEditor"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Jade Green pressed the back button because there was no interactable widgets
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Fill a focused textfield that has resource_id "amountEditor" with "10"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Jade Green pressed the back button because there was no interactable widgets
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a textfield that has resource_id "noteEditor"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Jade Green pressed the back button because there was no interactable widgets
+
+*** User:
+I performed the action, and as a result, the textfield with resource_id "noteEditor" is now focused, allowing the user to input text directly into it. This change indicates that the user has activated the textfield for editing, while other elements on the screen remain unchanged. What should be the next action?
+
+This time, I'll give you the full content of the current page as follows (I organized the page content as a hierarchical structure):
+```json
+{
+  page_name: AddOrEdit,
+  children: [
+    {
+      ID: 7,
+      widget_type: ImageButton,
+      resource_id: backButton,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 9,
+      widget_type: Button,
+      text: 收入,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 10,
+      widget_type: Button,
+      text: 支出,
+      state: [
+        selected
+      ],
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 11,
+      widget_type: Button,
+      resource_id: outButtonLine,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: TextView,
+      text: 日期
+    },
+    {
+      ID: 13,
+      widget_type: Button,
+      text: 2025-10-31,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 14,
+      widget_type: Button,
+      text: PM 05:07,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: TextView,
+      text: 資產
+    },
+    {
+      ID: 16,
+      widget_type: Spinner,
+      resource_id: assetPicker,
+      possible_action_types: [
+        touch,
+        long_touch,
+        scroll
+      ],
+      num_prev_actions: 6,
+      widget_role_inference: The widget allows users to select the 現金 option from a dropdown menu, which, upon selection, transforms into a checked button and introduces a new button labeled 帳戶 for additional asset-related options.,
+      children: [
+        {
+          ID: 17,
+          widget_type: CheckedTextView,
+          text: 現金,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 2,
+          widget_role_inference: The widget allows users to select 現金 (cash) as a payment method, which changes the selection state from 帳戶 (account) and introduces new buttons and dropdown fields related to income and expense categories.
+        }
+      ]
+    },
+    {
+      widget_type: TextView,
+      text: 類別
+    },
+    {
+      ID: 19,
+      widget_type: Spinner,
+      resource_id: categoryPicker,
+      possible_action_types: [
+        touch,
+        long_touch,
+        scroll
+      ],
+      num_prev_actions: 2,
+      widget_role_inference: The widget allows users to select a category from a dropdown menu, with 交通 being the currently selected option among others like 食物, 運動, 生活用品, and 其他.,
+      children: [
+        {
+          ID: 20,
+          widget_type: CheckedTextView,
+          text: 交通,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 6,
+          widget_role_inference: The widget labeled 交通 serves as a button that, when touched, expands the interface to display new options for entering transportation-related expenses, including a button for 收入, a dropdown field for category selection, and various input fields for date, assets, and amounts.
+        }
+      ]
+    },
+    {
+      widget_type: TextView,
+      text: 金額
+    },
+    {
+      ID: 22,
+      widget_type: EditText,
+      text: 10,
+      possible_action_types: [
+        touch,
+        long_touch,
+        set_text
+      ],
+      num_prev_actions: 12,
+      widget_role_inference: The widget is a textfield for entering and editing a specific amount for a financial transaction, currently displaying the value 10 and allowing user interaction to modify the amount.
+    },
+    {
+      widget_type: TextView,
+      text: 內容
+    },
+    {
+      ID: 24,
+      widget_type: EditText,
+      resource_id: noteEditor,
+      state: [
+        focused
+      ],
+      possible_action_types: [
+        touch,
+        long_touch,
+        set_text
+      ],
+      num_prev_actions: 4,
+      widget_role_inference: The widget is a focused textfield that allows the user to input and edit notes, such as Daily commute to university, directly within the current page without changing other elements on the screen.
+    },
+    {
+      ID: 25,
+      widget_type: Button,
+      text: 新增,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 6,
+      widget_role_inference: The widget allows users to add new financial entries by transitioning from the AddOrEdit screen to the Main screen, where a summary view of financial data such as income, expenses, and totals is displayed.
+    }
+  ]
+}
+```
+
+Guideline for selecting the next action:
+- Note that `num_prev_actions` property means the number of times the widget has been interacted with so far.
+- Note that `widget_role_inference` property means the role of the widget inferred by previous actions. Use this property to infer what the widget is used for. If the widget has not been interacted yet, `widget_role_inference` property is not included in the widget dictionary.
+- Focus on completing your SPECIFIC TASK, not exploring new widgets
+- If you are stuck or confused while trying to complete the task, report the problem:
+  * "I cannot find the option for [what you're looking for]"
+  * "The UI is unclear about [specific confusion point]"
+  * "I expected to see [something] but found [something else]"
+- If the task seems impossible to complete with current UI state, explain why and suggest giving up
+
+Recall that my current task is: Record a USD 10 transport expense by selecting the 交通 category, entering the amount, adding a note about the trip, and finalizing the entry.
+Select the next suitable action to perform, or end the task if the task is already completed.
+
+This time, I am going to provide a template for your output to let you think about my next action step by step. Fill out the <...> parts in the template with your own words. Do not include anything else in your answer except the text to fill out the template. Preserve the formatting and overall template.
+
+=== Below is the template for your answer ===
+1. Summary of my previous interactions for the task: <1~2 sentences according to the task execution history and current app state. Reflect criticizer's feedback if I mentioned any. Be careful not to include any actions that haven't been performed yet>
+2. Description of the current app state: <1~2 sentences, briefly describe in one line according to the hierarchical structure I provided above>
+3. Inference on the remaining steps needed to complete the task: <1~2 sentences according to the task execution history and current app state. Do not immediately judge the next action here>
+4. Reasoning for the next action: <1 sentence reasoning the most logical action to take next on the current state (or justification for ending the task). Refer to the guideline above>
+
+*** Assistant:
+1. Summary of my previous interactions for the task: I have selected the 交通 category, entered the amount of 10, and focused on the note input field to add a note about the trip. However, I have not yet finalized the entry. 
+2. Description of the current app state: The app is currently in the AddOrEdit page, with the note input field focused, allowing for text entry. 
+3. Inference on the remaining steps needed to complete the task: I need to enter a note for the trip and then press the 新增 button to finalize the expense entry.
+4. Reasoning for the next action: Since the note input field is currently focused, the logical next step is to enter the note about the trip.
+
+*** User:
+Based on your reasoning, select the next action or end the task by calling one of the given function that corresponds to a specific action.
+
+*** Assistant:
+{'id': 'call_ntczxZrAt8IUemvdDy5dYNeZ', 'type': 'function', 'function': {'name': 'set_text', 'arguments': '{"target_widget_ID":24}'}}
+
+*** User:
+{'tool_call_id': 'call_ntczxZrAt8IUemvdDy5dYNeZ', 'name': 'set_text', 'return_value': '{"follow_up_question": "Good. From now on, act as you are Jade Green and provide the text to be inputted in the selected textfield (Widget ID: 24). \\n\\nThe properties and children (if any) of the selected textfield are as follows:\\n{\\n  \\"ID\\": 24,\\n  \\"widget_type\\": \\"EditText\\",\\n  \\"resource_id\\": \\"noteEditor\\",\\n  \\"state\\": [\\n    \\"focused\\"\\n  ],\\n  \\"possible_action_types\\": [\\n    \\"touch\\",\\n    \\"long_touch\\",\\n    \\"set_text\\"\\n  ]\\n}\\n\\nYou need to generate concrete text content to be filled in the textfield by inferring the content based on my profile.\\n\\nI am going to provide a template for your output step by step.\\n=== Below is the template for your answer ===\\nRole of the textfield: <1~2 sentences>\\nReasoning for generating Jade Green\'s text: <1~2 sentences>\\nText: <generated text content>\\n\\n=== Below is the example of a valid answer format ===\\nRole of the textfield: The textfield is for inputting the user\'s full name.\\nReasoning for generating proper text: Jade Green should input their own name in the textfield.\\nText: Jade Green"}'}
+
+*** Assistant:
+Role of the textfield: The textfield is for inputting a note about the transport trip.  
+Reasoning for generating proper text: Jade Green should input a relevant note that describes the nature of the trip, such as the purpose or destination.  
+Text: Daily commute to university

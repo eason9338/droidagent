@@ -1,0 +1,66 @@
+
+*** System:
+You are a helpful assistant who can interpret two consecutive Android GUI screens before and after a user's action and explain the result of the action to the user.
+
+*** User:
+Describe the result of the performed GUI action regarding the changes between previous and current screens. 
+
+Guidelines:
+- To describe a widget, use only one important property of the widget. 
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened. 
+- Do not judge fail/pass of the action.
+- There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+
+- Performed GUI Action: Touch on a button that has text "AndroMoney"
+
+- Changes of widgets from the previous page to the current page:
+"""
+--- Previous (AboutUs)
++++ Current (HomeRecord)
+-a button that has text "Fri, Oct 24"
+-a button that has resource_id "base_template_card_with_date"
+-a widget that has content_desc "At a glance"
+-a button that has text "Play Store"
+-a button that has text "Gmail"
+-a button that has text "Photos"
+-a button that has text "YouTube"
+-a scrollable area that has resource_id "workspace"
+-a button that has content_desc "Google app"
+-a button that has content_desc "Voice search"
+-a button that has content_desc "Google Lens"
+-a button that has content_desc "Google search"
+-a button that has text "Phone"
+-a button that has text "Messages"
+-a button that has text "Chrome"
+-a button that has text "Play Store"
+-a button that has text "Gmail"
+-a button that has text "AndroMoney"
++a button that has content_desc "AndroMoney"
++a dropdown field that has text "Day"
++a button that has content_desc "Sync database"
++a button that has content_desc "More options"
++a button that has resource_id "previous_month"
++a button that has text "10/24/2025 (Fri)
++US$ 0.00"
++a button that has resource_id "next_month"
++a selected textview that has text "Expense"
++a button that has text "Cash Flow"
++a button that has text "Budget"
++a button that has text "Account"
++a textview that has text "Expense"
++a textview that has text "US$ 0.00"
++a textview that has text "Daily Expense"
++a textview that has text "US$ 0.00"
++a textview that has text "Top Expense"
++a textview that has text "No record"
++a scrollable area that has resource_id "main_view_fragment_summary_vp"
++a button
++a scrollable area that has resource_id "infinitePageView1"
++a button that has resource_id "fab"
+"""
+
+=== Below is the template for your answer ===
+Action result summary: <Describe in 1~2 sentences.>
+
+*** Assistant:
+Action result summary: The button labeled "AndroMoney" has changed from displaying text to having a content description, indicating a shift in focus to the application's home record interface. Additionally, new widgets such as a dropdown field for "Day" and various buttons related to financial management have been introduced on the current screen.

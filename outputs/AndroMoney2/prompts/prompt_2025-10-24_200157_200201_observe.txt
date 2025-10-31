@@ -1,0 +1,51 @@
+
+*** System:
+You are a helpful assistant who can interpret two consecutive Android GUI screens before and after a user's action and explain the result of the action to the user.
+
+*** User:
+Describe the result of the performed GUI action regarding the changes between previous and current screens. 
+
+Guidelines:
+- To describe a widget, use only one important property of the widget. 
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened. 
+- Do not judge fail/pass of the action.
+- There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+
+- Performed GUI Action: Touch on a button that has text "Filter"
+
+- Changes of widgets from the previous page to the current page:
+"""
+--- Previous (HomeAccount)
++++ Current (HomeAccount)
++a button that has content_desc "AndroMoney"
++a textview that has text "Account"
++a button that has content_desc "Refresh"
++a button that has content_desc "Sort"
++a button that has content_desc "New .."
++a button that has content_desc "More options"
++a focused textfield that has text "Account"
++a textview that has text "Total Assets"
++a textview that has text "US$ 0.00"
++a textview that has text "Total Liabilities"
++a textview that has text "US$ 0.00"
++a textview that has text "Balance"
++a textview that has text "US$ 0.00"
++a button that has resource_id "assets_line_chart"
++a textview that has text "Cash"
++a textview that has text "US$ 0.00"
++a button that has resource_id "row_bg"
++a textview that has text "Credit Card"
++a textview that has text "US$ 0.00"
++a button that has resource_id "row_bg"
++a textview that has text "Bank"
++a textview that has text "US$ 0.00"
++a button that has resource_id "row_bg"
++a listview that has resource_id "ListView01"
++a button that has resource_id "TransferButton"
+"""
+
+=== Below is the template for your answer ===
+Action result summary: <Describe in 1~2 sentences.>
+
+*** Assistant:
+Action result summary: The "Filter" button was touched, resulting in the appearance of a new button with the content description "More options" on the current screen. This indicates that additional filtering options are now accessible to the user.

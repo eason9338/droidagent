@@ -1,0 +1,13 @@
+{
+  "tag": "2025-10-31_165830",
+  "event": {
+    "event_type": "intent",
+    "log_lines": null,
+    "intent": "am start com.mark.pocketmanager/com.mark.pocketmanager.MainActivity"
+  },
+  "start_state": "c29a71008efd8a8352b6352f57bd8eae",
+  "stop_state": "d3ead7d067f385b6f2751b556fd249e3",
+  "event_str": "IntentEvent(intent='am start com.mark.pocketmanager/com.mark.pocketmanager.MainActivity')",
+  "task": null,
+  "view_image_dir": null
+}

@@ -1,0 +1,56 @@
+{
+  "agent_output_dir": "/Users/akiraeason/Desktop/droidagent/outputs/PocketManager",
+  "app_name": "\u8a18\u5e33\u5c0f\u52a9\u624b",
+  "package_name": "com.mark.pocketmanager",
+  "app_activities": [
+    "Budget",
+    "CategoryEdit",
+    "ExpenditureThreshold",
+    "CategoryGraph",
+    "AddOrEdit",
+    "CategoryList",
+    "BackUp",
+    "ChildCategory",
+    "CategoryAdd",
+    "Main"
+  ],
+  "actor_model": "gpt-4o-mini",
+  "observer_model": "gpt-4o-mini",
+  "planner_model": "gpt-4o-mini",
+  "reflector_model": "gpt-4o-mini",
+  "activity_name_map": {
+    "Main": "com.mark.pocketmanager.MainActivity",
+    "Budget": "com.mark.pocketmanager.Setting.BudgetActivity",
+    "CategoryEdit": "com.mark.pocketmanager.Setting.CategoryEditActivity",
+    "ExpenditureThreshold": "com.mark.pocketmanager.Setting.ExpenditureThreshold",
+    "CategoryGraph": "com.mark.pocketmanager.Graph.CategoryGraphActivity",
+    "AddOrEdit": "com.mark.pocketmanager.Home.AddOrEditActivity",
+    "CategoryList": "com.mark.pocketmanager.Setting.CategoryListActivity",
+    "BackUp": "com.mark.pocketmanager.Setting.BackUpActivity",
+    "ChildCategory": "com.mark.pocketmanager.Setting.ChildCategory",
+    "CategoryAdd": "com.mark.pocketmanager.Setting.CategoryAddActivity"
+  },
+  "persona": {
+    "name": "Jade Green",
+    "ultimate_goal": "Test the app's main features such as adding income and expense records, and according to the current persona settings, test the features that the user prefers to use.",
+    "initial_knowledge": [
+      "Jade Green started the \u8a18\u5e33\u5c0f\u52a9\u624b app"
+    ],
+    "profile": "(The username and password is what Jade Green generally uses for their accounts.)\n- name: Jade Green\n- age: 25\n- phone: 081-827-7650\n- email: anony1017mous@gmail.com\n- username: tester.green\n- password: green1029*\n- date_of_birth: 1997-10-29\n- self_introduction: I am a 25-year-old graduate student studying computer science. I want to explore advance feature, like record expense in different currencies\n- user_segment: \"Power User\"\n- typical_tasks: [\"Add expense in different currencies\", \"Generate expense reports\", \"Manage multiple accounts\"]\n- pain_points_to_watch: [\"Slow currency switching\", \"Complicated report filters\", \"Too many clicks for common tasks\"]\n- natural_behaviors: Jade Green is a busy student who records expenses regularly (meals, transport, study materials), may use multiple currencies when traveling, wants to analyze spending patterns, and manages different financial accounts for different purposes.\n- task_completion_rule: Each task is ONE COMPLETE workflow from start to finish. Do NOT split a workflow into multiple separate tasks. Do NOT repeat the same workflow multiple times unless testing different variations.",
+    "profile_dict": {
+      "name": "Jade Green",
+      "age": "25",
+      "phone": "081-827-7650",
+      "email": "anony1017mous@gmail.com",
+      "username": "tester.green",
+      "password": "green1029*",
+      "date_of_birth": "1997-10-29",
+      "self_introduction": "I am a 25-year-old graduate student studying computer science. I want to explore advance feature, like record expense in different currencies",
+      "user_segment": "\"Power User\"",
+      "typical_tasks": "[\"Add expense in different currencies\", \"Generate expense reports\", \"Manage multiple accounts\"]",
+      "pain_points_to_watch": "[\"Slow currency switching\", \"Complicated report filters\", \"Too many clicks for common tasks\"]",
+      "natural_behaviors": "Jade Green is a busy student who records expenses regularly (meals, transport, study materials), may use multiple currencies when traveling, wants to analyze spending patterns, and manages different financial accounts for different purposes.",
+      "task_completion_rule": "Each task is ONE COMPLETE workflow from start to finish. Do NOT split a workflow into multiple separate tasks. Do NOT repeat the same workflow multiple times unless testing different variations."
+    }
+  }
+}

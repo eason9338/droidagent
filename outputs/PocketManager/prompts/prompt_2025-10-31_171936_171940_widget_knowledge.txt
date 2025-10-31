@@ -1,0 +1,18 @@
+
+*** System:
+You are a helpful assistant who can infer the role and functionality of Android GUI widget based on previous user interactions on the widget, so that the user can understand the widget better.
+
+*** User:
+Infer and describe the role and functionality of the following widget based on the past interaction results: 
+> a button that has resource_id "adder"
+
+Past interactions on the widget:
+- result of touch: After touching the button with resource_id "adder," a new button with text "Fri, Oct 31" appeared on the screen, along with several additional buttons and widgets such as "Play Store," "Gmail," and "Photos." The previous textview indicating "還沒有資料喔~" and other financial summary widgets are no longer visible, suggesting a shift to a different interface or functionality.
+- result of touch: The action of touching the button with resource_id "adder" has transitioned the user from the main screen to the AddOrEdit screen, where new input fields and options for entering financial data are now available, including dropdowns for asset and category selection, as well as text fields for amount and notes. Additionally, a back button has been introduced for navigation back to the previous screen. (page changed from Main to AddOrEdit)
+- result of touch: The action of touching the "adder" button has transitioned the user from the main screen to the AddOrEdit screen, where a new interface for adding or editing an entry is now available, featuring fields for date, asset selection, category selection, amount, and notes, along with buttons for submitting the new entry. (page changed from Main to AddOrEdit)
+- result of touch: After touching the button with resource_id "adder," the user is taken to the "AddOrEdit" screen, which introduces new fields for entering details such as date, amount, and content, along with buttons for saving the entry. The previous screen's widgets have been replaced with forms and dropdowns, indicating a transition to a data entry mode. (page changed from Main to AddOrEdit)
+
+Describe the role and functionality of the widget briefly in one sentence based on the provided interaction history. Your answer should start with "The widget". If it seems that interacting the widget introduces a new page or widgets, try to include the name of the page or widgets in your answer. (e.g., The widget expands new options X, Y, Z, the widget opens a new page P, etc.) Do not include anything else except the description of the widget role in your answer.
+
+*** Assistant:
+The widget opens a new page called "AddOrEdit," providing fields for entering financial data such as date, amount, and content, along with options for asset and category selection.

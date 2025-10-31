@@ -1,0 +1,12 @@
+{
+  "task": "Record a USD 15 lunch expense at a nearby caf\u00e9.",
+  "task_end_condition": "The task is known to be completed when the lunch expense is successfully recorded in the app with all relevant details filled in.",
+  "working_memory": [
+    {
+      "description": "Touch on a button that has resource_id \"adder\"",
+      "type": "ACTION",
+      "timestamp": "16:57:55",
+      "page": "Main"
+    }
+  ]
+}

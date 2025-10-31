@@ -1,0 +1,24 @@
+{
+  "task": "Select a project for the expense record.",
+  "task_end_condition": "The task is known to be completed when Jade Green successfully selects a project and returns to the Add New Record page.",
+  "working_memory": [
+    {
+      "description": "Touch on a button that has text \"Project:\"",
+      "type": "ACTION",
+      "timestamp": "19:27:35",
+      "page": "AddNewRecord"
+    },
+    {
+      "description": "The screen has transitioned to a new layout where the \"Project\" section is now prominently displayed with options to modify or select projects. Additionally, there are new elements such as a list of project types and a checkbox, indicating the user can now manage project-related settings. (page changed from AddNewRecord to AddRecordProject)",
+      "type": "OBSERVATION",
+      "timestamp": "19:27:43",
+      "page": "AddRecordProject"
+    },
+    {
+      "description": "Touch on a button that has text \"Business\"",
+      "type": "ACTION",
+      "timestamp": "19:27:48",
+      "page": "AddRecordProject"
+    }
+  ]
+}

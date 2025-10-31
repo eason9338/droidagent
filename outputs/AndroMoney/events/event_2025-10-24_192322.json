@@ -1,0 +1,35 @@
+{
+  "tag": "2025-10-24_192322",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 32,
+      "view_str": "d87fc53b29cec74a20e111bd0e6bc476",
+      "widget_type": "RelativeLayout",
+      "class": "android.widget.RelativeLayout",
+      "resource_id": "bg",
+      "possible_action_types": [
+        "touch",
+        "long_touch"
+      ],
+      "bounds": [
+        [
+          0,
+          633
+        ],
+        [
+          2203,
+          777
+        ]
+      ]
+    }
+  },
+  "start_state": "e96aa3ebbf6e81823140b01ba31e7e19",
+  "stop_state": "fa75aee6f4fb47f9aae7919ee0a38992",
+  "event_str": "TouchEvent(state=e96aa3ebbf6e81823140b01ba31e7e19, view=d87fc53b29cec74a20e111bd0e6bc476(AddRecordProjectActivity/RelativeLayout-))",
+  "task": "Touch the button to add a new record.",
+  "view_image_dir": "../outputs/AndroMoney/views/view_d87fc53b29cec74a20e111bd0e6bc476.png"
+}

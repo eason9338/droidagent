@@ -46,7 +46,7 @@ def load_profile(profile_id):
 
 
 @timeout(7200)
-def main(device, app, persona, debug=False):
+def main(device, app, persona, debug=False, keep_app=False):
     start_time = time.time()
     agent = TaskBasedAgent(output_dir, app=app, persona=persona, debug_mode=debug)
     device_manager = DeviceManager(device, app, output_dir=output_dir)
@@ -59,7 +59,8 @@ def main(device, app, persona, debug=False):
     while True:
         if agent.step_count > MAX_STEP:
             print(f'Maximum number of steps reached ({agent.step_count})')
-            device.uninstall_app(app)
+            if not keep_app:
+                device.uninstall_app(app)
             device.disconnect()
             device.tear_down()
             exit(0)
@@ -74,7 +75,7 @@ def main(device, app, persona, debug=False):
                 print('Loading state persisted for too long. Pressing the back button to go back to the previous state...')
                 go_back_event = KeyEvent(name='BACK')
                 event_dict = device_manager.send_event_to_device(go_back_event)
-                agent.memory.append_to_working_memory(ExternalAction(f'{agent.persona_name} pressed the back button because there was no interactable widgets', [event_dict]), 'ACTION')
+                agent.memory.working_memory.add_step(ExternalAction(f'{agent.persona_name} pressed the back button because there was no interactable widgets', [event_dict]), device_manager.current_state.foreground_activity, 'ACTION')
                 loading_wait_count = 0
                 continue
                 
@@ -114,6 +115,7 @@ if __name__ == "__main__":
     parser.add_argument('--profile_id', type=str, help='name of the persona profile to be used', default='jade')
     parser.add_argument('--is_emulator', action='store_true', help='whether the device is an emulator or not', default=False)
     parser.add_argument('--debug', action='store_true', help='whether to run the agent in the debug mode or not', default=False)
+    parser.add_argument('-keep_app', action='store_true', help='keep the app on the device after testing', default=False)
     args = parser.parse_args()
     
     timestamp = time.strftime("%Y%m%d%H%M%S")
@@ -141,7 +143,7 @@ if __name__ == "__main__":
     persona_name = persona['name']
 
     persona.update({
-        'ultimate_goal': 'visit as many pages as possible while trying their core functionalities',
+        'ultimate_goal': "Test the app's main features such as adding income and expense records, and according to the current persona settings, test the features that the user prefers to use.",
         # 'ultimate_goal': 'check whether the app supports interactions between multiple users', # for QuickChat case study
         'initial_knowledge': initial_knowledge_map(args.app, persona_name, app_name),
     })
@@ -163,11 +165,12 @@ if __name__ == "__main__":
     time.sleep(10)
     
     try:
-        main(device, app, persona, debug=args.debug)
+        main(device, app, persona, debug=args.debug, keep_app=args.keep_app)
     except (KeyboardInterrupt, TimeoutError) as e:
         print("Ending the exploration due to a user request or timeout.")
         print(e)
-        device.uninstall_app(app)
+        if not args.keep_app:
+            device.uninstall_app(app)
         device.disconnect()
         device.tear_down()
         exit(0)
@@ -175,12 +178,14 @@ if __name__ == "__main__":
     except Exception as e:
         print("Ending the exploration due to an unexpected error.")
         print(e)
-        device.uninstall_app(app)
+        if not args.keep_app:
+            device.uninstall_app(app)
         device.disconnect()
         device.tear_down()
 
         raise e
-    
-    device.uninstall_app(app)
+
+    if not args.keep_app:
+        device.uninstall_app(app)
     device.disconnect()
     device.tear_down()

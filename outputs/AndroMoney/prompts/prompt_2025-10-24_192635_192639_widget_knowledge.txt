@@ -1,0 +1,17 @@
+
+*** System:
+You are a helpful assistant who can infer the role and functionality of Android GUI widget based on previous user interactions on the widget, so that the user can understand the widget better.
+
+*** User:
+Infer and describe the role and functionality of the following widget based on the past interaction results: 
+> a button that has text "Breakfast"
+
+Past interactions on the widget:
+- result of touch: After touching the button labeled "Breakfast," a new text view appears with the message "Auto fill by category," indicating that a prompt for auto-filling transactions based on the selected category has been activated. Additionally, a checkbox labeled "Ask every time" is now checked, suggesting that the user will be prompted for confirmation during future transactions.
+- result of touch: After touching the "Breakfast" button, a new textview appeared with the text "Auto fill by category," indicating that a new option related to auto-filling transactions by category is now available. Additionally, a checkbox labeled "Ask every time" was added, allowing for further customization of the auto-fill feature.
+- result of touch: The screen transitioned from the Category Selection page to a new interface that includes a prompt for auto-filling by category, featuring a checkbox for user preferences and two buttons labeled "NO" and "YES". Additionally, a temporary popup message displayed advertisements and information before disappearing.
+
+Describe the role and functionality of the widget briefly in one sentence based on the provided interaction history. Your answer should start with "The widget". If it seems that interacting the widget introduces a new page or widgets, try to include the name of the page or widgets in your answer. (e.g., The widget expands new options X, Y, Z, the widget opens a new page P, etc.) Do not include anything else except the description of the widget role in your answer.
+
+*** Assistant:
+The widget opens a new interface for auto-filling transactions by category, featuring a prompt with a checkbox for user preferences and confirmation buttons.

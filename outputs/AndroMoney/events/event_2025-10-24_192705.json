@@ -1,0 +1,35 @@
+{
+  "tag": "2025-10-24_192705",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 17,
+      "view_str": "d4c68240d95b077c5d9dd3b8542ef1af",
+      "widget_type": "Button",
+      "class": "android.widget.Button",
+      "text": "YES",
+      "resource_id": "button1",
+      "possible_action_types": [
+        "touch"
+      ],
+      "bounds": [
+        [
+          1469,
+          1013
+        ],
+        [
+          1637,
+          1139
+        ]
+      ]
+    }
+  },
+  "start_state": "6505792cd07a3437c083b07e493c15b0",
+  "stop_state": "ddf3717819548b9cab6a1af8641b8030",
+  "event_str": "TouchEvent(state=6505792cd07a3437c083b07e493c15b0, view=d4c68240d95b077c5d9dd3b8542ef1af(CategorySelectionActivity/Button-YES))",
+  "task": "Select an account for the expense record.",
+  "view_image_dir": "../outputs/AndroMoney/views/view_d4c68240d95b077c5d9dd3b8542ef1af.png"
+}

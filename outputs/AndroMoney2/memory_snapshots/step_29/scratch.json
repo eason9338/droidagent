@@ -1,0 +1,12 @@
+{
+  "task": "Touch the \"New ..\" button.",
+  "task_end_condition": "The task is known to be completed when the new record entry screen appears.",
+  "working_memory": [
+    {
+      "description": "Touch on a button that has content_desc \"New ..\"",
+      "type": "ACTION",
+      "timestamp": "20:03:07",
+      "page": "HomeAccount"
+    }
+  ]
+}

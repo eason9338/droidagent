@@ -1,0 +1,18 @@
+{
+  "task": "Record a USD 10 coffee expense by selecting the food category, entering the amount, and adding a note about the coffee shop visit.",
+  "task_end_condition": "The task is known to be completed when the coffee expense is reflected in the Main page with the correct amount and details.",
+  "working_memory": [
+    {
+      "description": "Touch on a button that has resource_id \"adder\"",
+      "type": "ACTION",
+      "timestamp": "17:20:03",
+      "page": "Main"
+    },
+    {
+      "description": "The action of touching the button with resource_id \"adder\" has transitioned the user from the main screen to the AddOrEdit screen, where new input fields and buttons are now available for adding or editing financial records. The current screen includes dropdown fields for selecting assets and categories, as well as text fields for entering amount and notes, which were not present on the previous screen. (page changed from Main to AddOrEdit)",
+      "type": "OBSERVATION",
+      "timestamp": "17:20:11",
+      "page": "AddOrEdit"
+    }
+  ]
+}

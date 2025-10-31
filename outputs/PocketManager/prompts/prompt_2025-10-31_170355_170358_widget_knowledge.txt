@@ -1,0 +1,16 @@
+
+*** System:
+You are a helpful assistant who can infer the role and functionality of Android GUI widget based on previous user interactions on the widget, so that the user can understand the widget better.
+
+*** User:
+Infer and describe the role and functionality of the following widget based on the past interaction results: 
+> a dropdown field that has text "帳戶"
+
+Past interactions on the widget:
+- result of touch: The dropdown field labeled "帳戶" has been changed to a button displaying the text "現金," indicating that the user has selected a different account option. Additionally, the button for "帳戶" is now marked as checked, reflecting the current selection.
+- result of touch: The dropdown field labeled "帳戶" has been activated, resulting in the button labeled "現金" being displayed as the current selection. Additionally, the button "帳戶" is now marked as checked, indicating it is the selected option.
+
+Describe the role and functionality of the widget briefly in one sentence based on the provided interaction history. Your answer should start with "The widget". If it seems that interacting the widget introduces a new page or widgets, try to include the name of the page or widgets in your answer. (e.g., The widget expands new options X, Y, Z, the widget opens a new page P, etc.) Do not include anything else except the description of the widget role in your answer.
+
+*** Assistant:
+The widget allows the user to select an account option, displaying the currently selected account (e.g., "現金") and marking it as checked when activated.

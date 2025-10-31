@@ -38,10 +38,16 @@ def summarize_state_change(memory, prompt_recorder=None):
 Describe the result of the performed GUI action regarding the changes between previous and current screens. 
 
 Guidelines:
-- To describe a widget, use only one important property of the widget. 
-- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened. 
+- To describe a widget, use only one important property of the widget.
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened.
 - Do not judge fail/pass of the action.
 - There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+- Note if the UI might confuse the {agent_config.persona_name} (e.g., unclear buttons, confusing layout, missing confirmation).
+- CRITICAL: If the action was clicking a submit/save button (新增, 保存, 確認, OK, Save):
+  * Check if the form has been cleared/reset → indicate "entry was successfully saved"
+  * Check if a success message appeared → indicate "confirmation of successful save"
+  * Check if the screen returned to a blank form → indicate "ready for next entry"
+  * These are KEY INDICATORS that the task workflow was completed
 
 - Performed GUI Action: {previous_action}
 

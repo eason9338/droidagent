@@ -1,0 +1,46 @@
+
+*** System:
+You are a helpful assistant who can interpret two consecutive Android GUI screens before and after a user's action and explain the result of the action to the user.
+
+*** User:
+Describe the result of the performed GUI action regarding the changes between previous and current screens. 
+
+Guidelines:
+- To describe a widget, use only one important property of the widget.
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened.
+- Do not judge fail/pass of the action.
+- There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+- Note if the UI might confuse the Jade Green (e.g., unclear buttons, confusing layout, missing confirmation).
+
+- Performed GUI Action: Touch on a button that has text "現金"
+
+- Changes of widgets from the previous page to the current page:
+"""
+--- Previous (AddOrEdit)
++++ Current (AddOrEdit)
++a button that has resource_id "backButton"
++a button that has text "收入"
++a selected button that has text "支出"
++a button that has resource_id "outButtonLine"
++a textview that has text "日期"
++a button that has text "2025-10-31"
++a button that has text "PM 04:58"
++a textview that has text "資產"
+ a button that has text "現金"
+-a checked button that has text "帳戶"
++a dropdown field that has resource_id "assetPicker"
++a textview that has text "類別"
++a button that has text "食物"
++a dropdown field that has resource_id "categoryPicker"
++a textview that has text "金額"
++a focused textfield that has text "15"
++a textview that has text "內容"
++a textfield that has resource_id "noteEditor"
++a button that has text "新增"
+"""
+
+=== Below is the template for your answer ===
+Action result summary: <Describe in 1~2 sentences.>
+
+*** Assistant:
+Action result summary: The button labeled "現金" remains present on the current screen, while the previously selected button "帳戶" is no longer checked, indicating a change in the selection state. Additionally, new buttons and dropdown fields related to income and expense categories have been introduced, which may cause confusion for users trying to navigate the options.

@@ -1,0 +1,12 @@
+{
+  "task": "Record a USD 10 coffee expense by selecting the food category, entering the amount, and adding a note about the coffee shop visit.",
+  "task_end_condition": "The task is known to be completed when the coffee expense is reflected in the Main page with the correct amount and details.",
+  "working_memory": [
+    {
+      "description": "Touch on a button that has resource_id \"adder\"",
+      "type": "ACTION",
+      "timestamp": "17:20:03",
+      "page": "Main"
+    }
+  ]
+}

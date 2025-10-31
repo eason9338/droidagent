@@ -1,0 +1,35 @@
+{
+  "tag": "2025-10-24_200449",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 22,
+      "view_str": "f1a882406e8ef56721b21f060f8114e5",
+      "widget_type": "Button",
+      "class": "android.widget.Button",
+      "text": "US$",
+      "resource_id": "currencyBtn",
+      "possible_action_types": [
+        "touch"
+      ],
+      "bounds": [
+        [
+          560,
+          659
+        ],
+        [
+          791,
+          764
+        ]
+      ]
+    }
+  },
+  "start_state": "e9c057897d0141cae54213959e7e8a46",
+  "stop_state": "e9c057897d0141cae54213959e7e8a46",
+  "event_str": "TouchEvent(state=e9c057897d0141cae54213959e7e8a46, view=f1a882406e8ef56721b21f060f8114e5(HomeAccountActivity/Button-US$))",
+  "task": "Touch the \"New ..\" button.",
+  "view_image_dir": "../outputs/AndroMoney2/views/view_f1a882406e8ef56721b21f060f8114e5.png"
+}

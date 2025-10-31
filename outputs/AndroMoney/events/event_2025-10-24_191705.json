@@ -1,0 +1,34 @@
+{
+  "tag": "2025-10-24_191705",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 59,
+      "view_str": "cf624ece9c912d8225b0a92e6b86fb71",
+      "widget_type": "RelativeLayout",
+      "class": "android.widget.RelativeLayout",
+      "possible_action_types": [
+        "touch",
+        "long_touch"
+      ],
+      "bounds": [
+        [
+          1216,
+          242
+        ],
+        [
+          2208,
+          387
+        ]
+      ]
+    }
+  },
+  "start_state": "bd2e1d127dd440df83317624097cd4b3",
+  "stop_state": "6505792cd07a3437c083b07e493c15b0",
+  "event_str": "TouchEvent(state=bd2e1d127dd440df83317624097cd4b3, view=cf624ece9c912d8225b0a92e6b86fb71(CategorySelectionActivity/RelativeLayout-))",
+  "task": "Add a new expense record.",
+  "view_image_dir": "../outputs/AndroMoney/views/view_cf624ece9c912d8225b0a92e6b86fb71.png"
+}

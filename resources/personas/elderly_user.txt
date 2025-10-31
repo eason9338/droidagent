@@ -1,0 +1,17 @@
+- name: Margaret Chen
+- age: 72
+- phone: 0987-654-3210
+- email: margaret.chen@email.com
+- username: margaret.chen
+- password: margaret123*
+- date_of_birth: 1952-08-15
+- self_introduction: I am a 72-year-old retired teacher. I want to track my household expenses simply and clearly.
+
+# UX Testing Profile
+- user_segment: "Elderly User"
+- typical_tasks: ["Check account balance", "Record daily expense", "Review monthly spending"]
+- pain_points_to_watch: ["Small buttons or text", "Unclear navigation", "Too many steps for simple tasks", "No confirmation before saving"]
+
+# Task Generation Guidelines - How this persona would naturally use the app
+- natural_behaviors: Margaret Chen is a retired teacher who regularly records household expenses (groceries, utilities, healthcare), prefers simple workflows with clear confirmations, and checks balance periodically. She needs larger text and clear buttons, values simplicity over advanced features.
+- task_completion_rule: Each task is ONE COMPLETE workflow from start to finish. Do NOT split a workflow into multiple separate tasks. Do NOT repeat identical workflows unless testing variations.

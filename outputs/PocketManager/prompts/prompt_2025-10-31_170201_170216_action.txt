@@ -1,0 +1,201 @@
+
+*** System:
+You are a helpful assistant to guide a user named Jade Green to accomplish a SPECIFIC task on an Android mobile application named 記帳小助手.
+
+The profile of Jade Green is as follows:
+(The username and password is what Jade Green generally uses for their accounts.)
+- name: Jade Green
+- age: 25
+- phone: 081-827-7650
+- email: anony1017mous@gmail.com
+- username: tester.green
+- password: green1029*
+- date_of_birth: 1997-10-29
+- self_introduction: I am a 25-year-old graduate student studying computer science. I want to explore advance feature, like record expense in different currencies
+- user_segment: "Power User"
+- typical_tasks: ["Add expense in different currencies", "Generate expense reports", "Manage multiple accounts"]
+- pain_points_to_watch: ["Slow currency switching", "Complicated report filters", "Too many clicks for common tasks"]
+- natural_behaviors: Jade Green is a busy student who records expenses regularly (meals, transport, study materials), may use multiple currencies when traveling, wants to analyze spending patterns, and manages different financial accounts for different purposes.
+- task_completion_rule: Each task is ONE COMPLETE workflow from start to finish. Do NOT split a workflow into multiple separate tasks. Do NOT repeat the same workflow multiple times unless testing different variations.
+
+CRITICAL: Your role is to help Jade Green COMPLETE the planned task, not to explore the app randomly.
+- You have a specific goal to achieve
+- You must work directly toward this goal
+- Do NOT try alternative options or explore unrelated features unless necessary
+- When you encounter choices, pick the one that matches your goal
+
+Jade Green can perform the following types of actions:
+- Scroll on a scrollable widget
+- Touch on a clickable widget
+- Long touch on a long-clickable widget
+- Fill in an editable widget
+- Navigate back by pressing the back button
+- End the task when your specific goal is completed
+
+*** User:
+My name is Jade Green and I am using an application named 記帳小助手 to accomplish the following task: 
+* Task: Record a USD 15 lunch expense at a nearby café. (The task is known to be completed when the lunch expense is successfully recorded in the app with all relevant details filled in)
+
+I'm currently on the Main page. What should be the first action?
+
+*** Assistant:
+Touch on a button that has resource_id "adder"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Open the app again because the previous action led to closing the app
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Press "BACK" button to navigate back
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Open the app again because the previous action led to closing the app
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a button that has resource_id "adder"
+
+*** User:
+I performed the action you suggested. The page changed from Main to AddOrEdit. What should be the next action?
+
+*** Assistant:
+Touch on a textfield that has resource_id "amountEditor"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Jade Green pressed the back button because there was no interactable widgets
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Fill a focused textfield that has resource_id "amountEditor" with "15"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Jade Green pressed the back button because there was no interactable widgets
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a dropdown field that has text "現金"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a button that has text "帳戶"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a dropdown field that has text "帳戶"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a checked button that has text "帳戶"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a dropdown field that has text "食物"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a checked button that has text "食物"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a dropdown field that has text "帳戶"
+
+*** User:
+I performed the action, and as a result, the dropdown field labeled "帳戶" has been activated, resulting in the button labeled "現金" being displayed as the current selection. Additionally, the button "帳戶" is now marked as checked, indicating it is the selected option. However, I got the following critique for my actions so far: 
+> Criticizer: "Jade Green has encountered some confusion with the interface and navigated back unnecessarily, which has delayed the task. Overall, the actions taken show a struggle with the app's navigation and functionality. Jade Green needs to explore the dropdown fields and options available on the AddOrEdit screen to select the correct account and category for the lunch expense, and ensure to fill in all required fields before submitting the expense." 
+Considering the critique, what should be the next action?
+
+This time, I'll give you the full content of the current page as follows (I organized the page content as a hierarchical structure):
+```json
+{
+  page_name: AddOrEdit,
+  children: [
+    {
+      ID: 3,
+      widget_type: CheckedTextView,
+      text: 現金,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 4,
+      widget_type: CheckedTextView,
+      text: 帳戶,
+      state: [
+        checked
+      ],
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 4,
+      widget_role_inference: The widget allows the user to select an account type, leading to the appearance of new options such as the buttons 收入 and 支出, as well as a dropdown field labeled 資產, indicating a change in transaction context.
+    }
+  ]
+}
+```
+
+Guideline for selecting the next action:
+- Note that `num_prev_actions` property means the number of times the widget has been interacted with so far.
+- Note that `widget_role_inference` property means the role of the widget inferred by previous actions. Use this property to infer what the widget is used for. If the widget has not been interacted yet, `widget_role_inference` property is not included in the widget dictionary.
+- Focus on completing your SPECIFIC TASK, not exploring new widgets
+- If you are stuck or confused while trying to complete the task, report the problem:
+  * "I cannot find the option for [what you're looking for]"
+  * "The UI is unclear about [specific confusion point]"
+  * "I expected to see [something] but found [something else]"
+- If the task seems impossible to complete with current UI state, explain why and suggest giving up
+
+Recall that my current task is: Record a USD 15 lunch expense at a nearby café.
+Select the next suitable action to perform, or end the task if the task is already completed.
+
+This time, I am going to provide a template for your output to let you think about my next action step by step. Fill out the <...> parts in the template with your own words. Do not include anything else in your answer except the text to fill out the template. Preserve the formatting and overall template.
+
+=== Below is the template for your answer ===
+1. Summary of my previous interactions for the task: <1~2 sentences according to the task execution history and current app state. Reflect criticizer's feedback if I mentioned any. Be careful not to include any actions that haven't been performed yet>
+2. Description of the current app state: <1~2 sentences, briefly describe in one line according to the hierarchical structure I provided above>
+3. Inference on the remaining steps needed to complete the task: <1~2 sentences according to the task execution history and current app state. Do not immediately judge the next action here>
+4. Reasoning for the next action: <1 sentence reasoning the most logical action to take next on the current state (or justification for ending the task). Refer to the guideline above>
+
+*** Assistant:
+1. Summary of my previous interactions for the task: I have struggled with the app's navigation and functionality, leading to unnecessary back navigation. I have selected the account type "帳戶" but have not yet fully completed the required fields for recording the expense.
+2. Description of the current app state: The current page is "AddOrEdit," where the account type "帳戶" is checked, and the button "現金" is available for selection.
+3. Inference on the remaining steps needed to complete the task: I need to select the appropriate category for the expense and ensure all required fields are filled before submitting the lunch expense of USD 15.
+4. Reasoning for the next action: I will touch on the button labeled "現金" to select it as the payment method for the expense.
+
+*** User:
+Based on your reasoning, select the next action or end the task by calling one of the given function that corresponds to a specific action.
+
+*** Assistant:
+{'id': 'call_oAoOHpAH0zyCwJPw4wy0ahxm', 'type': 'function', 'function': {'name': 'touch', 'arguments': '{"target_widget_ID":3}'}}

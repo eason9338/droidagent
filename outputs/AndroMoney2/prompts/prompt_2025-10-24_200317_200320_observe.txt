@@ -1,0 +1,68 @@
+
+*** System:
+You are a helpful assistant who can interpret two consecutive Android GUI screens before and after a user's action and explain the result of the action to the user.
+
+*** User:
+Describe the result of the performed GUI action regarding the changes between previous and current screens. 
+
+Guidelines:
+- To describe a widget, use only one important property of the widget. 
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened. 
+- Do not judge fail/pass of the action.
+- There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+
+- Performed GUI Action: Touch on a button that has content_desc "New .."
+
+- Changes of widgets from the previous page to the current page:
+"""
+--- Previous (HomeAccount)
++++ Current (HomeAccount)
+-a button that has content_desc "AndroMoney"
+-a textview that has text "Account"
+-a button that has content_desc "Refresh"
+-a button that has content_desc "Sort"
+-a button that has content_desc "New .."
+-a button that has content_desc "More options"
+-a focused textfield that has text "Account"
+-a textview that has text "Total Assets"
+-a textview that has text "US$ 0.00"
+-a textview that has text "Total Liabilities"
+-a textview that has text "US$ 0.00"
+-a textview that has text "Balance"
+-a textview that has text "US$ 0.00"
+-a button that has resource_id "assets_line_chart"
+-a textview that has text "Cash"
+-a textview that has text "US$ 0.00"
+-a button that has resource_id "row_bg"
+-a textview that has text "Credit Card"
+-a textview that has text "US$ 0.00"
+-a button that has resource_id "row_bg"
+-a textview that has text "Bank"
+-a textview that has text "US$ 0.00"
+-a button that has resource_id "row_bg"
+-a listview that has resource_id "ListView01"
+-a button that has resource_id "TransferButton"
++a textview that has text "New Account"
++a textview that has text "Type"
++a dropdown field that has text "Cash"
++a textview that has text "Name"
++a textfield that has resource_id "account_name"
++a textview that has text "Initial Amount"
++a button that has text "US$"
++a textfield that has resource_id "amount"
++a textview that has text "Billing Date"
++a textfield that has resource_id "bill_date"
++a textview that has text "Payment Date"
++a textfield that has resource_id "pay_date"
++a textview that has text "Notes"
++a textfield that has resource_id "remark"
++a checked checkbox that has text "Included in totals"
++a button that has text "CANCEL"
++a button that has text "OK"
+"""
+
+=== Below is the template for your answer ===
+Action result summary: <Describe in 1~2 sentences.>
+
+*** Assistant:
+Action result summary: After touching the button with content description "New ..", a new screen appears that includes a text view labeled "New Account" and various input fields for entering account details, indicating the initiation of creating a new account.

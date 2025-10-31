@@ -1,13 +1,11 @@
 import openai
 import time
 from openai import OpenAI
-from dotenv import load_dotenv 
 
 from .config import agent_config
 from .utils.logger import Logger
 
-load_dotenv()
-client = OpenAI()
+client = OpenAI(api_key="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")
 
 TIMEOUT = 60
 MAX_TOKENS = 500
@@ -60,15 +58,9 @@ def zip_messages(system_message, user_messages, assistant_messages):
         "conversation": conversation
     }
 
-def get_next_assistant_message(system_message, user_messages, assistant_messages=[], functions=[], model="gpt-3.5-turbo-16k-0613", max_tokens=MAX_TOKENS, function_call_option=None):
-    # If model is gpt-3.5-turbo-16k-0613 but the tokens in the prompt are less than 4000 tokens, use gpt-3.5-turbo-0613 instead
-    if model == "gpt-3.5-turbo-16k-0613" and len(stringify_prompt(zip_messages(system_message, user_messages, assistant_messages))) < 8000: # approximately 4000 tokens
-        model = "gpt-3.5-turbo-0613"
-        logger.info(f'Using {model} instead of gpt-3.5-turbo-16k-0613')
-    
-    if model == "gpt-4-0613" and len(stringify_prompt(zip_messages(system_message, user_messages, assistant_messages))) > 16000:    # approximately 8000 tokens
-        model = "gpt-3.5-turbo-16k-0613"
-        logger.info(f'Using {model} instead of gpt-4-0613 (context limit exceeded)')
+def get_next_assistant_message(system_message, user_messages, assistant_messages=[], functions=[], model="gpt-4o-mini", max_tokens=MAX_TOKENS, function_call_option=None):
+    # gpt-4o-mini has a large context window, so no need for model switching based on token count
+    logger.info(f'Using model: {model}')
 
     start_time = time.time()
 

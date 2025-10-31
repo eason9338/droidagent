@@ -1,0 +1,116 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        38acfd7 com.mark.pocketmanager/.MainActivity filter 4b830c4
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.appwidget.action.APPWIDGET_UPDATE:
+        ce0abad com.mark.pocketmanager/.Widget.tabletool filter 4c5fee2
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+
+Domain verification status:
+
+Registered ContentProviders:
+  com.mark.pocketmanager/androidx.startup.InitializationProvider:
+    Provider{a89191a com.mark.pocketmanager/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.mark.pocketmanager.androidx-startup]:
+    Provider{a89191a com.mark.pocketmanager/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{621cc4b com.mark.pocketmanager}
+
+Key Set Manager:
+  [com.mark.pocketmanager]
+      Signing KeySets: 129
+
+Packages:
+  Package [com.mark.pocketmanager] (5a50628):
+    appId=10227
+    pkg=Package{a13ff41 com.mark.pocketmanager}
+    codePath=/data/app/~~dIgxn5Qp5fWB25iifOcIdw==/com.mark.pocketmanager-GxNez_vVDbsD6lWuik3fCA==
+    resourcePath=/data/app/~~dIgxn5Qp5fWB25iifOcIdw==/com.mark.pocketmanager-GxNez_vVDbsD6lWuik3fCA==
+    legacyNativeLibraryDir=/data/app/~~dIgxn5Qp5fWB25iifOcIdw==/com.mark.pocketmanager-GxNez_vVDbsD6lWuik3fCA==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=null
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=6 minSdk=25 targetSdk=31
+    minExtensionVersions=[]
+    versionName=2.0.2
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2025-10-31 16:56:47
+    lastUpdateTime=2025-10-31 16:56:47
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{f8face6 version:2, signatures:[fd10a6ec], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PARTIALLY_DIRECT_BOOT_AWARE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.INTERNET
+      android.permission.READ_EXTERNAL_STORAGE
+      android.permission.READ_MEDIA_IMAGES
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.READ_MEDIA_VIDEO
+      android.permission.GET_ACCOUNTS
+      android.permission.WRITE_EXTERNAL_STORAGE
+      android.permission.WRITE_INTERNAL_STORAGE
+    install permissions:
+      android.permission.INTERNET: granted=true
+    User 0: ceDataInode=361563 deDataInode=90709 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.mark.pocketmanager
+      firstInstallTime=2025-10-31 16:56:47
+      uninstallReason=0
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true
+        android.permission.READ_MEDIA_VISUAL_USER_SELECTED: granted=true
+        android.permission.READ_EXTERNAL_STORAGE: granted=true, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.READ_MEDIA_IMAGES: granted=true, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_MEDIA_AUDIO: granted=true, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.READ_MEDIA_VIDEO: granted=true, flags=[ RESTRICTION_UPGRADE_EXEMPT]
+        android.permission.GET_ACCOUNTS: granted=true
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=true, flags=[ RESTRICTION_INSTALLER_EXEMPT]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.as.oss:
+      com.mark.pocketmanager
+    com.google.android.settings.intelligence:
+      com.mark.pocketmanager
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.mark.pocketmanager]
+    path: /data/app/~~dIgxn5Qp5fWB25iifOcIdw==/com.mark.pocketmanager-GxNez_vVDbsD6lWuik3fCA==/base.apk
+      arm64: [status=run-from-apk] [reason=unknown] [primary-abi]
+        [location is error]
+
+Compiler stats:
+  [com.mark.pocketmanager]
+     base.apk - 3776

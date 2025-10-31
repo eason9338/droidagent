@@ -1,0 +1,542 @@
+================================================================================
+    DroidAgent 如何獲取 Android APK Metadata 的深入解析
+================================================================================
+
+一、整體架構概覽
+================================================================================
+
+DroidAgent 獲取 APK metadata 的過程可以分為三個層次：
+
+1. APK 靜態分析層 (安裝時)
+2. 運行時動態獲取層 (即時)
+3. 數據結構轉換層 (處理)
+
+
+二、第一層：APK 靜態分析 (安裝時獲取)
+================================================================================
+
+入口點：device.install_app(app)
+
+當你執行 run_droidagent.py 時，系統首先會安裝 APK 並提取靜態資訊。
+
+位置：droidbot/droidbot/device.py:616-658
+
+步驟 1：安裝 APK
+--------------------------------------------------------------------------------
+使用 ADB 安裝：
+    install_cmd = ["adb", "-s", self.serial, "install", "-r", "-g", app.app_path]
+
+步驟 2：提取 Package 資訊
+--------------------------------------------------------------------------------
+安裝完成後，系統會執行關鍵命令：
+
+    dumpsys_p = subprocess.Popen([
+        "adb", "-s", self.serial, "shell",
+        "dumpsys", "package", package_name
+    ], stdout=subprocess.PIPE)
+
+「dumpsys package」是什麼？
+- Android 系統級命令
+- 讀取 /data/system/packages.xml 和相關資料庫
+- 返回 APP 的完整 manifest 資訊
+
+獲取的資訊包括：
+1. 所有 Activities (頁面列表)
+2. Main Activity (啟動頁面)
+3. Intent Filters (Intent 過濾器)
+4. Permissions (權限)
+5. Package 名稱
+
+步驟 3：解析 Main Activity
+--------------------------------------------------------------------------------
+位置：device.py:660-706
+
+系統會用正則表達式解析 dumpsys 輸出：
+
+    activity_line_re = re.compile("[^ ]+ ([^ ]+)/([^ ]+) filter [^ ]+")
+    action_re = re.compile("Action: \"([^ ]+)\"")
+    category_re = re.compile("Category: \"([^ ]+)\"")
+
+它在找什麼？
+尋找包含以下條件的 Activity：
+    Action: "android.intent.action.MAIN"
+    Category: "android.intent.category.LAUNCHER"
+
+這就是 APP 的主入口頁面。
+
+輸出範例：
+    Main activity: com.example.app/.MainActivity
+
+
+三、第二層：運行時動態獲取 (實時獲取 UI 狀態)
+================================================================================
+
+這是最核心的部分！DroidAgent 如何在 APP 運行時獲取當前畫面的所有 UI 元件？
+
+關鍵技術：Android Accessibility Service
+--------------------------------------------------------------------------------
+
+什麼是 Accessibility Service？
+- Android 提供給視障用戶的輔助功能 API
+- 可以讀取整個螢幕的 View Hierarchy Tree（視圖層次樹）
+- 包含所有 UI 元件的屬性
+
+DroidBot App：中間代理
+--------------------------------------------------------------------------------
+位置：droidbot/droidbot/adapter/droidbot_app.py
+
+DroidAgent 使用一個叫做 DroidBotApp 的輔助 APK 來獲取 UI 資訊。
+
+工作流程：
+
+1. 安裝 DroidBotApp
+
+   # 安裝內建的 droidbotApp.apk
+   droidbot_app_path = pkg_resources.resource_filename(
+       "droidbot", "resources/droidbotApp.apk"
+   )
+   device.adb.run_cmd(["install", droidbot_app_path])
+
+2. 啟用 Accessibility Service
+
+   ACCESSIBILITY_SERVICE = "io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService"
+   device.adb.enable_accessibility_service(ACCESSIBILITY_SERVICE)
+
+3. 建立 Socket 連接
+
+   # 電腦透過 ADB 轉發連接到設備的 7336 port
+   forward_cmd = "adb -s {serial} forward tcp:{port} tcp:7336"
+   self.sock.connect((self.host, self.port))
+
+4. 持續監聽 UI 事件
+
+   def listen_messages(self):
+       while self.connected:
+           _, _, message_len = self.read_head()
+           message = self.sock_read(message_len)
+           self.handle_message(message)
+
+DroidBotApp 回傳的資料格式
+--------------------------------------------------------------------------------
+位置：droidbot_app.py:155-162
+
+    def handle_message(self, message):
+        acc_event_idx = message.find("AccEvent >>> ")
+        if acc_event_idx >= 0:
+            body = json.loads(message[acc_event_idx + len("AccEvent >>> "):])
+            self.last_acc_event = body  # 儲存最新的 UI 狀態
+
+「last_acc_event」包含什麼？
+
+這是一個 JSON 物件，結構如下：
+
+    {
+      "root_node": {
+        "class": "android.widget.FrameLayout",
+        "bounds": [0, 0, 1080, 1920],
+        "resource_id": "android:id/content",
+        "text": null,
+        "content_description": null,
+        "clickable": false,
+        "scrollable": false,
+        "enabled": true,
+        "visible": true,
+        "children": [
+          {
+            "class": "android.widget.Button",
+            "bounds": [100, 200, 300, 280],
+            "resource_id": "com.example.app:id/submit_button",
+            "text": "Submit",
+            "clickable": true,
+            "children": []
+          },
+          // ... 更多子元件
+        ]
+      }
+    }
+
+
+四、第三層：數據轉換與處理
+================================================================================
+
+Step 1：從 DroidBotApp 獲取 View Tree
+--------------------------------------------------------------------------------
+位置：device.py:809-837 的 get_current_state() 方法
+
+    def get_current_state(self):
+        views = self.get_views()  # 呼叫 DroidBotApp
+        foreground_activity = self.get_top_activity_name()
+        activity_stack = self.get_current_activity_stack()
+        screenshot_path = self.take_screenshot()
+
+        return DeviceState(
+            self,
+            views=views,
+            foreground_activity=foreground_activity,
+            activity_stack=activity_stack,
+            screenshot_path=screenshot_path
+        )
+
+「get_views()」做了什麼？
+
+位置：device.py:878-899
+
+    def get_views(self):
+        if self.droidbot_app:
+            views = self.droidbot_app.get_views()  # 從 DroidBotApp socket 讀取
+            return views
+
+Step 2：樹狀結構轉換為列表
+--------------------------------------------------------------------------------
+位置：droidbot_app.py:199-225
+
+    def __view_tree_to_list(self, view_tree, view_list):
+        tree_id = len(view_list)
+        view_tree['temp_id'] = tree_id  # 賦予唯一 ID
+
+        # 轉換 bounds 格式：[x1, y1, x2, y2] → [[x1, y1], [x2, y2]]
+        bounds = [[-1, -1], [-1, -1]]
+        bounds[0][0] = view_tree['bounds'][0]
+        bounds[0][1] = view_tree['bounds'][1]
+        bounds[1][0] = view_tree['bounds'][2]
+        bounds[1][1] = view_tree['bounds'][3]
+        view_tree['bounds'] = bounds
+
+        view_list.append(view_tree)
+
+        # 遞迴處理子元件
+        children_ids = []
+        for child_tree in view_tree['children']:
+            child_tree['parent'] = tree_id
+            self.__view_tree_to_list(child_tree, view_list)
+            children_ids.append(child_tree['temp_id'])
+
+        view_tree['children'] = children_ids  # 子元件改為 ID 列表
+
+轉換結果：
+- 原本：巢狀樹狀結構
+- 轉換後：平面列表，用 parent 和 children ID 來表示關係
+
+Step 3：創建 DeviceState 物件
+--------------------------------------------------------------------------------
+位置：droidbot/droidbot/device_state.py:9-34
+
+    class DeviceState:
+        def __init__(self, device, views, foreground_activity, activity_stack, ...):
+            self.foreground_activity = foreground_activity  # 當前頁面
+            self.activity_stack = activity_stack            # 頁面堆疊
+            self.views = self.__parse_views(views)          # UI 元件列表
+            self.view_tree = {}
+            self.__assemble_view_tree(self.view_tree, self.views)  # 重建樹狀結構
+
+為什麼要重建樹狀結構？
+因為 DroidAgent 需要兩種表示方式：
+  - 列表形式：方便遍歷所有元件
+  - 樹狀形式：方便理解父子關係和層次結構
+
+Step 4：轉換為 DroidAgent 的 GUIState
+--------------------------------------------------------------------------------
+位置：droidagent/app_state.py:28-46
+
+    @classmethod
+    def set_current_gui_state(cls, droidbot_state):
+        cls._set_current_gui_state(
+            GUIState().from_droidbot_state(droidbot_state)
+        )
+
+位置：droidagent/types/gui_state.py:67-83
+
+    def from_droidbot_state(self, droidbot_state):
+        self.droidbot_state = droidbot_state
+        self.activity = ActivityNameManager.fix_activity_name(
+            droidbot_state.foreground_activity
+        )
+        self.activity_stack = droidbot_state.activity_stack
+        self.tag = droidbot_state.tag
+
+        # 簡化 view tree（移除不必要的屬性）
+        view_tree = minimize_view_tree(droidbot_state.view_tree)
+
+        # 遞迴遍歷並創建 Widget 物件
+        self.root_widgets = []
+        self.widgets = []
+        for root_elem in view_tree:
+            self.root_widgets.append(
+                traverse_widgets(root_elem, self.widgets, droidbot_state.views)
+            )
+
+        return self
+
+Step 5：提取元件屬性並創建 Widget
+--------------------------------------------------------------------------------
+位置：gui_state.py:315-374 的 traverse_widgets() 函數
+
+    def traverse_widgets(elem, processed_widgets, original_views):
+        new_elem = OrderedDict()
+        possible_action_types = []
+
+        # 判斷可執行的操作類型
+        if elem.get('clickable', False) or elem.get('checkable', False):
+            possible_action_types.append('touch')
+        if elem.get('long_clickable', False):
+            possible_action_types.append('long_touch')
+        if elem.get('editable', False):
+            possible_action_types.append('set_text')
+        if elem.get('scrollable', False):
+            possible_action_types.append('scroll')
+
+        # 只有可互動的元件才賦予 ID
+        if 'temp_id' in elem and len(possible_action_types) > 0:
+            elem_ID = elem['temp_id']
+            new_elem['ID'] = elem_ID
+            new_elem['view_str'] = original_views[elem_ID]['view_str']
+
+        # 提取顯示屬性
+        if 'class' in elem:
+            new_elem['widget_type'] = elem['class'].split('.')[-1]  # 只取類名最後一部分
+        if 'text' in elem and elem['text']:
+            new_elem['text'] = elem['text'][:100]  # 限制長度
+        if 'content_description' in elem:
+            new_elem['content_description'] = elem['content_description']
+        if 'resource_id' in elem:
+            new_elem['resource_id'] = elem['resource_id'].split('/')[-1]  # 簡化
+
+        # 提取狀態屬性
+        state_properties = []
+        if elem.get('focused', False):
+            state_properties.append('focused')
+        if elem.get('checked', False):
+            state_properties.append('checked')
+        if elem.get('selected', False):
+            state_properties.append('selected')
+
+        if len(possible_action_types) > 0:
+            new_elem['possible_action_types'] = possible_action_types
+
+        # 遞迴處理子元件
+        children_widgets = []
+        for child in elem.get('children', []):
+            children_widgets.append(traverse_widgets(child, processed_widgets, original_views))
+        new_elem['children'] = children_widgets
+
+        # 創建 Widget 物件
+        widget = Widget().from_dict(new_elem)
+        processed_widgets.append(widget)
+
+        return widget
+
+
+五、獲取當前頁面 (Activity) 的方法
+================================================================================
+
+方法 1：dumpsys activity
+--------------------------------------------------------------------------------
+位置：device.py:507-522
+
+    def get_top_activity_name(self):
+        r = self.adb.shell("dumpsys activity activities")
+
+        # 正則表達式匹配當前 activity
+        activity_line_re = re.compile(
+            r'\*\s*Hist\s*#\d+:\s*ActivityRecord\{[^ ]+\s*[^ ]+\s*([^ ]+)\s*t(\d+)}'
+        )
+        m = activity_line_re.search(r)
+        if m:
+            return m.group(1)  # 例如：com.example.app/.MainActivity
+
+「dumpsys activity activities」輸出範例：
+
+    * Hist #0: ActivityRecord{abc123 u0 com.example.app/.MainActivity t42}
+        Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] }
+        ProcessRecord{def456 1234:com.example.app/u0a123}
+
+方法 2：獲取 Activity Stack
+--------------------------------------------------------------------------------
+位置：device.py:524-539
+
+    def get_current_activity_stack(self):
+        task_to_activities = self.get_task_activities()
+        top_activity = self.get_top_activity_name()
+
+        # 找到包含 top_activity 的 task
+        for task_id in task_to_activities:
+            activities = task_to_activities[task_id]
+            if len(activities) > 0 and activities[0] == top_activity:
+                return activities  # 返回整個堆疊
+
+位置：device.py:541-570
+
+    def get_task_activities(self):
+        lines = self.adb.shell("dumpsys activity activities").splitlines()
+
+        task_to_activities = {}
+        for line in lines:
+            # 匹配 Task id
+            task_re = re.compile(r'^\s*Task\s*id\s*#(\d+)')
+            if task_re.match(line):
+                task_id = match.group(1)
+                task_to_activities[task_id] = []
+
+            # 匹配 Activity
+            activity_re = re.compile(r'\*\s*Hist\s*#\d+:.*\s*([^ ]+)\s*t(\d+)}')
+            m = activity_re.match(line)
+            if m:
+                activity = m.group(1)
+                task_id = m.group(2)
+                task_to_activities[task_id].append(activity)
+
+        return task_to_activities
+
+
+六、Widget 的唯一標識：Signature
+================================================================================
+
+每個 Widget 需要一個穩定的標識符，即使頁面重新載入，相同的元件也應該有相同的 signature。
+
+位置：widget.py:84-104
+
+    @cached_property
+    def signature(self):
+        # 選擇不可變屬性
+        immutable_props = ['content_description', 'resource_id']
+        if 'set_text' not in self.possible_action_types:
+            immutable_props.append('text')  # 非輸入框的文字是不變的
+
+        ingredients = []
+        for prop in immutable_props:
+            if prop in self.elem_dict and self.elem_dict[prop]:
+                ingredients.append(self.elem_dict[prop])
+
+        # 加上子元件的 signature（遞迴）
+        ingredients.extend([child.signature for child in self.children])
+
+        # 如果沒有任何可識別屬性，使用座標
+        if len(ingredients) == 0:
+            ingredients = [str(self.elem_dict['bounds'])]
+
+        # 加上元件類型
+        ingredients.insert(0, self.widget_type)
+
+        return '-'.join(ingredients)
+
+Signature 範例：
+
+    Button-resource_id:submit_button-text:Submit
+    ImageView-content_description:Profile Picture
+    EditText-resource_id:username_input
+    TextView-[[100,200],[300,250]]  # 沒有其他屬性時用座標
+
+
+七、完整的數據流圖
+================================================================================
+
+    ┌─────────────────┐
+    │  APK 安裝時     │
+    │ dumpsys package │──────┐
+    └─────────────────┘      │
+                             ├──> Activities 列表
+    ┌─────────────────┐      │    Main Activity
+    │ DroidBotApp     │      │    Package Name
+    │ (Accessibility) │──────┘
+    └─────────────────┘
+            │
+            │ Socket Connection (port 7336)
+            │
+            ▼
+    ┌─────────────────────────────┐
+    │  AccEvent JSON              │
+    │  {                          │
+    │    root_node: {             │
+    │      class: "...",          │
+    │      bounds: [...],         │
+    │      resource_id: "...",    │
+    │      text: "...",           │
+    │      clickable: true,       │
+    │      children: [...]        │
+    │    }                        │
+    │  }                          │
+    └─────────────────────────────┘
+            │
+            ▼
+    ┌─────────────────────────────┐
+    │  DroidBot DeviceState       │
+    │  - views (list)             │
+    │  - view_tree (dict)         │
+    │  - foreground_activity      │
+    │  - activity_stack           │
+    │  - screenshot_path          │
+    └─────────────────────────────┘
+            │
+            ▼
+    ┌─────────────────────────────┐
+    │  DroidAgent GUIState        │
+    │  - activity (str)           │
+    │  - widgets (list[Widget])   │
+    │  - root_widgets (list)      │
+    │  - possible_actions         │
+    └─────────────────────────────┘
+            │
+            ▼
+    ┌─────────────────────────────┐
+    │  Widget 物件                │
+    │  - view_id                  │
+    │  - widget_type              │
+    │  - text / resource_id       │
+    │  - possible_action_types    │
+    │  - signature (唯一識別)     │
+    │  - children (遞迴結構)      │
+    └─────────────────────────────┘
+
+
+八、關鍵技術總結
+================================================================================
+
+技術                      用途                           命令/API
+--------------------------------------------------------------------------------
+ADB dumpsys package      獲取 APK manifest 資訊         adb shell dumpsys package <pkg>
+ADB dumpsys activity     獲取當前 Activity 和堆疊       adb shell dumpsys activity activities
+Accessibility Service    即時讀取 UI 層次樹             Android AccessibilityService API
+DroidBotApp              中間代理，透過 socket 傳送     Socket on port 7336
+View Hierarchy           Android UI 的樹狀結構          AccessibilityNodeInfo tree
+ADB screencap            截取螢幕畫面                   adb shell screencap -p
+
+
+九、為什麼需要這麼複雜的流程？
+================================================================================
+
+1. Android 的安全機制：
+   - 無法直接從外部讀取 APP 的 UI 結構
+   - 必須透過 Accessibility Service 這個合法途徑
+
+2. 實時性需求：
+   - UI 會隨著用戶操作動態改變
+   - 需要持續監聽和更新
+
+3. 跨進程通信：
+   - DroidAgent (電腦) ↔ DroidBotApp (Android 設備)
+   - 需要 ADB port forwarding 和 Socket 通信
+
+4. 數據轉換：
+   - Android 原生格式 → DroidBot 格式 → DroidAgent 格式
+   - 每一層都有不同的抽象需求
+
+
+十、總結
+================================================================================
+
+DroidAgent 獲取 APK metadata 和 UI 元件的完整原理巧妙地結合了：
+
+1. 靜態分析（dumpsys package）
+2. 動態監控（Accessibility Service）
+3. 跨進程通信（Socket + ADB forwarding）
+4. 數據結構轉換（Tree ↔ List）
+
+這個系統展示了如何在 Android 的安全限制下，透過合法的 Accessibility API
+實現自動化 GUI 測試的深度探索能力。
+
+
+================================================================================
+文件生成時間：2025
+作者：Claude (Anthropic)
+專案：DroidAgent - Intent-Driven Android GUI Testing Framework
+================================================================================

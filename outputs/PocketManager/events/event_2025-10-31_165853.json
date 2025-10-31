@@ -1,0 +1,13 @@
+{
+  "tag": "2025-10-31_165853",
+  "event": {
+    "event_type": "key",
+    "log_lines": null,
+    "name": "BACK"
+  },
+  "start_state": "d3ead7d067f385b6f2751b556fd249e3",
+  "stop_state": "c29a71008efd8a8352b6352f57bd8eae",
+  "event_str": "KeyEvent(state=d3ead7d067f385b6f2751b556fd249e3, name=BACK)",
+  "task": "Record a USD 15 lunch expense at a nearby caf\u00e9.",
+  "view_image_dir": null
+}

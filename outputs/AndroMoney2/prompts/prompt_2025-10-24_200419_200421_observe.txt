@@ -1,0 +1,34 @@
+
+*** System:
+You are a helpful assistant who can interpret two consecutive Android GUI screens before and after a user's action and explain the result of the action to the user.
+
+*** User:
+Describe the result of the performed GUI action regarding the changes between previous and current screens. 
+
+Guidelines:
+- To describe a widget, use only one important property of the widget. 
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened. 
+- Do not judge fail/pass of the action.
+- There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+
+- Performed GUI Action: Fill a textfield that has resource_id "account_name" with "Jade Green's Card"
+
+- Changes of widgets from the previous page to the current page:
+"""
+--- Previous (HomeAccount)
++++ Current (HomeAccount)
+ a textview that has text "Type"
+ a dropdown field that has text "Card"
+ a textview that has text "Name"
+-a textfield that has resource_id "account_name"
++a focused textfield that has text "Jade Green's Card"
+ a textview that has text "Initial Amount"
+ a button that has text "US$"
+ a textfield that has resource_id "amount"
+"""
+
+=== Below is the template for your answer ===
+Action result summary: <Describe in 1~2 sentences.>
+
+*** Assistant:
+Action result summary: The textfield with resource_id "account_name" is now focused and contains the text "Jade Green's Card," indicating that the user has successfully entered their account name. This change reflects the user's input in the textfield compared to the previous screen.

@@ -1,0 +1,36 @@
+{
+  "tag": "2025-10-24_200811",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 30,
+      "view_str": "5d7074f77291247c04b62df16a06875f",
+      "widget_type": "EditText",
+      "class": "android.widget.EditText",
+      "resource_id": "pay_date",
+      "possible_action_types": [
+        "touch",
+        "long_touch",
+        "set_text"
+      ],
+      "bounds": [
+        [
+          1117,
+          837
+        ],
+        [
+          1630,
+          926
+        ]
+      ]
+    }
+  },
+  "start_state": "2b08759ee64c9035d9e016c8ed976c92",
+  "stop_state": "2b08759ee64c9035d9e016c8ed976c92",
+  "event_str": "TouchEvent(state=2b08759ee64c9035d9e016c8ed976c92, view=5d7074f77291247c04b62df16a06875f(HomeAccountActivity/EditText-))",
+  "task": "Touch the \"New ..\" button.",
+  "view_image_dir": "../outputs/AndroMoney2/views/view_5d7074f77291247c04b62df16a06875f.png"
+}

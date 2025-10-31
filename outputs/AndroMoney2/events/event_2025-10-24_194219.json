@@ -1,0 +1,35 @@
+{
+  "tag": "2025-10-24_194219",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 13,
+      "view_str": "75aa24aa822db59b48a9e4de25c09a25",
+      "widget_type": "ImageView",
+      "class": "android.widget.ImageView",
+      "content_description": "More options",
+      "possible_action_types": [
+        "touch",
+        "long_touch"
+      ],
+      "bounds": [
+        [
+          2082,
+          95
+        ],
+        [
+          2187,
+          221
+        ]
+      ]
+    }
+  },
+  "start_state": "0c30519ecdea7fd28cc97b2daadabf4d",
+  "stop_state": "37f8859105f1fd99e07c9e31be843cd4",
+  "event_str": "TouchEvent(state=0c30519ecdea7fd28cc97b2daadabf4d, view=75aa24aa822db59b48a9e4de25c09a25(HomeRecordActivity/ImageView-))",
+  "task": "Touch the AndroMoney icon to open the app.",
+  "view_image_dir": "../outputs/AndroMoney2/views/view_75aa24aa822db59b48a9e4de25c09a25.png"
+}

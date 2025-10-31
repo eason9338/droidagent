@@ -1,0 +1,61 @@
+
+*** System:
+You are a helpful assistant who can interpret two consecutive Android GUI screens before and after a user's action and explain the result of the action to the user.
+
+*** User:
+Describe the result of the performed GUI action regarding the changes between previous and current screens. 
+
+Guidelines:
+- To describe a widget, use only one important property of the widget. 
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened. 
+- Do not judge fail/pass of the action.
+- There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+
+- Performed GUI Action: Touch on a button that has text "Breakfast"
+
+- Changes of widgets from the previous page to the current page:
+"""
+--- Previous (CategorySelection)
++++ Current (CategorySelection)
+-a button that has content_desc "Navigate up"
+-a textview that has text "Category"
+-a textview that has text "Long press to modify"
+-a button that has content_desc "Sort"
+-a button that has content_desc "More options"
+-a textview that has text "Usual Options"
+-a button that has resource_id "bg"
+-a textview that has text "Food"
+-a button that has resource_id "bg"
+-a textview that has text "Clothing/Beauty"
+-a button that has resource_id "bg"
+-a textview that has text "Living"
+-a button that has resource_id "bg"
+-a textview that has text "Transportation"
+-a button that has resource_id "bg"
+-a textview that has text "Education"
+-a button that has resource_id "bg"
+-a textview that has text "Entertainment"
+-a button that has resource_id "bg"
+-a textview that has text "Personal 3C"
+-a button that has resource_id "bg"
+-a textview that has text "Publications"
+-a button that has resource_id "bg"
+-a textview that has text "Car/Motor"
+-a button that has resource_id "bg"
+-a scrollable area that has resource_id "category_selection_category_lv"
+-a textview that has text "Breakfast"
+-a button
+-a listview that has resource_id "category_selection_subcategory_lv"
++a textview that has text "Auto fill by category"
++a textview that has text "Auto fill by category on entering transaction?"
++a checked checkbox that has text "Ask every time"
++a button that has text "NO"
++a button that has text "YES"
+"""
+After the action, the following popup message(s) were shown and soon disappeared: ['Test Ad', '乾式軸承 耐腐蝕 抗UV 抗面壓', '瞭解詳情', 'igus Taiwan 台灣易格斯']
+
+=== Below is the template for your answer ===
+Action result summary: <Describe in 1~2 sentences.>
+
+*** Assistant:
+Action result summary: The screen transitioned from the Category Selection page to a new interface that includes a prompt for auto-filling by category, featuring a checkbox for user preferences and two buttons labeled "NO" and "YES". Additionally, a temporary popup message displayed advertisements and information before disappearing.

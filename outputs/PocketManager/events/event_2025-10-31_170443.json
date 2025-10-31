@@ -1,0 +1,13 @@
+{
+  "tag": "2025-10-31_170443",
+  "event": {
+    "event_type": "key",
+    "log_lines": null,
+    "name": "BACK"
+  },
+  "start_state": "17d9e14442532559d7802ad2e1669077",
+  "stop_state": "17d9e14442532559d7802ad2e1669077",
+  "event_str": "KeyEvent(state=17d9e14442532559d7802ad2e1669077, name=BACK)",
+  "task": null,
+  "view_image_dir": null
+}

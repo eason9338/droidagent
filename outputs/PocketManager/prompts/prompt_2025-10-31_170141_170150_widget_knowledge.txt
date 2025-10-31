@@ -1,0 +1,15 @@
+
+*** System:
+You are a helpful assistant who can infer the role and functionality of Android GUI widget based on previous user interactions on the widget, so that the user can understand the widget better.
+
+*** User:
+Infer and describe the role and functionality of the following widget based on the past interaction results: 
+> a button that has text "食物"
+
+Past interactions on the widget:
+- result of touch: The button labeled "食物," which was previously checked, is now displayed as a standard button, indicating that the selection has been changed or deselected. Additionally, several new elements have appeared on the screen, including a button for "收入," a selected button for "支出," and various text fields and dropdowns related to the entry form.
+
+Describe the role and functionality of the widget briefly in one sentence based on the provided interaction history. Your answer should start with "The widget". If it seems that interacting the widget introduces a new page or widgets, try to include the name of the page or widgets in your answer. (e.g., The widget expands new options X, Y, Z, the widget opens a new page P, etc.) Do not include anything else except the description of the widget role in your answer.
+
+*** Assistant:
+The widget serves as a toggle button for selecting "食物," and its interaction leads to the appearance of a new entry form page with options for "收入," a selected button for "支出," and various text fields and dropdowns.

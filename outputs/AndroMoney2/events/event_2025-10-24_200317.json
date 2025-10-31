@@ -1,0 +1,35 @@
+{
+  "tag": "2025-10-24_200317",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 12,
+      "view_str": "d962e041a65c5bbf20cba16e7e0caa1b",
+      "widget_type": "Button",
+      "class": "android.widget.Button",
+      "content_description": "New ..",
+      "resource_id": "menu_new",
+      "possible_action_types": [
+        "touch"
+      ],
+      "bounds": [
+        [
+          1934,
+          95
+        ],
+        [
+          2082,
+          221
+        ]
+      ]
+    }
+  },
+  "start_state": "0dc1ac0df4cd22c87cf9b94e2717e6ee",
+  "stop_state": "9e6ec5a11a3b9178d730a16e2d798ebd",
+  "event_str": "TouchEvent(state=0dc1ac0df4cd22c87cf9b94e2717e6ee, view=d962e041a65c5bbf20cba16e7e0caa1b(HomeAccountActivity/Button-))",
+  "task": "Touch the \"New ..\" button.",
+  "view_image_dir": "../outputs/AndroMoney2/views/view_d962e041a65c5bbf20cba16e7e0caa1b.png"
+}

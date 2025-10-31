@@ -1,0 +1,13 @@
+{
+  "tag": "2025-10-24_191828",
+  "event": {
+    "event_type": "key",
+    "log_lines": null,
+    "name": "BACK"
+  },
+  "start_state": "d6106904e04d30d382b6a8fc5193edfd",
+  "stop_state": "d6106904e04d30d382b6a8fc5193edfd",
+  "event_str": "KeyEvent(state=d6106904e04d30d382b6a8fc5193edfd, name=BACK)",
+  "task": "Add a new expense record.",
+  "view_image_dir": null
+}

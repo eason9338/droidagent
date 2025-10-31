@@ -1,0 +1,46 @@
+
+*** System:
+You are a helpful assistant who can interpret two consecutive Android GUI screens before and after a user's action and explain the result of the action to the user.
+
+*** User:
+Describe the result of the performed GUI action regarding the changes between previous and current screens. 
+
+Guidelines:
+- To describe a widget, use only one important property of the widget. 
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened. 
+- Do not judge fail/pass of the action.
+- There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+
+- Performed GUI Action: Touch on a button that has text "Card"
+
+- Changes of widgets from the previous page to the current page:
+"""
+--- Previous (HomeAccount)
++++ Current (HomeAccount)
+-a checked button that has text "Cash"
+-a button that has text "Card"
+-a button that has text "Bank"
++a textview that has text "New Account"
++a textview that has text "Type"
++a dropdown field that has text "Card"
++a textview that has text "Name"
++a textfield that has resource_id "account_name"
++a textview that has text "Initial Amount"
++a button that has text "US$"
++a textfield that has resource_id "amount"
++a textview that has text "Billing Date"
++a textfield that has resource_id "bill_date"
++a textview that has text "Payment Date"
++a textfield that has resource_id "pay_date"
++a textview that has text "Notes"
++a textfield that has resource_id "remark"
++a checked checkbox that has text "Included in totals"
++a button that has text "CANCEL"
++a button that has text "OK"
+"""
+
+=== Below is the template for your answer ===
+Action result summary: <Describe in 1~2 sentences.>
+
+*** Assistant:
+Action result summary: After touching the button labeled "Card," a new text view displaying "New Account" appeared along with several additional fields, including a dropdown field labeled "Card" and multiple text fields for entering account details such as "Name," "Initial Amount," "Billing Date," "Payment Date," and "Notes."

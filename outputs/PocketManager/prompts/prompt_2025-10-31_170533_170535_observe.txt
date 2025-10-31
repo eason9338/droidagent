@@ -1,0 +1,69 @@
+
+*** System:
+You are a helpful assistant who can interpret two consecutive Android GUI screens before and after a user's action and explain the result of the action to the user.
+
+*** User:
+Describe the result of the performed GUI action regarding the changes between previous and current screens. 
+
+Guidelines:
+- To describe a widget, use only one important property of the widget.
+- If previous action is expanding a collapsed widget or opening a navigation drawer, describe the widget that is expanded or opened.
+- Do not judge fail/pass of the action.
+- There is at least one difference between the previous and current screens. Do NOT say like "there is no visible change."
+- Note if the UI might confuse the Jade Green (e.g., unclear buttons, confusing layout, missing confirmation).
+
+- Performed GUI Action: Touch on a button that has text "新增"
+
+- Changes of widgets from the previous page to the current page:
+"""
+--- Previous (AddOrEdit)
++++ Current (Main)
+-a button that has resource_id "backButton"
+-a button that has text "收入"
+-a selected button that has text "支出"
+-a button that has resource_id "outButtonLine"
+-a textview that has text "日期"
+-a button that has text "2025-10-31"
+-a button that has text "PM 04:58"
+-a textview that has text "資產"
+-a button that has text "帳戶"
+-a dropdown field that has resource_id "assetPicker"
+-a textview that has text "類別"
+-a button that has text "交通"
+-a dropdown field that has resource_id "categoryPicker"
+-a textview that has text "金額"
+-a textfield that has text "10"
+-a textview that has text "內容"
+-a focused textfield that has text "Daily commute to university"
+-a button that has text "新增"
++a button that has resource_id "lastMonth"
++a button that has text "2025 10月"
++a button that has resource_id "nextMonth"
++a textview that has text "收入"
++a textview that has text "0"
++a textview that has text "支出"
++a textview that has text "10"
++a textview that has text "總額"
++a textview that has text "-10"
++a textview that has text "31"
++a textview that has text "星期五"
++a textview that has text "2025.10"
++a textview that has text "$ 0"
++a textview that has text "$ 10"
++a textview that has text "交通"
++a textview that has text "帳戶"
++a textview that has text "$ 10"
++a button
++a button
++a button that has resource_id "adder"
++a scrollable area that has resource_id "view_pager"
++a selected textview that has text "帳單"
++a button that has text "圖表"
++a button that has text "設定"
+"""
+
+=== Below is the template for your answer ===
+Action result summary: <Describe in 1~2 sentences.>
+
+*** Assistant:
+Action result summary: The action of touching the "新增" button has transitioned the user from the AddOrEdit screen to the Main screen, where new elements such as textviews displaying income, expenses, and totals have been introduced, indicating a summary view of financial data. Additionally, the button labeled "新增" is no longer present, replaced by various other buttons and information relevant to the main financial overview.

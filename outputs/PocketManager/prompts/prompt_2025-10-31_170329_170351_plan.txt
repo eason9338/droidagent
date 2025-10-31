@@ -1,0 +1,136 @@
+
+*** System:
+You are a helpful task planner for using an Android mobile application named 記帳小助手. You are planning for a person named "Jade Green" with the following profile:
+(The username and password is what Jade Green generally uses for their accounts.)
+- name: Jade Green
+- age: 25
+- phone: 081-827-7650
+- email: anony1017mous@gmail.com
+- username: tester.green
+- password: green1029*
+- date_of_birth: 1997-10-29
+- self_introduction: I am a 25-year-old graduate student studying computer science. I want to explore advance feature, like record expense in different currencies
+- user_segment: "Power User"
+- typical_tasks: ["Add expense in different currencies", "Generate expense reports", "Manage multiple accounts"]
+- pain_points_to_watch: ["Slow currency switching", "Complicated report filters", "Too many clicks for common tasks"]
+- natural_behaviors: Jade Green is a busy student who records expenses regularly (meals, transport, study materials), may use multiple currencies when traveling, wants to analyze spending patterns, and manages different financial accounts for different purposes.
+- task_completion_rule: Each task is ONE COMPLETE workflow from start to finish. Do NOT split a workflow into multiple separate tasks. Do NOT repeat the same workflow multiple times unless testing different variations.
+
+Jade Green's ultimate goal is to Test the app's main features such as adding income and expense records, and according to the current persona settings, test the features that the user prefers to use.. 
+
+- Currently, Jade Green is on the AddOrEdit page.
+- Previously visited pages: {Main: 3, AddOrEdit: 16} 
+
+Jade Green is not familiar with the app and does not fully know how to navigate to each page and what Jade Green can do on each page.
+To effectively explore the app for their goal, Jade Green needs a new task that aligns with the following desirable properties:
+- (Realism) Plan ONE COMPLETE workflow that Jade Green would naturally do. Include concrete details (e.g., "Record a meal expense" not just "Add expense"). Do NOT plan vague tasks like "Navigate to X" or "Explore X".
+- (Importance) Prioritize tasks matching Jade Green's typical usage patterns from their natural_behaviors. Focus on completing FULL workflows, not exploring individual widgets. Each task should be independently meaningful.
+- (Motivation) Ground the task in Jade Green's realistic motivation. Why would this persona do this task right now? What is their actual goal? Task should read like: "Record lunch expense because Jade Green eats out daily" rather than "Click category X".
+- (Completion) Plan for the ENTIRE workflow to finish in one task. If a workflow was incomplete in previous attempts, MUST complete it now. Do NOT split one workflow into multiple tasks, and do NOT repeat identical workflows.
+
+*** User:
+Plan Jade Green's next task based on the following information.
+
+Jade Green's prior knowledge and history of previous tasks so far (listed in chronological order):
+===
+2025-10-31 16:57:27: [INITIAL_KNOWLEDGE] Jade Green started the 記帳小助手 app
+2025-10-31 17:02:29: [TASK_RESULT] Jade Green attempted to record a USD 15 lunch expense but was unable to complete the task due to confusion with the UI elements and the lack of clear guidance on how to finalize the entry. As a result, the task was aborted before completion.
+2025-10-31 17:03:43: [TASK_RESULT] Jade Green successfully recorded a USD 15 lunch expense by selecting the cash account, choosing the food category, entering the amount, and adding a note. The entire workflow was completed without any issues.
+===
+
+Jade Green's learnt knowledge from previous tasks (which may be relevant to the current context):
+===
+- The transition between dropdowns and buttons, especially for "現金" and "帳戶," created confusion about the current selections and the available options.
+- Jade Green learned that the app supports recording expenses by allowing entry of amounts, categories, and accounts.
+- The navigation between screens and the selection of options can be confusing, indicating a need for clearer UI indicators or instructions.
+- The app supports recording expenses by allowing users to select accounts and categories easily.
+- Jade Green learned that the dropdown menus are effective in navigating through asset and category selections.
+===
+
+Current page (organized in a hierarchical structure):
+```json
+{
+  page_name: AddOrEdit,
+  children: [
+    {
+      ID: 3,
+      widget_type: CheckedTextView,
+      text: 食物,
+      state: [
+        checked
+      ],
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 2,
+      widget_role_inference: The widget serves as a toggle for selecting or deselecting the 食物 category, and when interacted with, it introduces new elements on the screen, including a button for 收入, a selected button for 支出, and various text fields and dropdowns related to the entry form.
+    },
+    {
+      ID: 4,
+      widget_type: CheckedTextView,
+      text: 交通,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 5,
+      widget_type: CheckedTextView,
+      text: 運動,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 6,
+      widget_type: CheckedTextView,
+      text: 生活用品,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 7,
+      widget_type: CheckedTextView,
+      text: 其他,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    }
+  ]
+}
+```
+Note that `num_prev_actions` means the number of times the widget has been interacted with during the previous tasks. If `num_prev_actions` property is not included in the widget dictionary, Jade Green has never performed any action on the widget yet.
+
+Jade Green can perform the following types of actions:
+- Scroll on a scrollable widget
+- Touch on a clickable widget
+- Long touch on a long-clickable widget
+- Fill in an editable widget
+- Navigate back by pressing the back button
+
+I am going to provide a template for your output to reason about your next task step by step. Fill out the <...> parts in the template with your own words. Do not include anything else in your answer except the text to fill out the template. Preserve the formatting and overall template.
+
+=== Below is the template for your answer ===
+Reasoning about Jade Green's next task: <Why would Jade Green do this task based on their natural behaviors and goals? Is it different from what they've already tested?>
+Jade Green's next task: <A COMPLETE workflow with concrete details. Example: "Record a USD 50 lunch expense" or "Generate a monthly expense report". NOT just "Add expense" or "Select category".>
+End condition of Jade Green's next task: <1 sentence, start with "The task is known to be completed when". Should describe the FINAL state after the complete workflow.>
+Reasoning of the first action of the Jade Green's next task: <What is the first step to begin this workflow?>
+Rough plan for the task in Jade Green's perspective: <1 sentence, start with "I plan to"; pretend that you are Jade Green. Include concrete details of what you're trying to achieve.>
+
+*** Assistant:
+Reasoning about Jade Green's next task: Jade Green is motivated to record a transport expense as part of their daily activities, especially since they frequently use public transportation for commuting. This task is different from what they've already tested because they successfully recorded a meal expense, but now they will explore how to log a different category of expense, which is transport.
+Jade Green's next task: Record a USD 10 transport expense by selecting the 交通 category, entering the amount, and adding a note about the trip.
+End condition of Jade Green's next task: The task is known to be completed when the transport expense is successfully recorded, showing the amount and category in the expense list.
+Reasoning of the first action of the Jade Green's next task: The first step to begin this workflow is to touch the 交通 category to select it for the expense.
+Rough plan for the task in Jade Green's perspective: I plan to record a transport expense of USD 10 by selecting the 交通 category, entering the amount, and adding a note to keep track of my daily commuting costs.
+
+*** User:
+Good. Now, based on your previous answer, execute the first action (by calling a function) to start the task. Pay attention to the possible action types specified in the target widget.
+
+*** Assistant:
+{'id': 'call_X30mOEtvrP1D8M6giwt2skMK', 'type': 'function', 'function': {'name': 'touch', 'arguments': '{"target_widget_ID":4}'}}

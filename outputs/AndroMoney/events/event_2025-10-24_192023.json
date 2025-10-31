@@ -1,0 +1,35 @@
+{
+  "tag": "2025-10-24_192023",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 66,
+      "view_str": "2c53b51ba2324ded286e72d9b7965543",
+      "widget_type": "Button",
+      "class": "android.widget.Button",
+      "text": "SAVE",
+      "resource_id": "Save",
+      "possible_action_types": [
+        "touch"
+      ],
+      "bounds": [
+        [
+          1104,
+          1625
+        ],
+        [
+          2208,
+          1751
+        ]
+      ]
+    }
+  },
+  "start_state": "57a5525735efdd63569d310c0c394caf",
+  "stop_state": "ab6f096e52eff9721c226d27ca009e70",
+  "event_str": "TouchEvent(state=57a5525735efdd63569d310c0c394caf, view=2c53b51ba2324ded286e72d9b7965543(AddNewRecordActivity/Button-SAVE))",
+  "task": "Select a category for the expense record.",
+  "view_image_dir": "../outputs/AndroMoney/views/view_2c53b51ba2324ded286e72d9b7965543.png"
+}

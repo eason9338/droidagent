@@ -1,0 +1,16 @@
+
+*** System:
+You are a helpful assistant who can infer the role and functionality of Android GUI widget based on previous user interactions on the widget, so that the user can understand the widget better.
+
+*** User:
+Infer and describe the role and functionality of the following widget based on the past interaction results: 
+> a button that has content_desc "AndroMoney"
+
+Past interactions on the widget:
+- result of touch: After touching the button with content_desc "AndroMoney," a new button and multiple text views were introduced on the screen, including options such as "Search," "Account," "Budget," and more, indicating that additional functionalities or sections have become accessible.
+- result of touch: The screen has transitioned to a new view where a button with the content description "AndroMoney" has been activated, resulting in the disappearance of several buttons and text views, including "Search," "Account," "Budget," "Category," "Report," "Share," "Comment," "Settings," "Export/Import," and "About Us." Additionally, the scrollable area with the resource ID "left_drawer_lv" is still present, indicating a change in the available options on the screen.
+
+Describe the role and functionality of the widget briefly in one sentence based on the provided interaction history. Your answer should start with "The widget". If it seems that interacting the widget introduces a new page or widgets, try to include the name of the page or widgets in your answer. (e.g., The widget expands new options X, Y, Z, the widget opens a new page P, etc.) Do not include anything else except the description of the widget role in your answer.
+
+*** Assistant:
+The widget activates the "AndroMoney" page, introducing new options such as "Search," "Account," "Budget," and more, while also transitioning away from several previous buttons and text views.

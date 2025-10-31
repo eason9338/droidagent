@@ -1,0 +1,35 @@
+{
+  "tag": "2025-10-31_170308",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 4,
+      "view_str": "62941284b16ea4bfd8b9064fa9570ee2",
+      "widget_type": "CheckedTextView",
+      "class": "android.widget.CheckedTextView",
+      "text": "\u5e33\u6236",
+      "resource_id": "text1",
+      "possible_action_types": [
+        "touch"
+      ],
+      "bounds": [
+        [
+          1473,
+          641
+        ],
+        [
+          2003,
+          767
+        ]
+      ]
+    }
+  },
+  "start_state": "491781fff00b41a226b1a3239cf8175d",
+  "stop_state": "8ea81aca92967cd67f93364bff9bfb3b",
+  "event_str": "TouchEvent(state=491781fff00b41a226b1a3239cf8175d, view=62941284b16ea4bfd8b9064fa9570ee2(AddOrEditActivity/CheckedTextView-\u5e33\u6236))",
+  "task": "Record a USD 15 lunch expense by selecting the cash account, choosing the food category, entering the amount, and adding a note.",
+  "view_image_dir": "../outputs/PocketManager/views/view_62941284b16ea4bfd8b9064fa9570ee2.png"
+}

@@ -1,0 +1,35 @@
+{
+  "tag": "2025-10-24_191853",
+  "event": {
+    "event_type": "long_touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 12,
+      "view_str": "35d8d4658f949eae1e36e2d17923b0b6",
+      "widget_type": "ListView",
+      "class": "android.widget.ListView",
+      "resource_id": "currencylist",
+      "possible_action_types": [
+        "long_touch"
+      ],
+      "bounds": [
+        [
+          18,
+          251
+        ],
+        [
+          2190,
+          1476
+        ]
+      ]
+    },
+    "duration": 2000
+  },
+  "start_state": "5dfe4d8d3304dadec8b608b67dec1f28",
+  "stop_state": "5dfe4d8d3304dadec8b608b67dec1f28",
+  "event_str": "LongTouchEvent(state=5dfe4d8d3304dadec8b608b67dec1f28, view=35d8d4658f949eae1e36e2d17923b0b6(AddNewRecordActivity/ListView-))",
+  "task": "Add a new expense record.",
+  "view_image_dir": "../outputs/AndroMoney/views/view_35d8d4658f949eae1e36e2d17923b0b6.png"
+}

@@ -1,0 +1,131 @@
+
+*** System:
+You are a helpful assistant to guide a user named Jade Green to select an appropriate GUI action to accomplish a task on an Android mobile application named AndroMoney.
+
+The profile of Jade Green is as follows:
+(The username and password is what Jade Green generally uses for their accounts.)
+- name: Jade Green
+- phone: 081-827-7650
+- email: anony1017mous@gmail.com
+- username: tester.green
+- password: green1029*
+- date_of_birth: 1997-10-29
+- age: 25
+- self_introduction: I am a 25-year-old graduate student studying computer science. I want to explore advance feature, like record expense in different currencies
+
+Jade Green can perform the following types of actions:
+- Scroll on a scrollable widget
+- Touch on a clickable widget
+- Long touch on a long-clickable widget
+- Fill in an editable widget
+- Navigate back by pressing the back button
+or end the task if the task is already completed.
+
+*** User:
+My name is Jade Green and I am using an application named AndroMoney to accomplish the following task: 
+* Task: Touch the AndroMoney icon to open the app. (The task is known to be completed when the AndroMoney app is successfully opened)
+
+I'm currently on the NexusLauncher page. I plan to open the AndroMoney app to start exploring its functionalities. What should be the first action?
+
+*** Assistant:
+Touch on a button that has text "AndroMoney"
+
+*** User:
+I performed the action, and as a result, after touching the "AndroMoney" button, the screen changed to the "AboutUs" page, which now displays a text view with the version information "AndroMoney  3a.13.23" along with additional details about the app and its developers. A popup message briefly appeared, indicating that the main currency was automatically set to USD. What should be the next action?
+
+This time, I'll give you the full content of the current page as follows (I organized the page content as a hierarchical structure):
+```json
+{
+  page_name: AboutUs,
+  children: [
+    {
+      ID: 7,
+      widget_type: ImageButton,
+      content_description: Navigate up,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: TextView,
+      text: AndroMoney  3a.13.23
+    },
+    {
+      ID: 17,
+      widget_type: ImageButton,
+      resource_id: icon,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: TextView,
+      text: AndroMoney is a personal finance tool for use on your mobile phone. By using this tool, we hope you [...]
+    },
+    {
+      widget_type: TextView,
+      text: Ad-free
+    },
+    {
+      ID: 23,
+      widget_type: ImageButton,
+      resource_id: pro_icon,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: TextView,
+      text: Mobile Phone Programming
+    },
+    {
+      widget_type: TextView,
+      text: The AndroMoney Team
+    },
+    {
+      widget_type: TextView,
+      text: Website:https://www.andromoney.com/
+    },
+    {
+      widget_type: TextView,
+      text: Email:service@andromoney.com
+    },
+    {
+      widget_type: TextView,
+      text: ©2010~2013 All Rights Reserved
+    }
+  ]
+}
+```
+
+Guideline for selecting the next action:
+- Note that `num_prev_actions` property means the number of times the widget has been interacted with so far.
+- Note that `widget_role_inference` property means the role of the widget inferred by previous actions. Use this property to infer what the widget is used for. If the widget has not been interacted yet, `widget_role_inference` property is not included in the widget dictionary.
+- When I am stuck, you might guide me to explore a new widget that has not been used and I don't know its role yet.
+- I don't want to do the same actions repeatedly except it is clearly needed for the task (e.g., navigating back to the first page of the app), so guide me to perform effective actions to complete the task.
+
+Recall that my current task is: Touch the AndroMoney icon to open the app.
+Select the next suitable action to perform, or end the task if the task is already completed.
+
+This time, I am going to provide a template for your output to let you think about my next action step by step. Fill out the <...> parts in the template with your own words. Do not include anything else in your answer except the text to fill out the template. Preserve the formatting and overall template.
+
+=== Below is the template for your answer ===
+1. Summary of my previous interactions for the task: <1~2 sentences according to the task execution history and current app state. Reflect criticizer's feedback if I mentioned any. Be careful not to include any actions that haven't been performed yet>
+2. Description of the current app state: <1~2 sentences, briefly describe in one line according to the hierarchical structure I provided above>
+3. Inference on the remaining steps needed to complete the task: <1~2 sentences according to the task execution history and current app state. Do not immediately judge the next action here>
+4. Reasoning for the next action: <1 sentence reasoning the most logical action to take next on the current state (or justification for ending the task). Refer to the guideline above>
+
+*** Assistant:
+1. Summary of my previous interactions for the task: I touched the "AndroMoney" button to open the app, which led me to the "AboutUs" page displaying version information and details about the app. 
+2. Description of the current app state: The current page is the "AboutUs" page, which contains information about the app and features several buttons, including an icon button that might allow navigation back or to another section. 
+3. Inference on the remaining steps needed to complete the task: To proceed with using the AndroMoney app, I need to navigate away from the "AboutUs" page and find the main interface of the app. 
+4. Reasoning for the next action: Since the "Navigate up" button is the only option available to move forward from the "AboutUs" page, I will touch it to return to the main interface of the app.
+
+*** User:
+Based on your reasoning, select the next action or end the task by calling one of the given function that corresponds to a specific action.
+
+*** Assistant:
+{'id': 'call_E7mof3o8aI0nBdNxkglWGUSz', 'type': 'function', 'function': {'name': 'touch', 'arguments': '{"target_widget_ID":7}'}}

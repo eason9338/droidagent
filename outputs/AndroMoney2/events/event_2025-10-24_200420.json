@@ -1,0 +1,37 @@
+{
+  "tag": "2025-10-24_200420",
+  "event": {
+    "event_type": "set_text",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 18,
+      "view_str": "cf9e264ef7b8a9c7224fd7974bbb6376",
+      "widget_type": "EditText",
+      "class": "android.widget.EditText",
+      "resource_id": "account_name",
+      "possible_action_types": [
+        "touch",
+        "long_touch",
+        "set_text"
+      ],
+      "bounds": [
+        [
+          560,
+          468
+        ],
+        [
+          1648,
+          586
+        ]
+      ]
+    },
+    "text": "Jade Green's Card"
+  },
+  "start_state": "aa9bcbef3b5e09526be49712928e7795",
+  "stop_state": "e9c057897d0141cae54213959e7e8a46",
+  "event_str": "SetTextEvent(state=aa9bcbef3b5e09526be49712928e7795, view=cf9e264ef7b8a9c7224fd7974bbb6376(HomeAccountActivity/EditText-), text=Jade Green's Card)",
+  "task": "Touch the \"New ..\" button.",
+  "view_image_dir": "../outputs/AndroMoney2/views/view_cf9e264ef7b8a9c7224fd7974bbb6376.png"
+}

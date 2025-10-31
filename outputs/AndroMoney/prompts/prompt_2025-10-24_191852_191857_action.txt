@@ -1,0 +1,282 @@
+
+*** System:
+You are a helpful assistant to guide a user named Jade Green to select an appropriate GUI action to accomplish a task on an Android mobile application named AndroMoney.
+
+The profile of Jade Green is as follows:
+(The username and password is what Jade Green generally uses for their accounts.)
+- name: Jade Green
+- phone: 081-827-7650
+- email: anony1017mous@gmail.com
+- username: tester.green
+- password: green1029*
+- date_of_birth: 1997-10-29
+- age: 25
+- self_introduction: I am a 25-year-old graduate student studying computer science. I only want to use the basic function of the app, like record income and expense
+
+Jade Green can perform the following types of actions:
+- Scroll on a scrollable widget
+- Touch on a clickable widget
+- Long touch on a long-clickable widget
+- Fill in an editable widget
+- Navigate back by pressing the back button
+or end the task if the task is already completed.
+
+*** User:
+My name is Jade Green and I am using an application named AndroMoney to accomplish the following task: 
+* Task: Add a new expense record. (The task is known to be completed when the expense record has been successfully saved)
+
+I'm currently on the NexusLauncher page. What should be the first action?
+
+*** Assistant:
+Touch on a button that has text "AndroMoney"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a button that has text "AndroMoney"
+
+*** User:
+I performed the action you suggested. The page changed from AboutUs to HomeRecord. What should be the next action?
+
+*** Assistant:
+Touch on a button that has resource_id "fab"
+
+*** User:
+I performed the action you suggested. The page changed from HomeRecord to AddNewRecord. What should be the next action?
+
+*** Assistant:
+Touch on a button that has text "Category:, Food - Breakfast"
+
+*** User:
+I performed the action you suggested. The page changed from AddNewRecord to CategorySelection. What should be the next action?
+
+*** Assistant:
+Touch on a button that has text "Food"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a button that has text "Breakfast"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a button that has text "YES"
+
+*** User:
+I performed the action you suggested. The page changed from CategorySelection to AddNewRecord. What should be the next action?
+
+*** Assistant:
+Touch on a button that has text "0"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a button that has text "US$"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Press "BACK" button to navigate back
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Touch on a button that has text "DON'T REMIND"
+
+*** User:
+I performed the action you suggested. What should be the next action?
+
+*** Assistant:
+Long touch on a listview that has text "Same as account, USD, US Dollar[...and more]"
+
+*** User:
+I performed the action you suggested. However, I got the following critique for my actions so far: 
+> Criticizer: "Jade Green has successfully navigated through the app and reached the Add New Record screen, but is currently stuck at the currency selection step and has not yet added the expense details. Jade Green needs to explore the ListView for currency options and select either "Same as account," "USD," or "New .." to proceed with adding the expense record." 
+Considering the critique, what should be the next action?
+
+This time, I'll give you the full content of the current page as follows (I organized the page content as a hierarchical structure):
+```json
+{
+  page_name: AddNewRecord,
+  children: [
+    {
+      ID: 5,
+      widget_type: ImageButton,
+      resource_id: back,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: TextView,
+      text: Currency
+    },
+    {
+      widget_type: TextView,
+      text: Long press to modify
+    },
+    {
+      ID: 10,
+      widget_type: ImageButton,
+      content_description: AndroMoney,
+      resource_id: refresh,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 12,
+      widget_type: ListView,
+      resource_id: currencylist,
+      possible_action_types: [
+        long_touch
+      ],
+      num_prev_actions: 2,
+      children: [
+        {
+          ID: 13,
+          widget_type: RelativeLayout,
+          resource_id: bg,
+          possible_action_types: [
+            touch,
+            long_touch
+          ],
+          text: [
+            Same as account
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 18,
+          widget_type: RelativeLayout,
+          resource_id: bg,
+          possible_action_types: [
+            touch,
+            long_touch
+          ],
+          text: [
+            USD,
+            US Dollar
+          ],
+          num_prev_actions: 0
+        },
+        {
+          ID: 23,
+          widget_type: RelativeLayout,
+          resource_id: bg,
+          possible_action_types: [
+            touch,
+            long_touch
+          ],
+          text: [
+            New ..
+          ],
+          num_prev_actions: 0
+        }
+      ]
+    },
+    {
+      ID: 39,
+      widget_type: View,
+      text: 乾式軸承 耐腐蝕 抗UV 抗面壓,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 42,
+      widget_type: View,
+      content_description: 追日太陽能系統 igus 德國ESQM軸承零件25年保固，耐 腐蝕 抗UV 抗面壓 風吹日曬雨淋也不怕,
+      possible_action_types: [
+        touch
+      ],
+      text: [
+        追日太陽能系統 igus 德國ESQM軸承零件25年保固，耐,
+        腐蝕 抗UV 抗面壓 風吹日曬雨淋也不怕
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 47,
+      widget_type: View,
+      text: igus Taiwan 台灣易格斯,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 49,
+      widget_type: View,
+      text: 瞭解詳情,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      ID: 54,
+      widget_type: View,
+      resource_id: abgc,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0,
+      children: [
+        {
+          ID: 59,
+          widget_type: Button,
+          resource_id: cbb,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        }
+      ]
+    },
+    {
+      widget_type: TextView,
+      text: Test Ad
+    }
+  ]
+}
+```
+
+Guideline for selecting the next action:
+- Note that `num_prev_actions` property means the number of times the widget has been interacted with so far.
+- Note that `widget_role_inference` property means the role of the widget inferred by previous actions. Use this property to infer what the widget is used for. If the widget has not been interacted yet, `widget_role_inference` property is not included in the widget dictionary.
+- When I am stuck, you might guide me to explore a new widget that has not been used and I don't know its role yet.
+- I don't want to do the same actions repeatedly except it is clearly needed for the task (e.g., navigating back to the first page of the app), so guide me to perform effective actions to complete the task.
+
+Recall that my current task is: Add a new expense record.
+Select the next suitable action to perform, or end the task if the task is already completed.
+
+This time, I am going to provide a template for your output to let you think about my next action step by step. Fill out the <...> parts in the template with your own words. Do not include anything else in your answer except the text to fill out the template. Preserve the formatting and overall template.
+
+=== Below is the template for your answer ===
+1. Summary of my previous interactions for the task: <1~2 sentences according to the task execution history and current app state. Reflect criticizer's feedback if I mentioned any. Be careful not to include any actions that haven't been performed yet>
+2. Description of the current app state: <1~2 sentences, briefly describe in one line according to the hierarchical structure I provided above>
+3. Inference on the remaining steps needed to complete the task: <1~2 sentences according to the task execution history and current app state. Do not immediately judge the next action here>
+4. Reasoning for the next action: <1 sentence reasoning the most logical action to take next on the current state (or justification for ending the task). Refer to the guideline above>
+
+*** Assistant:
+1. Summary of my previous interactions for the task: Jade Green has successfully navigated to the Add New Record screen and is currently at the currency selection step but has not yet selected a currency option. The criticizer noted that Jade needs to explore the ListView for currency options to proceed with adding the expense record.  
+2. Description of the current app state: The current page is AddNewRecord, where Jade can select a currency from a ListView that includes options like "Same as account," "USD," and "New ..".  
+3. Inference on the remaining steps needed to complete the task: Jade needs to select a currency option from the ListView to continue with adding the expense record, which hasn't been done yet.  
+4. Reasoning for the next action: Since the currency options in the ListView have not been interacted with yet, touching on the option "USD" is the most logical next step to proceed with the task.
+
+*** User:
+Based on your reasoning, select the next action or end the task by calling one of the given function that corresponds to a specific action.
+
+*** Assistant:
+{'id': 'call_7H7CiMybU5LC5pHW2FglywTn', 'type': 'function', 'function': {'name': 'touch', 'arguments': '{"target_widget_ID":18}'}}

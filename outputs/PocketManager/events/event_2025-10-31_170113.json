@@ -1,0 +1,38 @@
+{
+  "tag": "2025-10-31_170113",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "ID": 4,
+      "view_str": "7ad11ed958a1a4a96b404f825c385d3a",
+      "widget_type": "CheckedTextView",
+      "class": "android.widget.CheckedTextView",
+      "text": "\u5e33\u6236",
+      "resource_id": "text1",
+      "state": [
+        "checked"
+      ],
+      "possible_action_types": [
+        "touch"
+      ],
+      "bounds": [
+        [
+          1473,
+          641
+        ],
+        [
+          2003,
+          767
+        ]
+      ]
+    }
+  },
+  "start_state": "ac85cad8ba01bda5ddd823ccc8fc7876",
+  "stop_state": "8ea81aca92967cd67f93364bff9bfb3b",
+  "event_str": "TouchEvent(state=ac85cad8ba01bda5ddd823ccc8fc7876, view=7ad11ed958a1a4a96b404f825c385d3a(AddOrEditActivity/CheckedTextView-\u5e33\u6236))",
+  "task": "Record a USD 15 lunch expense at a nearby caf\u00e9.",
+  "view_image_dir": "../outputs/PocketManager/views/view_7ad11ed958a1a4a96b404f825c385d3a.png"
+}

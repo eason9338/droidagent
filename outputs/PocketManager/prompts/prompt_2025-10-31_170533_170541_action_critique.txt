@@ -1,0 +1,196 @@
+
+*** System:
+You are a helpful inspector who can review the GUI actions performed on an Android mobile app named 記帳小助手. The actions are done by a person named "Jade Green" to accomplish the target task: Record a USD 10 transport expense by selecting the 交通 category, entering the amount, and adding a note about the trip. The task is known to be completed when the transport expense is successfully recorded, showing the amount and category in the expense list.
+
+Jade Green has the following profile:
+(The username and password is what Jade Green generally uses for their accounts.)
+- name: Jade Green
+- age: 25
+- phone: 081-827-7650
+- email: anony1017mous@gmail.com
+- username: tester.green
+- password: green1029*
+- date_of_birth: 1997-10-29
+- self_introduction: I am a 25-year-old graduate student studying computer science. I want to explore advance feature, like record expense in different currencies
+- user_segment: "Power User"
+- typical_tasks: ["Add expense in different currencies", "Generate expense reports", "Manage multiple accounts"]
+- pain_points_to_watch: ["Slow currency switching", "Complicated report filters", "Too many clicks for common tasks"]
+- natural_behaviors: Jade Green is a busy student who records expenses regularly (meals, transport, study materials), may use multiple currencies when traveling, wants to analyze spending patterns, and manages different financial accounts for different purposes.
+- task_completion_rule: Each task is ONE COMPLETE workflow from start to finish. Do NOT split a workflow into multiple separate tasks. Do NOT repeat the same workflow multiple times unless testing different variations.
+
+You are going to provide helpful feedback and suggest a revised plan to help Jade Green successfully accomplish the task.
+
+*** User:
+Critique the actions done by Jade Green with respect to the current task, and give a helpful workaround if Jade Green is struggling to accomplish the task.
+
+Task execution history so far (listed in chronological order):
+===
+17:03:51:AddOrEdit: [ACTION] Jade Green touched on a button that has text "交通"
+17:03:57:AddOrEdit: [OBSERVATION] The button labeled "交通" remains visible, but several new widgets have appeared, including a "backButton," a "收入" button, and a selected button labeled "支出." Additionally, new text views and dropdown fields have been introduced, indicating a change in the available options and context for the user.
+17:04:14:AddOrEdit: [ACTION] Jade Green filled a focused textfield that has text "15" with the text "10"
+17:04:43:com.mark.pocketmanager/.Home.AddOrEditActivity: [ACTION] Jade Green pressed the back button because there was no interactable widgets
+17:04:44:AddOrEdit: [OBSERVATION] The focused textfield now displays "10" instead of "15," indicating that the user has successfully replaced the previous value with the new input. Other elements on the screen remain unchanged, ensuring clarity in the updated entry.
+17:05:00:AddOrEdit: [ACTION] Jade Green filled a textfield that has resource_id "noteEditor" with the text "Daily commute to university"
+17:05:14:com.mark.pocketmanager/.Home.AddOrEditActivity: [ACTION] Jade Green pressed the back button because there was no interactable widgets
+17:05:16:AddOrEdit: [OBSERVATION] The textfield with resource_id "noteEditor" is now filled with the text "Daily commute to university," indicating that the user has successfully entered a note. Additionally, this textfield is currently focused, allowing for further editing if needed.
+17:05:28:AddOrEdit: [ACTION] Jade Green touched on a button that has text "新增"
+17:05:35:Main: [OBSERVATION] The action of touching the "新增" button has transitioned the user from the AddOrEdit screen to the Main screen, where new elements such as textviews displaying income, expenses, and totals have been introduced, indicating a summary view of financial data. Additionally, the button labeled "新增" is no longer present, replaced by various other buttons and information relevant to the main financial overview. (page changed from AddOrEdit to Main)
+===
+
+Current page: Main 
+Widgets in current page:
+```json
+{
+  page_name: Main,
+  children: [
+    {
+      widget_type: ViewPager,
+      resource_id: view_pager,
+      possible_action_types: [
+        scroll
+      ],
+      num_prev_actions: 0,
+      children: [
+        {
+          widget_type: ImageButton,
+          resource_id: lastMonth,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          widget_type: Button,
+          text: 2025 10月,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          widget_type: ImageButton,
+          resource_id: nextMonth,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0
+        },
+        {
+          widget_type: TextView,
+          text: 收入
+        },
+        {
+          widget_type: TextView,
+          text: 0
+        },
+        {
+          widget_type: TextView,
+          text: 支出
+        },
+        {
+          widget_type: TextView,
+          text: 10
+        },
+        {
+          widget_type: TextView,
+          text: 總額
+        },
+        {
+          widget_type: TextView,
+          text: -10
+        },
+        {
+          widget_type: LinearLayout,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 0,
+          children: [
+            {
+              widget_type: TextView,
+              text: 31
+            },
+            {
+              widget_type: TextView,
+              text: 星期五
+            },
+            {
+              widget_type: TextView,
+              text: 2025.10
+            },
+            {
+              widget_type: TextView,
+              text: $ 0
+            },
+            {
+              widget_type: TextView,
+              text: $ 10
+            },
+            {
+              widget_type: LinearLayout,
+              possible_action_types: [
+                touch
+              ],
+              text: [
+                交通,
+                帳戶,
+                $ 10
+              ],
+              num_prev_actions: 0
+            }
+          ]
+        },
+        {
+          widget_type: ImageButton,
+          resource_id: adder,
+          possible_action_types: [
+            touch
+          ],
+          num_prev_actions: 4,
+          widget_role_inference: The widget opens the AddOrEdit screen, allowing users to input financial data and select options for assets and categories.
+        }
+      ]
+    },
+    {
+      widget_type: TextView,
+      text: 帳單,
+      state: [
+        selected
+      ]
+    },
+    {
+      widget_type: LinearLayout,
+      text: 圖表,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    },
+    {
+      widget_type: LinearLayout,
+      text: 設定,
+      possible_action_types: [
+        touch
+      ],
+      num_prev_actions: 0
+    }
+  ]
+}
+```
+Guideline for criticizing the actions:
+- Note that `num_prev_actions` property means the number of times the widget has been interacted with so far.
+- Note that `widget_role_inference` property means the role of the widget inferred by previous actions. Use this property to infer what the widget is used for. If `widget_role_inference` property is not included in the widget dictionary, the widget has not been interacted yet.
+- When I am stuck, you might guide me to explore the new widgets that have not been used and doesn't know the role yet.
+- I don't want to do the same actions repeatedly except it is clearly needed for the task (e.g., navigating back to the first page of the app), so guide me to perform effective actions to complete the task.
+
+I am going to provide a template for your output to reason about your choice step by step. Fill out the <...> parts in the template with your own words. Do not include anything else in your answer except the text to fill out the template. Preserve the formatting and overall template.
+
+=== Below is the template for your answer ===
+Critique of task execution so far: <1~2 sentences in one line, say "okay" if everything seems fine.>
+Need a workaround plan?: <yes/no, do not include any other word except "yes" or "no">
+Workaround plan for Jade Green: <Start with "Jade Green needs to", and describe in one line. Say just "none" if Jade Green is doing well and no workaround is needed.>
+
+*** Assistant:
+Critique of task execution so far: Jade Green has successfully selected the transport category, entered the amount, and added a note; however, pressing the back button has caused them to exit the expense entry screen, preventing the task from being completed.  
+Need a workaround plan?: yes  
+Workaround plan for Jade Green: Jade Green needs to navigate back to the AddOrEdit screen by touching the adder button and then complete the expense entry by pressing the "新增" button to record the transport expense.

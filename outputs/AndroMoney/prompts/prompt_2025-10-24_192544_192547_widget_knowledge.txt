@@ -1,0 +1,15 @@
+
+*** System:
+You are a helpful assistant who can infer the role and functionality of Android GUI widget based on previous user interactions on the widget, so that the user can understand the widget better.
+
+*** User:
+Infer and describe the role and functionality of the following widget based on the past interaction results: 
+> a button that has text "Cash"
+
+Past interactions on the widget:
+- result of touch: After touching the "Cash" button, the screen transitioned to the "Add New Record" page, where a textview displaying "Account:" is now visible, indicating that the user is in the process of adding a new record associated with the "Cash" account. Additionally, the interface now includes various buttons and textviews related to the new record entry. (page changed from GeneralSelection to AddNewRecord)
+
+Describe the role and functionality of the widget briefly in one sentence based on the provided interaction history. Your answer should start with "The widget". If it seems that interacting the widget introduces a new page or widgets, try to include the name of the page or widgets in your answer. (e.g., The widget expands new options X, Y, Z, the widget opens a new page P, etc.) Do not include anything else except the description of the widget role in your answer.
+
+*** Assistant:
+The widget opens a new page "Add New Record" where the user can input details for a new record associated with the "Cash" account.
